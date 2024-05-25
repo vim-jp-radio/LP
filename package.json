@@ -28,6 +28,7 @@
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"typescript-svelte-plugin": "^0.3.38",
+		"unocss": "^0.60.3",
 		"vite": "^5.0.3"
 	},
 	"type": "module",
