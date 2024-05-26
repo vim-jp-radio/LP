@@ -1,3 +1,3 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'unocss';
 
 export default defineConfig({});
