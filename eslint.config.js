@@ -35,10 +35,5 @@ export default antfu(
 			},
 		},
 	},
-	gitignore({
-		files: [
-			'.gitignore',
-			'.eslintignore',
-		],
-	}),
+	gitignore(),
 );
