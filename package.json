@@ -1,42 +1,41 @@
 {
 	"name": "vim-jp-lp",
+	"type": "module",
 	"version": "0.0.1",
 	"private": true,
+	"packageManager": "pnpm@9.1.0+sha256.22e36fba7f4880ecf749a5ca128b8435da085ecd49575e7fb9e64d6bf4fad394",
+	"engines": {
+		"node": ">=20.0.0 <21.0.0"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"lint": "eslint .",
+		"format": "eslint --fix ."
+	},
+	"dependencies": {
+		"@unocss/reset": "^0.60.3"
 	},
 	"devDependencies": {
+		"@antfu/eslint-config": "^2.19.1",
 		"@sveltejs/adapter-static": "^3.0.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"@types/eslint": "^8.56.0",
-		"@typescript-eslint/eslint-plugin": "^7.0.0",
-		"@typescript-eslint/parser": "^7.0.0",
-		"eslint": "^8.56.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.36.0-next.4",
-		"prettier": "^3.1.1",
-		"prettier-plugin-svelte": "^3.1.2",
+		"@unocss/eslint-plugin": "^0.60.3",
+		"eslint": "^9.3.0",
+		"eslint-config-flat-gitignore": "^0.1.5",
+		"eslint-plugin-format": "^0.1.1",
+		"eslint-plugin-svelte": "^2.39.0",
 		"svelte": "^5.0.0-next.1",
 		"svelte-check": "^3.6.0",
+		"svelte-eslint-parser": "^0.36.0",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"typescript-svelte-plugin": "^0.3.38",
 		"unocss": "^0.60.3",
 		"vite": "^5.0.3"
-	},
-	"type": "module",
-	"packageManager": "pnpm@9.1.0+sha256.22e36fba7f4880ecf749a5ca128b8435da085ecd49575e7fb9e64d6bf4fad394",
-	"dependencies": {
-		"@unocss/reset": "^0.60.3"
-	},
-	"engines": {
-		"node": ">=20.0.0 <21.0.0"
 	}
 }
