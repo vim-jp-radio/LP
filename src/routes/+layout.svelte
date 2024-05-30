@@ -1,8 +1,10 @@
 <script lang='ts'>
+	export const prerender = true;
+
 	import 'uno.css';
 	import '@unocss/reset/normalize.css';
 
-	export const prerender = true;
+	const { children } = $props();
 </script>
 
-<slot />
+{@render children()}
