@@ -14,9 +14,9 @@ const config = {
 		adapter: adapter({
 			// default options are shown. On some platforms
 			// these options are set automatically — see below
-			fallback: 'index.html'
-		})
-	}
+			fallback: 'index.html',
+		}),
+	},
 };
 
 export default config;
