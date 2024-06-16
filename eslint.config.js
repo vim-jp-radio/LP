@@ -18,11 +18,13 @@ export default antfu(
 			semi: true,
 		},
 
-		javascript: true,
-		typescript: true,
 		unocss: true,
 		yaml: true,
 		markdown: true,
+
+		typescript: {
+			tsconfigPath: './tsconfig.json',
+		},
 
 		svelte: {
 			overrides: {
