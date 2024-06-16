@@ -27,7 +27,6 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@unocss/eslint-plugin": "^0.60.3",
 		"eslint": "^9.3.0",
-		"eslint-config-flat-gitignore": "^0.1.5",
 		"eslint-plugin-format": "^0.1.1",
 		"eslint-plugin-svelte": "^2.39.0",
 		"svelte": "^5.0.0-next.1",

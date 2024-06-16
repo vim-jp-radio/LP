@@ -30,9 +30,6 @@ importers:
       eslint:
         specifier: ^9.3.0
         version: 9.3.0
-      eslint-config-flat-gitignore:
-        specifier: ^0.1.5
-        version: 0.1.5
       eslint-plugin-format:
         specifier: ^0.1.1
         version: 0.1.1(eslint@9.3.0)
