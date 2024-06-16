@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# get the list of staged files
+files=$(git diff --cached --name-only --diff-filter=ACM --relative="")
+
+pnpm dlx @secretlint/quick-start $files

@@ -14,7 +14,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint .",
-		"format": "eslint --fix ."
+		"format": "eslint --fix .",
+		"prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'"
 	},
 	"dependencies": {
 		"@unocss/reset": "^0.60.3"
