@@ -1,3 +1,4 @@
+import path from 'node:path';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
@@ -20,6 +21,12 @@ const config = {
 			// these options are set automatically — see below
 			fallback: 'index.html',
 		}),
+
+		typescript: {
+			config(config) {
+				config.include.push(path.join(import.meta.dirname, 'uno.config.ts'));
+			},
+		},
 	},
 };
 
