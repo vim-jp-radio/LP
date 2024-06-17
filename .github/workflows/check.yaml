@@ -27,7 +27,7 @@ jobs:
       - name: Run secretlint
         shell: bash
         run: pnpm dlx @secretlint/quick-start $(git ls-files)
-      - name: Run lint
-        run: pnpm lint
       - name: Run check
         run: pnpm check
+      - name: Run lint
+        run: pnpm lint
