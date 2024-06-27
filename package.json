@@ -13,8 +13,8 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "eslint .",
-		"format": "eslint --fix .",
+		"lint": "eslint --cache .",
+		"format": "npm run lint -- --fix",
 		"prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'"
 	},
 	"dependencies": {
