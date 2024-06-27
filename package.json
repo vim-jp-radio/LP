@@ -21,15 +21,14 @@
 		"@unocss/reset": "^0.60.3"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "^2.19.1",
+		"@antfu/eslint-config": "^2.21.1",
 		"@sveltejs/adapter-static": "^3.0.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@unocss/eslint-plugin": "^0.60.3",
 		"eslint": "^9.3.0",
-		"eslint-config-flat-gitignore": "^0.1.5",
-		"eslint-plugin-format": "^0.1.1",
-		"eslint-plugin-svelte": "^2.39.0",
+		"eslint-plugin-format": "^0.1.2",
+		"eslint-plugin-svelte": "^2.40.0",
 		"svelte": "^5.0.0-next.1",
 		"svelte-check": "^3.6.0",
 		"svelte-eslint-parser": "^0.36.0",

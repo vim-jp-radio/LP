@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-pnpm lint
 pnpm check
+pnpm lint
