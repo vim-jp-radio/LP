@@ -2,17 +2,17 @@
 
 Vim-jp ラジオの LP です。
 
-## Development
+## 💻 Development
 
-### Setup
+- Clone this repository
+- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
+- Install dependencies using `pnpm install`
+- Run development server using `pnpm dev`
 
-```sh
-pnpm i
-pnpm dev
-```
+## 📦 Build
 
-### Build
+- Run `pnpm build` to build the site
 
-```sh
-pnpm build
-```
+## ✨ Preview
+
+- Run `pnpm preview` to preview the site
