@@ -1,7 +1,8 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import { enhancedImages } from '@sveltejs/enhanced-img';
 import { defineConfig } from 'vite';
 import UnoCss from 'unocss/vite';
 
 export default defineConfig({
-	plugins: [UnoCss(), sveltekit()],
+	plugins: [enhancedImages(), UnoCss(), sveltekit()],
 });
