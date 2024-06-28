@@ -31,11 +31,11 @@
 	<meta name='description' content={description} />
 
 	<!-- X -->
-	{@render xMeta('card', 'summary')}
 	{@render xMeta('site', xAccount)}
 	{@render xMeta('creator', xAccount)}
 	{@render xMeta('title', title)}
 	{@render xMeta('description', description)}
+	{@render xMeta('card', 'summary_large')}
 	{@render xMeta('image', images[0].src)}
 	{@render xMeta('image:alt', images[0].alt)}
 	{@render xMeta('image:type', images[0].type)}
