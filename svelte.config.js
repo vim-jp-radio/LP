@@ -1,6 +1,8 @@
+import process from 'node:process';
 import path from 'node:path';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { isDevelopment } from 'std-env';
 
 /** @param {...string} args */
 function relativePath(...args) {
@@ -33,6 +35,10 @@ const config = {
 
 		alias: {
 			$: relativePath('src'),
+		},
+
+		paths: {
+			assets: isDevelopment ? '' : process.env.CF_PAGES_URL,
 		},
 	},
 };
