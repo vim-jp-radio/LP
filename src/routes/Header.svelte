@@ -1,6 +1,5 @@
 <script lang='ts'>
 	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
-	import faviconLinks from '$/assets/favicons.html?raw';
 
 	const title = `エンジニアの楽園 vim-jpラジオ`;
 	const description = `2024年7月8日配信開始のラジオ番組`;
@@ -45,7 +44,4 @@
 	{@render ogMeta('image', image.src)}
 	{@render ogMeta('image:alt', image.alt)}
 	{@render ogMeta('image:type', image.type)}
-
-	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-	{@html faviconLinks}
 </svelte:head>
