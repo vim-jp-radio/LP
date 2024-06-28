@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import Logo from '$/assets/vimjp-radio-cover-art/3000x3000-fs8.png';
+	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
 
 	const title = `エンジニアの楽園 vim-jpラジオ`;
 	const description = `2024年7月8日配信開始のラジオ番組`;
@@ -7,7 +7,7 @@
 	const xAccount = `@vimjpradio`;
 	const locale = `ja_JP`;
 
-	const images = [{ src: Logo, alt: `vim-jpラジオのロゴ`, type: `image/png` }] as const;
+	const image = { src: OGP, alt: `vim-jpラジオのロゴ`, type: `image/png` } as const;
 </script>
 
 <!-- X のメタタグを生成するsnippet -->
@@ -27,26 +27,21 @@
 	<meta name='description' content={description} />
 
 	<!-- X -->
-	{@render xMeta('card', 'summary')}
 	{@render xMeta('site', xAccount)}
 	{@render xMeta('creator', xAccount)}
 	{@render xMeta('title', title)}
 	{@render xMeta('description', description)}
-	{#each images as { src, alt, type } (src)}
-		{@render xMeta('image', src)}
-		{@render xMeta('image:alt', alt)}
-		{@render xMeta('image:type', type)}
-	{/each}
+	{@render xMeta('card', 'summary_large')}
+	{@render xMeta('image', image.src)}
+	{@render xMeta('image:alt', image.alt)}
+	{@render xMeta('image:type', image.type)}
 
 	<!-- Open Graph -->
 	{@render ogMeta('type', 'website')}
 	{@render ogMeta('title', title)}
 	{@render ogMeta('description', description)}
 	{@render ogMeta('locale', locale)}
-	{@render ogMeta('image', Logo)}
-	{#each images as { src, alt, type } (src)}
-		{@render ogMeta('image', src)}
-		{@render ogMeta('image:alt', alt)}
-		{@render ogMeta('image:type', type)}
-	{/each}
+	{@render ogMeta('image', image.src)}
+	{@render ogMeta('image:alt', image.alt)}
+	{@render ogMeta('image:type', image.type)}
 </svelte:head>
