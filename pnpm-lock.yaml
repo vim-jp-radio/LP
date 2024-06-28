@@ -39,6 +39,9 @@ importers:
       eslint-plugin-svelte:
         specifier: ^2.41.0
         version: 2.41.0(eslint@9.5.0)(svelte@5.0.0-next.166)
+      std-env:
+        specifier: ^3.7.0
+        version: 3.7.0
       svelte:
         specifier: 5.0.0-next.166
         version: 5.0.0-next.166
@@ -2232,6 +2235,9 @@ packages:
 
   spdx-license-ids@3.0.18:
     resolution: {integrity: sha512-xxRs31BqRYHwiMzudOrpSiHtZ8i/GeionCBDSilhYRj+9gIcI8wCZTlXZKu9vZIVqViP3dcp9qE5G6AlIaD+TQ==}
+
+  std-env@3.7.0:
+    resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==}
 
   string-argv@0.3.2:
     resolution: {integrity: sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q==}
@@ -4910,6 +4916,8 @@ snapshots:
       spdx-license-ids: 3.0.18
 
   spdx-license-ids@3.0.18: {}
+
+  std-env@3.7.0: {}
 
   string-argv@0.3.2: {}
 
