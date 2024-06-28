@@ -27,7 +27,7 @@
 	<meta name='description' content={description} />
 
 	<!-- X -->
-	{@render xMeta('card', 'summary_large_image')}
+	{@render xMeta('card', 'summary')}
 	{@render xMeta('site', xAccount)}
 	{@render xMeta('creator', xAccount)}
 	{@render xMeta('title', title)}
