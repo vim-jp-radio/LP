@@ -1,3 +1,12 @@
-import { defineConfig } from 'unocss';
+import {
+	defineConfig,
+	presetAttributify,
+	presetMini,
+} from 'unocss';
 
-export default defineConfig({});
+export default defineConfig({
+	presets: [
+		presetAttributify(),
+		presetMini(),
+	],
+});

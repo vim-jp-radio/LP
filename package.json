@@ -29,6 +29,7 @@
 		"@types/node": "^20.14.9",
 		"@unocss/eslint-plugin": "^0.60.4",
 		"@unocss/extractor-svelte": "^0.61.0",
+		"@unocss/preset-attributify": "^0.61.0",
 		"eslint": "^9.5.0",
 		"eslint-plugin-format": "^0.1.2",
 		"eslint-plugin-svelte": "^2.41.0",
