@@ -3,13 +3,13 @@
 	import '@unocss/reset/normalize.css';
 
 	import Header from './Header.svelte';
-	import { ALISUE } from '$/assets/aa';
+	import ALISUE_AA from '$/assets/aa/alisue.txt?raw';
 
 	const { children } = $props();
 
 	$effect(() => {
 		// eslint-disable-next-line no-console
-		console.log(ALISUE);
+		console.log(ALISUE_AA);
 	});
 </script>
 
