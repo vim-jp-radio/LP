@@ -8,7 +8,7 @@ import { faviconPlugin } from './plugins/favicons';
 export default defineConfig({
 	plugins: [
 		faviconPlugin,
-		UnoCss({ extractors: [extractorSvelte()] }),
+		UnoCss({ extractors: [extractorSvelte()] }), // UnoCssの設定。extractorsにextractorSvelteを設定している。https://unocss.dev/extractors/svelte#svelte-extractor
 		enhancedImages(),
 		sveltekit(),
 	],
