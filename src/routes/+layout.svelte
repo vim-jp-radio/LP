@@ -7,9 +7,9 @@
 
 	const { children } = $props();
 
+	const log = (s: string) => console.log(s); // eslint-disable-line no-console
 	$effect(() => {
-		// eslint-disable-next-line no-console
-		console.log(ALISUE_AA);
+		log(ALISUE_AA);
 	});
 </script>
 
