@@ -33,6 +33,12 @@ importers:
       '@unocss/eslint-plugin':
         specifier: ^0.60.4
         version: 0.60.4(eslint@9.5.0)(typescript@5.5.2)
+      '@unocss/extractor-svelte':
+        specifier: ^0.61.0
+        version: 0.61.0
+      '@unocss/preset-attributify':
+        specifier: ^0.61.0
+        version: 0.61.0
       eslint:
         specifier: ^9.5.0
         version: 9.5.0
@@ -894,12 +900,18 @@ packages:
   '@unocss/core@0.60.4':
     resolution: {integrity: sha512-6tz8KTzC30oB0YikwRQoIpJ6Y6Dg+ZiK3NfCIsH+UX11bh2J2M53as2EL/5VQCqtiUn3YP0ZEzR2d1AWX78RCA==}
 
+  '@unocss/core@0.61.0':
+    resolution: {integrity: sha512-Y/Ly3LPIAzOBlWCdKBVzVzIaaWDsf+oWPIUZlaW7DL++WWypVBCghmxXIT5dyuMGXE560Hj92st4AkXfuVdxGQ==}
+
   '@unocss/eslint-plugin@0.60.4':
     resolution: {integrity: sha512-+ZWlc5TrzVjnvK3fKJqaTH7phSrYAKcbXC0aTTfM1PeTg8ya6tW4sqUmESRkbn9M5AYxhDADqFdqenQN0qlXqQ==}
     engines: {node: '>=14'}
 
   '@unocss/extractor-arbitrary-variants@0.60.4':
     resolution: {integrity: sha512-USuFGs5CLft9q7IGNdAEp1oliuUns+W7OO0Tx5qtx/oBh6pU/L93lcNNsuuGNrMU8BCmF3atx1/PEmGymgJ7VA==}
+
+  '@unocss/extractor-svelte@0.61.0':
+    resolution: {integrity: sha512-4oiWNiY0flDj1rEvXOd2pKto7NRw5YbrNZSv7LFT0cWk6vR1HzU5kwSmkvnd/ACOjRCSdgN93BcVTqN0ItLNyQ==}
 
   '@unocss/inspector@0.60.4':
     resolution: {integrity: sha512-PcnrEQ2H7osZho4Nh0+84O4IXzlkF7pvTUe/7FTJYF1HQGWHB/PfOSoyKn7/sF5sED8hMK9RlSJ9YGUH9ioY+g==}
@@ -912,6 +924,9 @@ packages:
 
   '@unocss/preset-attributify@0.60.4':
     resolution: {integrity: sha512-J2GWUC0bcmZSXlBGLYUXwWQos/dNzKbq2CKweWVBAmAH9XyfM0mA5CTNBRv05PN1g6C/0z5st7ntUjV6KHJuTg==}
+
+  '@unocss/preset-attributify@0.61.0':
+    resolution: {integrity: sha512-E0oIfYAnnm8piSU7cbAnLIKKz0TwlHMOfAcg0Z0jv2N/MatCpq0BCJZHeE0fEw53OUc+oa6Dpd509rOEUXp/tA==}
 
   '@unocss/preset-icons@0.60.4':
     resolution: {integrity: sha512-UN/dj+nhI3+S06YxCZQPLw3GZy780iaE71dysyhDMdh+Qq2KFVs3d94mr1427fjz/3Y8ZyXkgqyhCFr7UT0bMQ==}
@@ -3460,6 +3475,8 @@ snapshots:
 
   '@unocss/core@0.60.4': {}
 
+  '@unocss/core@0.61.0': {}
+
   '@unocss/eslint-plugin@0.60.4(eslint@9.5.0)(typescript@5.5.2)':
     dependencies:
       '@typescript-eslint/utils': 7.14.1(eslint@9.5.0)(typescript@5.5.2)
@@ -3475,6 +3492,8 @@ snapshots:
   '@unocss/extractor-arbitrary-variants@0.60.4':
     dependencies:
       '@unocss/core': 0.60.4
+
+  '@unocss/extractor-svelte@0.61.0': {}
 
   '@unocss/inspector@0.60.4':
     dependencies:
@@ -3496,6 +3515,10 @@ snapshots:
   '@unocss/preset-attributify@0.60.4':
     dependencies:
       '@unocss/core': 0.60.4
+
+  '@unocss/preset-attributify@0.61.0':
+    dependencies:
+      '@unocss/core': 0.61.0
 
   '@unocss/preset-icons@0.60.4':
     dependencies:
