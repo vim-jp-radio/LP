@@ -4,6 +4,7 @@
 
 <h1
 	uno-grid
+	uno-h='100svh'
 	uno-place='content-center items-center'
 >
 	<img
