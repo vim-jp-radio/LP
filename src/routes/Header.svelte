@@ -7,7 +7,7 @@
 	const xAccount = `@vimjpradio`;
 	const locale = `ja_JP`;
 
-	const image = { src: OGP, alt: `vim-jpラジオのロゴ`, type: `image/png` } as const;
+	const image = { src: OGP, alt: `エンジニアの楽園 vim-jpラジオ`, type: `image/png` } as const;
 </script>
 
 <!-- X のメタタグを生成するsnippet -->
@@ -25,6 +25,7 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name='description' content={description} />
+	<meta name='viewport' content='width=device-width,initial-scale=1' />
 
 	<!-- X -->
 	{@render xMeta('site', xAccount)}

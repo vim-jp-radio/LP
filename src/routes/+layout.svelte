@@ -1,6 +1,7 @@
 <script lang='ts'>
 	import 'uno.css';
 	import '@unocss/reset/normalize.css';
+	import './global.css'; // bodyにbackground-colorをあてようとしたときに、この方法しかうまくいかなかったため
 
 	import Header from './Header.svelte';
 	import ALISUE_AA from '$/assets/aa/alisue.txt?raw';
