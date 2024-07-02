@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href='https://kit.svelte.dev'>kit.svelte.dev</a> to read the documentation</p>
+<script lang='ts'>
+</script>
+
+<div
+	uno-grid
+	uno-place='content-center items-center'
+>
+	<enhanced:img
+		alt='Vim-jp Radio Logo'
+		src='$/assets/vimjp-radio-cover-art/800x800-fs8.png'
+	/>
+</div>
