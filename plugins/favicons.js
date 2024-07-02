@@ -20,6 +20,7 @@ async function main() {
   /** @satisfies {import('favicons').FaviconOptions} */
   const configuration = {
     path: `/favicons`,
+    theme_color: '#001330',
   };
 
   const response = await favicons(src, configuration);
