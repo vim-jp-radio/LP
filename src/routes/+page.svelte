@@ -1,5 +1,4 @@
 <script lang='ts'>
-	import logo from '$/assets/vimjp-radio-cover-art/3000x3000-alpha-fs8.png';
 </script>
 
 <h1
@@ -7,9 +6,8 @@
 	uno-h='100svh'
 	uno-place='content-center items-center'
 >
-	<img
-		class='h-50svh object-contain'
-		alt='エンジニアの楽園 vim-jpラジオ'
-		src={logo}
+	<enhanced:img
+		alt='Vim-jp Radio Logo'
+		src='$/assets/vimjp-radio-cover-art/800x800-fs8.png'
 	/>
 </h1>
