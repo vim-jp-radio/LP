@@ -1,6 +1,3 @@
-<script lang='ts'>
-</script>
-
 <h1
 	uno-grid
 	uno-h='100svh'
