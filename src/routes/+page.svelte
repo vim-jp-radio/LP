@@ -7,7 +7,8 @@
 	uno-place='content-center items-center'
 >
 	<enhanced:img
-		alt='Vim-jp Radio Logo'
-		src='$/assets/vimjp-radio-cover-art/800x800-fs8.png'
+		class='h-auto max-w-100% w-50svh'
+		alt='エンジニアの楽園 vim-jpラジオ'
+		src='$/assets/vimjp-radio-cover-art/3000x3000-alpha-fs8.png'
 	/>
 </h1>
