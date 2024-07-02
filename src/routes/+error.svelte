@@ -3,7 +3,10 @@
 </script>
 
 {#if $page.error != null}
-	<div class='grid place-content-center place-items-center'>
+	<div
+		uno-grid
+		uno-place='content-center items-center'
+	>
 		<!-- svelte-ignore element_invalid_self_closing_tag -->
 		<enhanced:img alt='some alt text' src='$/assets/404.png' />
 		<h1>{$page.error.message}</h1>
