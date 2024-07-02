@@ -8,7 +8,7 @@
 
 	const { children } = $props();
 
-	const log = (s: string) => console.log(s); // eslint-disable-line no-console
+	const log = (s: string) => console.log(s.replaceAll('%', '%%')); // eslint-disable-line no-console
 	$effect(() => {
 		log(VIM_JP_RADIO);
 		log(ALISUE_AA);
