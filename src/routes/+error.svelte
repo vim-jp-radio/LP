@@ -11,8 +11,10 @@
 </script>
 
 {#if $page.error != null}
-	<div
+	<h1
 		uno-grid
+		uno-h='100svh'
+		uno-m='0'
 		uno-place='content-center items-center'
 	>
 		<!-- svelte-ignore element_invalid_self_closing_tag -->
@@ -21,8 +23,8 @@
 			alt='error logo'
 			src='$/assets/alisue/beer.png'
 		/>
-		<h1 uno-text='white'>
+		<span uno-text='white'>
 			{$page.error.message}
-		</h1>
-	</div>
+		</span>
+	</h1>
 {/if}
