@@ -17,6 +17,8 @@
 			throw new Error(`Invalid URL: ${url}`);
 		}
 	}
+
+	type XCardType = 'summary' | 'summary_large_image' | 'app' | 'player';
 </script>
 
 <!-- X のメタタグを生成するsnippet -->
@@ -41,7 +43,7 @@
 	{@render xMeta('creator', xAccount)}
 	{@render xMeta('title', title)}
 	{@render xMeta('description', description)}
-	{@render xMeta('card', 'summary_large')}
+	{@render xMeta('card', `summary_large_image` satisfies XCardType)}
 	{@render xMeta('image', image.src)}
 	{@render xMeta('image:alt', image.alt)}
 	{@render xMeta('image:type', image.type)}
