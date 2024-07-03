@@ -1,13 +1,22 @@
 <script lang='ts'>
 	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
+	import { building } from '$app/environment';
 
 	const title = `エンジニアの楽園 vim-jpラジオ`;
 	const description = `2024年7月8日配信開始のラジオ番組`;
 
 	const xAccount = `@vimjpradio`;
 	const locale = `ja_JP`;
+	const url = `https://vim-jp-radio.com/`;
 
 	const image = { src: OGP, alt: `エンジニアの楽園 vim-jpラジオ`, type: `image/png` } as const;
+
+	/* ビルド時にurlが不正でないかチェックする。ビルド時にtree-shakingされる */
+	if (building) {
+		if (!URL.canParse(url)) {
+			throw new Error(`Invalid URL: ${url}`);
+		}
+	}
 </script>
 
 <!-- X のメタタグを生成するsnippet -->
@@ -38,6 +47,7 @@
 	{@render xMeta('image:type', image.type)}
 
 	<!-- Open Graph -->
+	{@render ogMeta('url', url)}
 	{@render ogMeta('type', 'website')}
 	{@render ogMeta('title', title)}
 	{@render ogMeta('description', description)}
