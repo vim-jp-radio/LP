@@ -11,7 +11,6 @@ const KONAMI_CODES = [
 	'ArrowRight',
 	'b',
 	'a',
-	'Enter',
 ] as const;
 
 type KonamiCode = typeof KONAMI_CODES[number];
