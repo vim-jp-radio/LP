@@ -15,10 +15,6 @@ const dest = join(staticDir, "favicons");
 const htmlDest = join(assetDir, "favicons.html");
 
 async function main() {
-  if (existsSync(dest)) {
-    fs.rm(dest, { recursive: true });
-  }
-
   /** @satisfies {import('favicons').FaviconOptions} */
   const configuration = {
     path: `/favicons`,
@@ -32,6 +28,14 @@ async function main() {
       console.log("Cache Hit");
       return;
     }
+  }
+
+  if (existsSync(dest)) {
+    await fs.rm(dest, { recursive: true });
+  }
+
+  if (existsSync(htmlDest)) {
+    await fs.rm(htmlDest);
   }
 
   const response = await favicons(src, configuration);
