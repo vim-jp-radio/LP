@@ -14,7 +14,7 @@ const dest = join(staticDir, 'favicons');
 const htmlDest = join(assetDir, 'favicons.html');
 
 /** @satisfies {import('favicons').FaviconOptions} */
-const configuration = { path: `/favicons`, theme_color: '#001330' };
+const configuration = { path: `/favicons`, theme_color: '#001330', background: '#001330' };
 
 async function main() {
 	/** cache key */
