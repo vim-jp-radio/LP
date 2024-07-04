@@ -1,7 +1,6 @@
 <script lang='ts'>
 	import 'uno.css';
 	import '@unocss/reset/normalize.css';
-	import './global.css'; // bodyにbackground-colorをあてようとしたときに、この方法しかうまくいかなかったため
 
 	import Header from './Header.svelte';
 	import ALISUE_AA from '$/assets/aa/alisue.txt?raw';
@@ -19,3 +18,11 @@
 <Header />
 
 {@render children()}
+
+<style>
+/* css variable でglobal要素に設定する */
+:global(body) {
+	background-color: #001330;
+	margin: 0;
+}
+</style>
