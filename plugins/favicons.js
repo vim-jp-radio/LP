@@ -1,65 +1,69 @@
-/* eslint-disable eslint-comments/no-unlimited-disable */
-/* eslint-disable */
+/* eslint-disable no-console */
 
-import fs from "node:fs/promises";
-import { existsSync } from "node:fs";
-import path, { join } from "node:path";
+import fs from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { createHash } from 'node:crypto';
-import { favicons } from "favicons";
+import { favicons } from 'favicons';
 import { isProduction } from 'std-env';
 
-const staticDir = join(import.meta.dirname, "../static");
-const assetDir = join(staticDir, "../src/assets");
-const src = join(assetDir, "vimjp-radio-cover-art/3000x3000-fs8.png");
-const dest = join(staticDir, "favicons");
-const htmlDest = join(assetDir, "favicons.html");
+const staticDir = join(import.meta.dirname, '../static');
+const assetDir = join(staticDir, '../src/assets');
+const src = join(assetDir, 'vimjp-radio-cover-art/3000x3000-fs8.png');
+const dest = join(staticDir, 'favicons');
+const htmlDest = join(assetDir, 'favicons.html');
+
+/** @satisfies {import('favicons').FaviconOptions} */
+const configuration = { path: `/favicons`, theme_color: '#001330' };
 
 async function main() {
-  if (existsSync(dest)) {
-    fs.rm(dest, { recursive: true });
-  }
+	/** cache key */
+	const cacheKey = `<!-- ${createHash('md5').update(JSON.stringify(configuration) + await fs.readFile(src, 'utf-8')).digest('hex')} -->`;
 
-  /** @satisfies {import('favicons').FaviconOptions} */
-  const configuration = {
-    path: `/favicons`,
-    theme_color: '#001330',
-  };
+	/* cacheがある場合は再生成しない */
+	if (existsSync(htmlDest) && !isProduction) {
+		const oldHTML = await fs.readFile(htmlDest, 'utf-8');
+		/* html file 末尾にcache keyがあれば再生成しない */
+		if (oldHTML.endsWith(cacheKey)) {
+			console.log('Cache Hit');
+			return;
+		}
+	}
 
-  const cacheKey = `<!-- ${createHash('md5').update(JSON.stringify(configuration) + await fs.readFile(src,'utf-8')).digest('hex')} -->`
-  if (existsSync(htmlDest) && !isProduction) {
-    const oldHTML = await fs.readFile(htmlDest, 'utf-8');
-    if (oldHTML.endsWith(cacheKey)) {
-      console.log("Cache Hit");
-      return;
-    }
-  }
+	/* 既存のファイルを削除 */
+	if (existsSync(dest)) {
+		await fs.rm(dest, { recursive: true });
+	}
 
-  const response = await favicons(src, configuration);
-  await fs.mkdir(dest, { recursive: true });
+	/* 既存のhtmlを削除 */
+	if (existsSync(htmlDest)) {
+		await fs.rm(htmlDest);
+	}
 
-  await Promise.all(
-    response.images.map(
-      async (image) =>
-        await fs.writeFile(path.join(dest, image.name), image.contents),
-    ),
-  );
-  await Promise.all(
-    response.files.map(
-      async (file) =>
-        await fs.writeFile(path.join(dest, file.name), file.contents),
-    ),
-  );
+	/* faviconのdirectoryをstaticに作成 */
+	await fs.mkdir(dest, { recursive: true });
+	await fs.mkdir(assetDir, { recursive: true });
 
-  await fs.writeFile(htmlDest, response.html.join("\n") + cacheKey);
+	/* faviconsの生成 */
+	const response = await favicons(src, configuration);
+
+	await Promise.all([
+		/* 生成したfavicon 画像を書き出し */
+		...response.images.map(async image => await fs.writeFile(join(dest, image.name), image.contents)),
+		/* 生成したfavicon ファイルを書き出し */
+		...response.files.map(async file => await fs.writeFile(join(dest, file.name), file.contents)),
+		/* 生成したhtmlを書き出し 末尾にcache keyを追加 */
+		fs.writeFile(htmlDest, response.html.join('\n') + cacheKey),
+	]);
 }
 
 /** @type {import('vite').Plugin} */
 export const faviconPlugin = {
-  name: "favicons",
-  enforce: "pre",
-  async buildStart() {
-    console.log("build start");
-    await main();
-    console.log("Favicon generated");
-  },
+	name: 'favicons',
+	enforce: 'pre',
+	async buildStart() {
+		console.log('build start');
+		await main();
+		console.log('Favicon generated');
+	},
 };
