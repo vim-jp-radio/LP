@@ -1,7 +1,8 @@
 <script>
 	import RadioLetter from './RadioLetter.svelte';
-
+	import Description from './Description.svelte';
 </script>
+
 <h1
 	uno-grid
 	uno-h='100svh'
@@ -14,6 +15,8 @@
 		alt='エンジニアの楽園 vim-jpラジオ'
 		src='$/assets/vimjp-radio-cover-art/3000x3000-alpha-fs8.png'
 	/>
+
 </h1>
 
+<Description />
 <RadioLetter />
