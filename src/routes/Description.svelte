@@ -15,9 +15,14 @@
 <div uno-flex='~ col' uno-text='LP-foreground'>
 	{#each description as paragraph (paragraph)}
 		<div uno-gap='1.5'>
-			{#each paragraph as line (line)}
-				<p class='text'>{line}</p>
-			{/each}
+			<p class='text'>
+				{#each paragraph as line, i (line)}
+					{line}
+					{#if i < paragraph.length - 1}
+						<br />
+					{/if}
+				{/each}
+			</p>
 		</div>
 	{/each}
 </div>
