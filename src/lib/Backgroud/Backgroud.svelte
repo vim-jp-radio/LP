@@ -26,17 +26,11 @@
 <!-- svelte-ignore element_invalid_self_closing_tag -->
 <canvas
 	bind:this={canvas}
-	id='canvas'
 	{height}
+	uno-bg='LP-backgroud'
+	uno-left='0'
+	uno-position='fixed'
+	uno-top='0'
+	uno-z='1'
 	{width}
 />
-
-<style>
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #010A01;
-  z-index: 1;
-}
-</style>
