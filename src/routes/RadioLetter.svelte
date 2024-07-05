@@ -1,7 +1,6 @@
 <div uno-text='white'
 >
 	<h1
-		class='text-neon'
 		uno-drop='shadow-2xl'
 		uno-text='#1ECFFF'
 	>番組へのおたより</h1>
@@ -14,10 +13,10 @@
 </div>
 
 <style>
-.text-neon {
-    text-shadow:
-        0 0 2px #fff,
-        0 0 5px #08f,
-        0 0 1000000000px #08f;
-}
+/* .text-neon { */
+/*     text-shadow: */
+/*         0 0 2px #fff, */
+/*         0 0 5px #08f, */
+/*         0 0 1000000000px #08f; */
+/* } */
 </style>
