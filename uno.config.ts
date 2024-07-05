@@ -27,4 +27,7 @@ export default defineConfig({
 			'LP-foreground': '#F8F9FA',
 		},
 	},
+	shortcuts: {
+		text: 'text-base text-LP-foreground',
+	},
 });
