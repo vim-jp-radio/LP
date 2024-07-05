@@ -19,13 +19,17 @@
 <Header />
 
 <Backgroud />
-
-{@render children()}
-
+<div>
+	{@render children()}
+</div>
 <style>
 /* css variable でglobal要素に設定する */
 :global(body) {
-	background-color: #001330;
 	margin: 0;
+}
+
+div {
+  z-index: 1;
+  position: relative;
 }
 </style>
