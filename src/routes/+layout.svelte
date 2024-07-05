@@ -22,7 +22,7 @@
 <style>
 /* css variable でglobal要素に設定する */
 :global(body) {
-	background-color: #001330;
+	@apply bg-LP-backgroud
 	margin: 0;
 }
 </style>
