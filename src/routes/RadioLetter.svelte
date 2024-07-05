@@ -2,7 +2,7 @@
 >
 	<h1
 		uno-drop='shadow-2xl'
-		uno-text='#1ECFFF'
+		uno-text='LP-blue'
 	>番組へのおたより</h1>
 	<p>
 		この番組では皆さんからのおたよりを募集しています。 vim-jp Slackの #vim-jp-radio-message チャンネルに投稿してください。
