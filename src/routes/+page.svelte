@@ -1,3 +1,7 @@
+<script>
+	import RadioLetter from './RadioLetter.svelte';
+
+</script>
 <h1
 	uno-grid
 	uno-h='100svh'
@@ -11,3 +15,5 @@
 		src='$/assets/vimjp-radio-cover-art/3000x3000-alpha-fs8.png'
 	/>
 </h1>
+
+<RadioLetter />
