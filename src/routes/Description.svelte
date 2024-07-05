@@ -10,6 +10,6 @@
 
 <div uno-text='LP-foreground'>
 	{#each description as line (line)}
-		<p>{line}</p>
+		<p class='text'>{line}</p>
 	{/each}
 </div>
