@@ -19,7 +19,13 @@
 <Header />
 
 <Backgroud />
-<div>
+<div
+	uno-max='w-[600px]'
+	uno-mx='auto'
+	uno-px='6'
+	uno-text='~'
+	uno-w='full'
+>
 	{@render children()}
 </div>
 <style>
