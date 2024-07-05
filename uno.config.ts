@@ -13,4 +13,14 @@ export default defineConfig({
 		presetMini(), // Tailwind互換の最小限の設定を含む。 Aspect ration とか。 https://unocss.dev/presets/mini
 		presetIcons({ autoInstall: true }), // Iconを使うための設定。autoInstallも設定している。https://unocss.dev/presets/icons
 	],
+	theme: {
+		colors: {
+			'LP-blue': '#1ECFFF',
+			'LP-pink': '#FF00FF',
+			'LP-yellow': '#FFFFB3',
+			'LP-gray': '#909296',
+			'LP-backgroud': '#010A01',
+			'LP-foreground': '#F8F9FA',
+		},
+	},
 });
