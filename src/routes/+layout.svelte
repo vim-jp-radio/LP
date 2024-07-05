@@ -3,6 +3,7 @@
 	import '@unocss/reset/normalize.css';
 
 	import Header from './Header.svelte';
+	import { Backgroud } from '$lib/Backgroud';
 	import ALISUE_AA from '$/assets/aa/alisue.txt?raw';
 	import VIM_JP_RADIO from '$/assets/aa/vim-jp-radio.txt?raw';
 
@@ -16,6 +17,8 @@
 </script>
 
 <Header />
+
+<Backgroud />
 
 {@render children()}
 
