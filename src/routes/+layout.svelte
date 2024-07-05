@@ -19,7 +19,7 @@
 <Header />
 
 <Backgroud />
-<div>
+<div class='mx-auto max-w-[600px] w-full px-6 text'>
 	{@render children()}
 </div>
 <style>
