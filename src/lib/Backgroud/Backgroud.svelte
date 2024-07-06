@@ -30,19 +30,33 @@
 </script>
 
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
-
 {#if jsLoaded}
+	{@const margin = 20}
 	<!-- svelte-ignore element_invalid_self_closing_tag -->
-	<canvas
-		bind:this={canvas}
-		{height}
-		uno-bg='LP-backgroud'
-		uno-left='0'
-		uno-position='fixed'
-		uno-top='0'
-		uno-z='1'
-		{width}
-	/>
+	<div
+		uno-h-full
+		uno-left-0
+		uno-overflow-hidden
+		uno-position-fixed
+		uno-top-0
+		uno-w-full
+	>
+		<canvas
+			bind:this={canvas}
+			class='blurred-canvas'
+			height={height + margin * 4}
+			uno-bg='LP-backgroud'
+			uno-filter-blur-20
+			uno-left='50%'
+			uno-position-absolute
+			uno-position-fixed
+			uno-top='50%'
+			uno-transform-translate-x='-50%'
+			uno-transform-translate-y='-50%'
+			uno-z-1
+			width={width + margin * 4}
+		/>
+	</div>
 {:else}
 	<!-- svelte-ignore element_invalid_self_closing_tag -->
 	<div

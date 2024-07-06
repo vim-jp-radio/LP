@@ -7,7 +7,6 @@ export class Circle {
 	dx: number;
 	dy: number;
 	color: string;
-	blur: number;
 	mass: number;
 	canvas: HTMLCanvasElement;
 	ctx: CanvasRenderingContext2D;
@@ -24,13 +23,11 @@ export class Circle {
 		this.dx = (Math.random() - 0.5) * 1.5;
 		this.dy = (Math.random() - 0.5) * 1.5;
 		this.color = colors[Math.floor(Math.random() * colors.length)];
-		this.blur = 50;
 		this.mass = this.radius * this.radius;
 	}
 
 	draw(): void {
 		this.ctx.save();
-		this.ctx.filter = `blur(${this.blur}px)`;
 		this.ctx.beginPath();
 		this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
 		this.ctx.fillStyle = this.color;
