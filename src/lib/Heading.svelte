@@ -2,7 +2,7 @@
 	const { title }: { title: string } = $props();
 </script>
 
-<h2 uno-text='LP-blue 4xl'>
+<h2 uno-mb-6 uno-text='LP-blue 4xl'>
 	{title}
 </h2>
 
