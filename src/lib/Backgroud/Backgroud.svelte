@@ -40,13 +40,12 @@
 	uno-w-full
 >
 	{#if jsLoaded}
-		{@const margin = 20}
+		{@const blurStrength = 20}
 		<canvas
 			bind:this={canvas}
-			class='blurred-canvas'
-			height={height + margin * 4}
+			class:filter-blur={blurStrength}
+			height={height + blurStrength * 4}
 			uno-bg='LP-backgroud'
-			uno-filter-blur-20
 			uno-left='50%'
 			uno-position-absolute
 			uno-position-fixed
@@ -54,7 +53,7 @@
 			uno-transform-translate-x='-50%'
 			uno-transform-translate-y='-50%'
 			uno-z-1
-			width={width + margin * 4}
+			width={width + blurStrength * 4}
 		/>
 	{:else}
 		<!-- svelte-ignore element_invalid_self_closing_tag -->
