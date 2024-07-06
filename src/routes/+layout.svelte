@@ -37,6 +37,7 @@
 <style>
 /* css variable でglobal要素に設定する */
 :global(body) {
+	@apply uno-bg-LP-backgroud;
 	margin: 0;
 }
 

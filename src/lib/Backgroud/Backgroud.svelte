@@ -47,6 +47,7 @@
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 <!-- svelte-ignore element_invalid_self_closing_tag -->
 <div
+	uno-bg-LP-backgroud
 	uno-h-full
 	uno-left-0
 	uno-overflow-hidden
@@ -61,7 +62,7 @@
 			bind:this={canvas}
 			class='filter-blur-50'
 			height={height + blurStrength * 4}
-			uno-bg='LP-backgroud'
+			uno-bg-LP-backgroud
 			uno-left='50%'
 			uno-position-absolute
 			uno-position-fixed
@@ -70,14 +71,6 @@
 			uno-transform-translate-y='-50%'
 			uno-z-1
 			width={width + blurStrength * 4}
-		/>
-	{:else}
-		<!-- svelte-ignore element_invalid_self_closing_tag -->
-		<div
-			uno-bg-LP-backgroud
-			uno-h-full
-			uno-position-absolute
-			uno-w-full
 		/>
 	{/if}
 </div>
