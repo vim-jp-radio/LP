@@ -24,10 +24,10 @@ export default defineConfig({
 			'LP-yellow': '#FFFFB3',
 			'LP-gray': '#909296',
 			'LP-backgroud': '#010A01',
-			'LP-foreground': '#F8F9FA',
+			'LP-text-color': '#F8F9FA',
 		},
 	},
 	shortcuts: {
-		text: 'text-base text-LP-foreground',
+		text: 'text-base text-LP-text-color',
 	},
 });
