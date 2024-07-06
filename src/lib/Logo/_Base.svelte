@@ -1,7 +1,7 @@
 <script lang='ts'>
 	import { building } from '$app/environment';
 
-	const { link, icon, alt, className }: { link?: string; icon: string; alt: string; className?: string } = $props();
+	const { link, icon, alt, className = '' }: { link?: string; icon: string; alt: string; className?: string } = $props();
 
 	/** build時にURLが正しいかチェック */
 	if (building && link != null) {
@@ -20,13 +20,13 @@
 	<!-- svelte-ignore element_invalid_self_closing_tag -->
 	{#if typeof icon === 'string' && icon.endsWith('.svg')}
 		<img
-			class={className}
+			class={`${className} object-contain h-full w-full`}
 			{alt}
 			src={icon}
 		/>
 {:else}
 	<enhanced:img
-		class={className}
+		class={`${className} object-contain h-full w-full`}
 		{alt}
 		src={icon}
 	/>

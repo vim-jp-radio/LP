@@ -1,9 +1,13 @@
 <script lang='ts'>
 	import * as Logo from '$lib/Logo';
 </script>
+
 <div>
-	<Logo.VimJpRadio />
-	<div>
+	<div uno-mb-32>
+		<Logo.VimJpRadio />
+	</div>
+
+	<div uno-flex uno-gap-4 uno-h-10 uno-justify-center uno-mb-16>
 		<Logo.Audee />
 		<Logo.ApplePodcast />
 		<Logo.Spotify />
@@ -11,6 +15,7 @@
 		<Logo.Youtube />
 		<Logo.X />
 	</div>
+
 	<div>
 		<p uno-color='#909296' uno-text-sm>
 			Personality: lambdalisue & tomoya<br />
