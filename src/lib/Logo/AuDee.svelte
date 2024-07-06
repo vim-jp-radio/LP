@@ -3,7 +3,7 @@
 	// @ts-ignore
 	import icon from '$/assets/logos/logo-audee.svg';
 
-	const alt = `Audee`;
+	const alt = `AuDee`;
 	const link = `https://audee.jp/program/show/300008578`;
 </script>
 
