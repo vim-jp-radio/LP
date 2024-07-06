@@ -1,6 +1,9 @@
 <script>
 	import RadioLetter from './RadioLetter.svelte';
 	import Description from './Description.svelte';
+	import Platforms from './Platforms.svelte';
+	import Personalities from './Personalities.svelte';
+	import Footer from './Footer.svelte';
 </script>
 
 <h1
@@ -19,4 +22,7 @@
 </h1>
 
 <Description />
+<Platforms />
+<Personalities />
 <RadioLetter />
+<Footer />
