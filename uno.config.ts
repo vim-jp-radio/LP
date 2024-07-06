@@ -19,12 +19,12 @@ export default defineConfig({
 	],
 	theme: {
 		colors: {
-			'LP-blue': '#1ECFFF',
-			'LP-pink': '#FF00FF',
-			'LP-yellow': '#FFFFB3',
-			'LP-gray': '#909296',
-			'LP-backgroud': '#010A01',
-			'LP-text-color': '#F8F9FA',
+			'LP-blue': 'var(--LP-blue)',
+			'LP-pink': 'var(--LP-pink)',
+			'LP-yellow': 'var(--LP-yellow)',
+			'LP-gray': 'var(--LP-gray)',
+			'LP-backgroud': 'var(--LP-backgroud)',
+			'LP-text-color': 'var(--LP-text-color)',
 		},
 	},
 	shortcuts: {
