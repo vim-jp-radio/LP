@@ -1,10 +1,15 @@
 <script lang='ts'>
-	import { VimJpRadio } from '$lib/Logo';
+	import * as Logo from '$lib/Logo';
 </script>
 <div>
-	<VimJpRadio />
+	<Logo.VimJpRadio />
 	<div>
-		TODO: ここにロゴが並ぶ
+		<Logo.Audee />
+		<Logo.ApplePodcast />
+		<Logo.Spotify />
+		<Logo.AmazonMusic />
+		<Logo.Youtube />
+		<Logo.X />
 	</div>
 	<div>
 		<p uno-color='#909296' uno-text-sm>
