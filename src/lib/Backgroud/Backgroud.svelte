@@ -4,13 +4,19 @@
 	/**
 	 * @param {number} blurStrength - ぼかしの強さ
 	 * @param {number} circleNum - 円の数
+	 * @param {number} minSpeed - 最小速度
+	 * @param {number} maxSpeed - 最大速度
 	 */
 	const {
 		blurStrength = 50,
 		circleNum = 15,
+		minSpeed = 0.5,
+		maxSpeed = 1,
 	}: {
 		blurStrength?: number;
 		circleNum?: number;
+		minSpeed?: number;
+		maxSpeed?: number;
 	} = $props();
 
 	let canvas = $state<HTMLCanvasElement | undefined>(undefined);
@@ -22,7 +28,7 @@
 	let jsLoaded = $state(false);
 
 	const circles = $derived.by(() =>
-		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx) : [],
+		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx, minSpeed, maxSpeed) : [],
 	);
 
 	/** js が読み込まれたらオンになる */
