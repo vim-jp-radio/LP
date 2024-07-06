@@ -17,6 +17,7 @@
 		uno-m='0'
 		uno-place='content-center items-center'
 	>
+		<!-- EASTER_EGG🐰🥚: Konamiコマンドが認識されると、`konami.activated`が`true`になり、`animate-spin`が適用されます。 -->
 		<!-- svelte-ignore element_invalid_self_closing_tag -->
 		<enhanced:img
 			class:animate-spin={konami.activated}
