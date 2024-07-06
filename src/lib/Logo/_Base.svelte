@@ -34,7 +34,7 @@
 {/snippet}
 
 {#if link != null}
-	<a href={link}>
+	<a href={link} target='_blank'>
 		{@render image()}
 	</a>
 {:else}
