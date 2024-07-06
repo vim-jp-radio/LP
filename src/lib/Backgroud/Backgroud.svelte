@@ -2,18 +2,15 @@
 	import { animate, createCircles } from './circle.js';
 
 	/**
-	 * @param {number} blurStrength - ぼかしの強さ
 	 * @param {number} circleNum - 円の数
 	 * @param {number} minSpeed - 最小速度
 	 * @param {number} maxSpeed - 最大速度
 	 */
 	const {
-		blurStrength = 50,
 		circleNum = 15,
 		minSpeed = 0.5,
 		maxSpeed = 1,
 	}: {
-		blurStrength?: number;
 		circleNum?: number;
 		minSpeed?: number;
 		maxSpeed?: number;
@@ -58,9 +55,11 @@
 	uno-w-full
 >
 	{#if jsLoaded}
+		{@const blurStrength = 50}
+		<!-- classのfilter-blurを変更することが何やら難しいのでhard coded -->
 		<canvas
 			bind:this={canvas}
-			class='filter-blur-{blurStrength}'
+			class='filter-blur-50'
 			height={height + blurStrength * 4}
 			uno-bg='LP-backgroud'
 			uno-left='50%'
