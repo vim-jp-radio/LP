@@ -30,17 +30,17 @@
 </script>
 
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} />
-{#if jsLoaded}
-	{@const margin = 20}
-	<!-- svelte-ignore element_invalid_self_closing_tag -->
-	<div
-		uno-h-full
-		uno-left-0
-		uno-overflow-hidden
-		uno-position-fixed
-		uno-top-0
-		uno-w-full
-	>
+<!-- svelte-ignore element_invalid_self_closing_tag -->
+<div
+	uno-h-full
+	uno-left-0
+	uno-overflow-hidden
+	uno-position-fixed
+	uno-top-0
+	uno-w-full
+>
+	{#if jsLoaded}
+		{@const margin = 20}
 		<canvas
 			bind:this={canvas}
 			class='blurred-canvas'
@@ -56,16 +56,16 @@
 			uno-z-1
 			width={width + margin * 4}
 		/>
-	</div>
-{:else}
-	<!-- svelte-ignore element_invalid_self_closing_tag -->
-	<div
-		uno-bg='LP-backgroud'
-		uno-h='full'
-		uno-left='0'
-		uno-position='fixed'
-		uno-top='0'
-		uno-w='full'
-		uno-z='1'
-	/>
-{/if}
+	{:else}
+		<!-- svelte-ignore element_invalid_self_closing_tag -->
+		<div
+			uno-bg-LP-backgroud
+			uno-h-full
+			uno-left-0
+			uno-position-fixed
+			uno-top-0
+			uno-w-full
+			uno-z-1
+		/>
+	{/if}
+</div>
