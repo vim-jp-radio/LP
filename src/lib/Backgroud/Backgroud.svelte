@@ -61,11 +61,8 @@
 		<div
 			uno-bg-LP-backgroud
 			uno-h-full
-			uno-left-0
-			uno-position-fixed
-			uno-top-0
+			uno-position-absolute
 			uno-w-full
-			uno-z-1
 		/>
 	{/if}
 </div>
