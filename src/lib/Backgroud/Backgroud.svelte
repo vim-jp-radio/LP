@@ -1,6 +1,8 @@
 <script lang='ts'>
 	import { animate, createCircles } from './circle.js';
 
+	const { blurStrength = 50 }: { blurStrength?: number } = $props();
+
 	let canvas = $state<HTMLCanvasElement | undefined>(undefined);
 	const ctx = $derived.by(() => canvas?.getContext('2d'));
 	let width = $state(0);
@@ -40,7 +42,6 @@
 	uno-w-full
 >
 	{#if jsLoaded}
-		{@const blurStrength = 20}
 		<canvas
 			bind:this={canvas}
 			class:filter-blur={blurStrength}
