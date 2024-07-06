@@ -1,7 +1,17 @@
 <script lang='ts'>
 	import { animate, createCircles } from './circle.js';
 
-	const { blurStrength = 50 }: { blurStrength?: number } = $props();
+	/**
+	 * @param {number} blurStrength - ぼかしの強さ
+	 * @param {number} circleNum - 円の数
+	 */
+	const {
+		blurStrength = 50,
+		circleNum = 15,
+	}: {
+		blurStrength?: number;
+		circleNum?: number;
+	} = $props();
 
 	let canvas = $state<HTMLCanvasElement | undefined>(undefined);
 	const ctx = $derived.by(() => canvas?.getContext('2d'));
@@ -12,7 +22,7 @@
 	let jsLoaded = $state(false);
 
 	const circles = $derived.by(() =>
-		canvas != null && ctx != null ? createCircles(15, canvas, ctx) : [],
+		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx) : [],
 	);
 
 	/** js が読み込まれたらオンになる */
