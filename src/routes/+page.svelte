@@ -17,8 +17,10 @@
 
 </h1>
 
-<Description />
-<Platforms />
-<Personalities />
-<RadioLetter />
+<main uno-flex-col uno-space-y-8>
+	<Description />
+	<Platforms />
+	<Personalities />
+	<RadioLetter />
+</main>
 <Footer />
