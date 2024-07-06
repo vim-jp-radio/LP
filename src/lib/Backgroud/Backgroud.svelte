@@ -54,7 +54,7 @@
 	{#if jsLoaded}
 		<canvas
 			bind:this={canvas}
-			class:filter-blur={blurStrength}
+			class='filter-blur-{blurStrength}'
 			height={height + blurStrength * 4}
 			uno-bg='LP-backgroud'
 			uno-left='50%'
