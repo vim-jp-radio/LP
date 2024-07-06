@@ -8,6 +8,6 @@
 
 <style>
 h2 {
-	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #1ECFFF, 0 0 0.5em #1ECFFF, 0 0 0.1em #1ECFFF, 0 10px 3px #000;
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em var(--LP-blue), 0 0 0.5em var(--LP-blue), 0 0 0.1em var(--LP-blue), 0 10px 3px var(--LP-backgroud);
 }
 </style>
