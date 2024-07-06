@@ -1,5 +1,4 @@
 <script lang='ts'>
-
 	import { VimJpRadio } from '$lib/Logo';
 </script>
 <div>
