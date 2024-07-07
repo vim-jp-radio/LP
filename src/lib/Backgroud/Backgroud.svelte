@@ -63,7 +63,7 @@
 			style:--blur='{blurStrength}px'
 			height={height + blurStrength * 4}
 			uno-bg-LP-backgroud
-			uno-filter-blur='[var(--blur)]'
+			uno-filter-blur='[--blur]'
 			uno-left='50%'
 			uno-position-absolute
 			uno-position-fixed
