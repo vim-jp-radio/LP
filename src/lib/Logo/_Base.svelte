@@ -15,18 +15,20 @@
 		}
 	}
 
+	const _className = `object-contain h-full w-full ${className}`.trim();
+
 </script>
 {#snippet image()}
 	<!-- svelte-ignore element_invalid_self_closing_tag -->
 	{#if typeof icon === 'string' && icon.endsWith('.svg')}
 		<img
-			class={`${className} object-contain h-full w-full`}
+			class={_className}
 			{alt}
 			src={icon}
 		/>
 {:else}
 	<enhanced:img
-		class={`${className} object-contain h-full w-full`}
+		class={_className}
 		{alt}
 		src={icon}
 	/>
