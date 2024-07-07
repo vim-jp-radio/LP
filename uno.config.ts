@@ -29,5 +29,6 @@ export default defineConfig({
 	},
 	shortcuts: {
 		text: 'text-base text-LP-text-color',
+		button: 'color-LP-yellow border-solid border-2 border-[var(--LP-yellow)] rounded px-4 py-2 hover:bg-[var(--LP-yellow)] hover:color-[var(--LP-backgroud)]',
 	},
 });
