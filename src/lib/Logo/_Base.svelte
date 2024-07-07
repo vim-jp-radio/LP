@@ -3,7 +3,7 @@
 
 	const { link, icon, alt, imageClass, ...rest }: { link?: string; icon: string; alt: string; imageClass?: string } = $props();
 
-	const defaultImageClass = `h-full object-fill w-auto`;
+	const defaultImageClass = `h-full object-scale-down w-auto`;
 	const _imageClassName = imageClass ?? defaultImageClass;
 
 </script>
