@@ -22,15 +22,15 @@
 			>
 				<h3
 					pl-1rem
-					uno-text-3xl
+					uno-text-2xl
 					uno-text-LP-blue
 				>tomoya</h3>
 				<Logo.X
-					class='h-auto w-1.5rem'
+					class='h-auto w-1.25rem'
 					link='https://x.com/tomoyaton'
 				/>
 				<Logo.GitHub
-					class='h-auto w-1.5rem'
+					class='h-auto w-1.25rem'
 					link='https://github.com/tomoya'
 				/>
 				<Logo.Home
@@ -63,15 +63,15 @@
 			>
 				<h3
 					pl-1rem
-					uno-text-3xl
+					uno-text-2xl
 					uno-text-LP-pink
 				>ありすえ</h3>
 				<Logo.X
-					class='h-auto w-1.5rem'
+					class='h-auto w-1.25rem'
 					link='https://twitter.com/lambdalisue'
 				/>
 				<Logo.GitHub
-					class='h-auto w-1.5rem'
+					class='h-auto w-1.25rem'
 					link='https://github.com/lambdalisue'
 				/>
 			</div>
