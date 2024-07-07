@@ -3,7 +3,7 @@
 	import '@unocss/reset/tailwind-compat.css';
 	import '../main.css';
 
-	import Header from './Header.svelte';
+	import Meta from './Meta.svelte';
 	import { Backgroud } from '$lib/Backgroud';
 
 	/** EASTER_EGG🐰🥚: ありすえさんのAA */
@@ -22,7 +22,7 @@
 	});
 </script>
 
-<Header />
+<Meta />
 
 <Backgroud />
 <div
