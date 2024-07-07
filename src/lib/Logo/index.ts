@@ -5,6 +5,8 @@ import AmazonMusic from './AmazonMusic.svelte';
 import YouTube from './YouTube.svelte';
 import AuDee from './AuDee.svelte';
 import X from './X.svelte';
+import GitHub from './GitHub.svelte';
+import Home from './Home.svelte';
 
 export {
 	VimJpRadio,
@@ -14,4 +16,6 @@ export {
 	YouTube,
 	AuDee,
 	X,
+	GitHub,
+	Home,
 };
