@@ -3,7 +3,7 @@
 	import * as Logo from '$lib/Logo';
 </script>
 
-<div>
+<section>
 	<Heading title='パーソナリティ' />
 	<div
 		uno-flex
@@ -93,4 +93,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>

@@ -3,7 +3,7 @@
 	import * as Logo from '$lib/Logo';
 </script>
 
-<div>
+<section>
 	<Heading title='配信プラットフォーム' />
 	<div uno-flex-col uno-space-y-12>
 		<div uno-flex uno-space-x-4>
@@ -36,4 +36,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
