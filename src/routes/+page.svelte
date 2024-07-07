@@ -9,8 +9,8 @@
 
 <h1
 	uno-grid
-	uno-h='100svh'
-	uno-m='0'
+	uno-h-100svh
+	uno-m-0
 	uno-place='content-center items-center'
 >
 	<VimJpRadio />

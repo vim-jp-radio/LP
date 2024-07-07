@@ -57,12 +57,13 @@
 >
 	{#if jsLoaded}
 		{@const blurStrength = 50}
-		<!-- classのfilter-blurを変更することが何やら難しいのでhard coded -->
+		<!-- css変数を経由することで、unocssのclassに値を渡すことができる -->
 		<canvas
 			bind:this={canvas}
-			class='filter-blur-50'
+			style:--blur='{blurStrength}px'
 			height={height + blurStrength * 4}
 			uno-bg-LP-backgroud
+			uno-filter-blur='[--blur]'
 			uno-left='50%'
 			uno-position-absolute
 			uno-position-fixed

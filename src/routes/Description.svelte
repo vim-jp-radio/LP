@@ -12,7 +12,7 @@
 	] as const satisfies string[][];
 </script>
 
-<div uno-flex='~ col' uno-gap='1.5'>
+<div uno-flex='~ col' uno-gap-1.5>
 	{#each description as paragraph (paragraph)}
 		<p class='text'>
 			{#each paragraph as line, i (line)}
