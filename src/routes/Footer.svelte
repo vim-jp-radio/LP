@@ -19,7 +19,7 @@
 		<Logo.Spotify />
 		<Logo.AmazonMusic />
 		<Logo.YouTube />
-		<Logo.X />
+		<Logo.X link='https://x.com/vimjpradio' />
 	</div>
 
 	<div uno-flex-col uno-space-y-4>

@@ -5,8 +5,7 @@
 
 	const { ...rest } = $props();
 
-	const alt = `Spotify`;
-	const link = `https://x.com/vimjpradio`;
+	const alt = `X`;
 </script>
 
-<Base {alt} {icon} {link} {...rest} />
+<Base {alt} {icon} {...rest} />
