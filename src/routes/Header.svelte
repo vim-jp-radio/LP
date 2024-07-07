@@ -1,60 +1,14 @@
-<script lang='ts'>
-	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
-	import { building } from '$app/environment';
-
-	const title = `エンジニアの楽園 vim-jpラジオ`;
-	const description = `2024年7月8日配信開始のラジオ番組`;
-
-	const xAccount = `@vimjpradio`;
-	const locale = `ja_JP`;
-	const url = `https://vim-jp-radio.com/`;
-
-	const image = { src: OGP, alt: `エンジニアの楽園 vim-jpラジオ`, type: `image/png` } as const;
-
-	/* ビルド時にurlが不正でないかチェックする。ビルド時にtree-shakingされる */
-	if (building) {
-		if (!URL.canParse(url)) {
-			throw new Error(`Invalid URL: ${url}`);
-		}
-	}
-
-	type XCardType = 'summary' | 'summary_large_image' | 'app' | 'player';
+<script>
+	import { VimJpRadio } from '$lib/Logo';
 </script>
 
-<!-- X のメタタグを生成するsnippet -->
-{#snippet xMeta(property: string, content: string)}
-	<meta name='twitter:{property}' content={content} />
-{/snippet}
-
-<!-- Open Graph のメタタグを生成するsnippet -->
-{#snippet ogMeta(property: string, content: string)}
-	<!-- eslint-disable svelte/sort-attributes -->
-	<meta property='og:{property}' content={content} />
-	<!-- eslint-enable svelte/sort-attributes -->
-{/snippet}
-
-<svelte:head>
-	<title>{title}</title>
-	<meta name='description' content={description} />
-	<meta name='viewport' content='width=device-width,initial-scale=1' />
-
-	<!-- X -->
-	{@render xMeta('site', xAccount)}
-	{@render xMeta('creator', xAccount)}
-	{@render xMeta('title', title)}
-	{@render xMeta('description', description)}
-	{@render xMeta('card', `summary_large_image` satisfies XCardType)}
-	{@render xMeta('image', image.src)}
-	{@render xMeta('image:alt', image.alt)}
-	{@render xMeta('image:type', image.type)}
-
-	<!-- Open Graph -->
-	{@render ogMeta('url', url)}
-	{@render ogMeta('type', 'website')}
-	{@render ogMeta('title', title)}
-	{@render ogMeta('description', description)}
-	{@render ogMeta('locale', locale)}
-	{@render ogMeta('image', image.src)}
-	{@render ogMeta('image:alt', image.alt)}
-	{@render ogMeta('image:type', image.type)}
-</svelte:head>
+<header>
+	<h1
+		uno-grid
+		uno-h-100svh
+		uno-m-0
+		uno-place='content-center items-center'
+	>
+		<VimJpRadio imageClass='h-auto max-w-100% w-50svh' />
+	</h1>
+</header>
