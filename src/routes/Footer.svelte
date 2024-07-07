@@ -7,7 +7,13 @@
 		<Logo.VimJpRadio />
 	</div>
 
-	<div uno-flex uno-gap-4 uno-h-8 uno-justify-center uno-mb-8>
+	<div
+		uno-flex
+		uno-gap-4
+		uno-h-8
+		uno-justify-center
+		uno-mb-8
+	>
 		<Logo.AuDee />
 		<Logo.ApplePodcast />
 		<Logo.Spotify />
