@@ -13,8 +13,8 @@
 {#if $page.error != null}
 	<h1
 		uno-grid
-		uno-h='100svh'
-		uno-m='0'
+		uno-h-100svh
+		uno-m-0
 		uno-place='content-center items-center'
 	>
 		<!-- EASTER_EGG🐰🥚: Konamiコマンドが認識されると、`konami.activated`が`true`になり、`animate-spin`が適用されます。 -->
