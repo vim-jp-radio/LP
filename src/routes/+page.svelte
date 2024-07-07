@@ -17,7 +17,7 @@
 
 </h1>
 
-<main uno-flex-col uno-space-y-8>
+<main uno-flex-col uno-space-y-16>
 	<Description />
 	<Platforms />
 	<Personalities />
