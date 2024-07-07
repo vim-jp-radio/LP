@@ -1,7 +1,7 @@
 <script lang='ts'>
 	import { building } from '$app/environment';
 
-	const { link, icon, alt, className = '', ...rest }: { link?: string; icon: string; alt: string; className?: string } = $props();
+	const { link, icon, alt, imageClass, ...rest }: { link?: string; icon: string; alt: string; imageClass?: string } = $props();
 
 	/** build時にURLが正しいかチェック */
 	if (building && link != null) {
@@ -15,21 +15,23 @@
 		}
 	}
 
-	const _className = `object-contain h-full w-full ${className}`.trim();
+	const defaultImageClass = `h-full object-fill w-auto`;
+	const _imageClassName = imageClass ?? defaultImageClass;
 
 </script>
 {#snippet image()}
-	<!-- svelte-ignore element_invalid_self_closing_tag -->
 	{#if typeof icon === 'string' && icon.endsWith('.svg')}
+    <!-- svg image -->
 		<img
-			class={_className}
+			class={_imageClassName}
 			{alt}
 			src={icon}
 			{...rest}
 		/>
 {:else}
+	<!-- svelte-ignore element_invalid_self_closing_tag -->
 	<enhanced:img
-		class={_className}
+		class={_imageClassName}
 		{alt}
 		src={icon}
 		{...rest}
@@ -38,7 +40,7 @@
 {/snippet}
 
 {#if link != null}
-	<a href={link} target='_blank'>
+	<a class='h-full w-auto' href={link} target='_blank'>
 		{@render image()}
 	</a>
 {:else}
