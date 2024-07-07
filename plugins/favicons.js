@@ -14,7 +14,16 @@ const dest = join(staticDir, 'favicons');
 const htmlDest = join(assetDir, 'favicons.html');
 
 /** @satisfies {import('favicons').FaviconOptions} */
-const configuration = { path: `/favicons`, theme_color: '#010A01', background: '#010A01' };
+const configuration = {
+	path: `/favicons`,
+	theme_color: '#010A01',
+	background: '#010A01',
+	appName: `エンジニアの楽園 vim-jpラジオ`,
+	appShortName: `vim-jpラジオ`,
+	appDescription: `エンジニアの楽園 vim-jpラジオ | 毎週月曜配信の技術系ポッドキャスト`,
+	lang: 'ja-JP',
+	orientation: 'portrait',
+};
 
 async function main() {
 	/** cache key */
