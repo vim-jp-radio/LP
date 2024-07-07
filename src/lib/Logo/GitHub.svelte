@@ -1,11 +1,11 @@
 <script lang='ts'>
 	import Base from './_Base.svelte';
 	// @ts-ignore
-	import icon from '$/assets/logos/logo-x.png?enhanced';
+	import icon from '$/assets/logos/icon-github.png?enhanced';
 
 	const { ...rest } = $props();
 
-	const alt = `X`;
+	const alt = `github`;
 </script>
 
 <Base {alt} {icon} {...rest} />
