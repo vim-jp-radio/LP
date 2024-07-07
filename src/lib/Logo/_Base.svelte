@@ -1,19 +1,7 @@
 <script lang='ts'>
-	import { building } from '$app/environment';
+	import { ensureURL } from '../utils/url';
 
 	const { link, icon, alt, imageClass, ...rest }: { link?: string; icon: string; alt: string; imageClass?: string } = $props();
-
-	/** build時にURLが正しいかチェック */
-	if (building && link != null) {
-		/** https で始まるURLかチェック */
-		if (!link.startsWith('https')) {
-			throw new Error(`link must start with http or https: ${link}`);
-		}
-		/** URLが正しいかチェック */
-		if (!URL.canParse(link)) {
-			throw new Error(`link is not a valid URL: ${link}`);
-		}
-	}
 
 	const defaultImageClass = `h-full object-fill w-auto`;
 	const _imageClassName = imageClass ?? defaultImageClass;
@@ -40,7 +28,7 @@
 {/snippet}
 
 {#if link != null}
-	<a class='h-full w-auto' href={link} target='_blank'>
+	<a class='h-full w-auto' href={ensureURL(link)} target='_blank'>
 		{@render image()}
 	</a>
 {:else}
