@@ -1,5 +1,5 @@
 <script lang='ts'>
-	const { className: _className }: { className?: string } = $props();
+	const { className: _className, ...rest }: { className?: string } = $props();
 
 	import Base from './_Base.svelte';
 
@@ -10,4 +10,4 @@
 	const className = `${_className} h-auto max-w-100% w-50svh`;
 </script>
 
-<Base {alt} {className} {icon} />
+<Base {alt} {className} {icon} {...rest} />

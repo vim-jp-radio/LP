@@ -1,7 +1,7 @@
 <script lang='ts'>
 	import { building } from '$app/environment';
 
-	const { link, icon, alt, className = '' }: { link?: string; icon: string; alt: string; className?: string } = $props();
+	const { link, icon, alt, className = '', ...rest }: { link?: string; icon: string; alt: string; className?: string } = $props();
 
 	/** build時にURLが正しいかチェック */
 	if (building && link != null) {
@@ -25,12 +25,14 @@
 			class={_className}
 			{alt}
 			src={icon}
+			{...rest}
 		/>
 {:else}
 	<enhanced:img
 		class={_className}
 		{alt}
 		src={icon}
+		{...rest}
 	/>
 {/if}
 {/snippet}
