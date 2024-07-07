@@ -13,7 +13,7 @@
 	uno-m='0'
 	uno-place='content-center items-center'
 >
-	<VimJpRadio />
+	<VimJpRadio imageClass='h-auto max-w-100% w-50svh' />
 
 </h1>
 

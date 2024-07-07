@@ -4,7 +4,7 @@
 
 <footer uno-pb-20 uno-pt-64>
 	<div uno-mb-24>
-		<Logo.VimJpRadio />
+		<Logo.VimJpRadio imageClass='h-auto max-w-100% w-50svh mx-auto' />
 	</div>
 
 	<div
