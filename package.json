@@ -18,7 +18,8 @@
 		"prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'"
 	},
 	"dependencies": {
-		"@unocss/reset": "^0.60.4"
+		"@unocss/reset": "^0.60.4",
+		"animated-unocss": "^0.0.6"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.21.3",
