@@ -28,6 +28,9 @@ export default defineConfig({
 			'LP-backgroud': 'var(--LP-backgroud)',
 			'LP-text-color': 'var(--LP-text-color)',
 		},
+		breakpoints: {
+			tiny: '375px',
+		},
 	},
 	shortcuts: {
 		text: 'text-base text-LP-text-color',
