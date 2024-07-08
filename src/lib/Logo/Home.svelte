@@ -5,7 +5,7 @@
 
 	const { ...rest } = $props();
 
-	const alt = `github`;
+	const alt = `Home icon`;
 </script>
 
 <Base {alt} {icon} {...rest} />
