@@ -19,7 +19,8 @@
 	},
 	"dependencies": {
 		"@unocss/reset": "^0.60.4",
-		"animated-unocss": "^0.0.6"
+		"animated-unocss": "^0.0.6",
+		"sveltekit-html-minifier": "^1.0.3"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.21.3",
