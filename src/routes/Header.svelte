@@ -1,9 +1,8 @@
 <script>
 	import { VimJpRadio } from '$lib/Logo';
-
 </script>
 
-<header uno-animated='duration-500ms flash repeat-2 delay-2s'>
+<header>
 	<h1
 		uno-grid
 		uno-h-100svh
