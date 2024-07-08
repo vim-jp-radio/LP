@@ -37,8 +37,8 @@
 
 		<!-- 幅がtiny未満であれば、上下に分割して表示 -->
 		<div uno-gap-8 uno-grid uno-grid-rows-1 uno-place-items-center uno-tiny-hidden>
-			{@render desc()}
 			{@render audeeLogo()}
+			{@render desc()}
 			{@render audeeLink()}
 		</div>
 
