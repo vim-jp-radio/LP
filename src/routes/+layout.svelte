@@ -39,6 +39,7 @@
 :global(body) {
 	@apply uno-bg-LP-backgroud;
 	margin: 0;
+	min-width: 300px; /* 実際には320pxだが、スクロールバー等を考慮して300pxとしておく */
 }
 
 div {
