@@ -12,6 +12,8 @@ export class Circle {
 	maxSpeed: number;
 	canvas: HTMLCanvasElement;
 	ctx: CanvasRenderingContext2D;
+
+	/** Circleの動きのUpdateを一時停止するかどうか */
 	motionPaused: boolean;
 
 	constructor(
@@ -51,12 +53,15 @@ export class Circle {
 	}
 
 	update(circles: Circle[]): void {
+		/* motionPausedがtrueの場合は動きのUpdateを一時停止する */
 		if (!this.motionPaused) {
 			this.checkWallCollision();
 			this.checkCircleCollision(circles);
 			this.x += this.dx;
 			this.y += this.dy;
 		}
+
+		/* 描画はいずれの場合も行う */
 		this.draw();
 	}
 
