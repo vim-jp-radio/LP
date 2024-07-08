@@ -15,11 +15,11 @@ const cacheDir = findCacheDirectory({ name: VITE_PLUGIN_NAME });
  * @typedef {Omit<Config, 'path'>} PluginOptions
  */
 
-/*
-  * This plugin will optimize SVG files using SVGO.
-  * @param {PluginOptions} svgoOptimizeOptions - SVGO options
-  * @returns {Plugin} - Vite plugin
-  */
+/**
+ * This plugin will optimize SVG files using SVGO.
+ * @param {PluginOptions} svgoOptimizeOptions - SVGO options
+ * @returns {Plugin} - Vite plugin
+ */
 export default function viteSvgPlugin(svgoOptimizeOptions = {}) {
 	/** @type {Plugin} */
 	return {

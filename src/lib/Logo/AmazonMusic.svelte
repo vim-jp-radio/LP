@@ -1,7 +1,7 @@
 <script lang='ts'>
 	import Base from './_Base.svelte';
 	// @ts-ignore
-	import icon from '$/assets/logos/icon-amazon-music.png?enhanced';
+	import icon from '$/assets/logos/icon-amazon-music.png?enhanced&w=300;600;800';
 
 	const { ...rest } = $props();
 
