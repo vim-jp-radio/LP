@@ -2,8 +2,6 @@
 
 import path from 'node:path';
 import fs from 'node:fs/promises';
-import { existsSync } from 'node:fs';
-import { createHash } from 'node:crypto';
 import findCacheDirectory from 'find-cache-dir';
 import { optimize } from 'svgo';
 
@@ -38,57 +36,36 @@ export default function viteSvgPlugin(svgoOptimizeOptions = {}) {
 				throw new TypeError('Cache directory not found');
 			}
 
-			/* もし、SVGファイルでない場合、または、キャッシュディレクトリに含まれている場合は、そのまま返す */
-			if (!fileRegex.test(id) || id.includes('node_modules')) {
-				return;
-			}
+			if (fileRegex.test(id) && !id.includes(cacheDir)) {
+				let svgCode;
+				try {
+					svgCode = await fs.readFile(id, 'utf8');
+				}
+				catch (exception) {
+					console.warn(`${id} couldn't be loaded by vite-plugin-svgo: `, exception);
+					return;
+				}
+				try {
+					const optimizedSvg = optimize(svgCode, {
+						path: id,
+						...svgoOptimizeOptions,
+					});
 
-			// svgをよみこむ
-			let svgCode;
-			try {
-				svgCode = await fs.readFile(id, 'utf8');
-			}
-			catch (exception) {
-				console.warn(`${id} couldn't be loaded by vite-plugin-svgo: `, exception);
-				return;
-			}
+					/* save optimized svg to cache */
+					await fs.mkdir(cacheDir, { recursive: true });
 
-			/** svgCodeのmd5ハッシュを取得 */
-			const hash = createHash('md5').update(svgCode).digest('hex');
+					const basename = path.basename(id);
+					const cachePath = path.join(cacheDir, basename);
 
-			/** idの拡張子を取得 */
-			const ext = path.extname(id);
+					await fs.writeFile(cachePath, optimizedSvg.data, 'utf8');
 
-			/** idのbasenameを取得 */
-			const basename = path.basename(id, ext);
-
-			/** キャッシュディレクトリに保存されたファイルのパス */
-			const cachePath = path.join(cacheDir, `${basename}-${hash}${ext}`);
-
-			/* キャッシュディレクトリにファイルが存在する場合、そのパスを返す */
-			if (existsSync(cachePath)) {
-				console.log(`Found cached ${id} at ${cachePath}`); // eslint-disable-line no-console
-				return cachePath;
-			}
-
-			/* svgを最適化 */
-			try {
-				const optimizedSvg = optimize(svgCode, {
-					path: id,
-					...svgoOptimizeOptions,
-				});
-
-				/* save optimized svg to cache */
-				await fs.mkdir(cacheDir, { recursive: true });
-
-				await fs.writeFile(cachePath, optimizedSvg.data, 'utf8');
-
-				console.log(`Optimized ${id} to ${cachePath}`); // eslint-disable-line no-console
-				return cachePath;
-			}
-			catch (exception) {
-				console.error(`${id} errored during svg optimization: `, exception);
+					console.log(`Optimized ${id} to ${cachePath}`); // eslint-disable-line no-console
+					return cachePath;
+				}
+				catch (exception) {
+					console.error(`${id} errored during svg optimization: `, exception);
+				}
 			}
 		},
 	};
-}
+};
