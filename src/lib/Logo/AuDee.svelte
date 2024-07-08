@@ -7,6 +7,8 @@
 
 	const alt = `AuDee`;
 	const link = `https://audee.jp/program/show/300008578`;
+	const width = 123.836;
+	const height = 66.126;
 </script>
 
-<Base {alt} {icon} {link} {...rest} />
+<Base {alt} {height} {icon} {link} {width} {...rest} />
