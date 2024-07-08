@@ -1,7 +1,8 @@
 <script lang='ts'>
+	import type { HTMLImgAttributes } from 'svelte/elements';
 	import { ensureURL } from '../utils/url';
 
-	const { link, icon, alt, imageClass, ...rest }: { link?: string; icon: string; alt: string; imageClass?: string } = $props();
+	const { link, icon, alt, imageClass, ...rest }: { link?: string; icon: string; imageClass?: string } & Omit<HTMLImgAttributes, 'src' | 'class'> = $props();
 
 	const defaultImageClass = `h-full object-scale-down w-auto`;
 	const _imageClassName = imageClass ?? defaultImageClass;
