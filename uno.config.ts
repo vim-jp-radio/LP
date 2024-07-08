@@ -29,7 +29,7 @@ export default defineConfig({
 			'LP-text-color': 'var(--LP-text-color)',
 		},
 		breakpoints: {
-			tiny: '320px',
+			tiny: '375px',
 		},
 	},
 	shortcuts: {
