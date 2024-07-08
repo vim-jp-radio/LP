@@ -13,11 +13,15 @@ export class Circle {
 	canvas: HTMLCanvasElement;
 	ctx: CanvasRenderingContext2D;
 
+	/** Circleの動きのUpdateを一時停止するかどうか */
+	motionPaused: boolean;
+
 	constructor(
 		canvas: HTMLCanvasElement,
 		ctx: CanvasRenderingContext2D,
 		minSpeed: number,
 		maxSpeed: number,
+		motionPaused: boolean = false,
 	) {
 		this.canvas = canvas;
 		this.ctx = ctx;
@@ -31,6 +35,7 @@ export class Circle {
 		this.dx = Math.cos(angle) * this.speed;
 		this.dy = Math.sin(angle) * this.speed;
 		this.color = colors[Math.floor(Math.random() * colors.length)];
+		this.motionPaused = motionPaused;
 	}
 
 	getRandomSpeed(): number {
@@ -48,10 +53,15 @@ export class Circle {
 	}
 
 	update(circles: Circle[]): void {
-		this.checkWallCollision();
-		this.checkCircleCollision(circles);
-		this.x += this.dx;
-		this.y += this.dy;
+		/* motionPausedがtrueの場合は動きのUpdateを一時停止する */
+		if (!this.motionPaused) {
+			this.checkWallCollision();
+			this.checkCircleCollision(circles);
+			this.x += this.dx;
+			this.y += this.dy;
+		}
+
+		/* 描画はいずれの場合も行う */
 		this.draw();
 	}
 
@@ -128,10 +138,11 @@ function createCircles(
 	ctx: CanvasRenderingContext2D,
 	minSpeed: number,
 	maxSpeed: number,
+	isMotionPaused: boolean,
 ): Circle[] {
 	const circles = Array.from(
 		{ length: count },
-		() => new Circle(canvas, ctx, minSpeed, maxSpeed),
+		() => new Circle(canvas, ctx, minSpeed, maxSpeed, isMotionPaused),
 	);
 	return circles;
 }
