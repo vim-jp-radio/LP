@@ -18,9 +18,7 @@
 		"prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'"
 	},
 	"dependencies": {
-		"@unocss/reset": "^0.60.4",
-		"animated-unocss": "^0.0.6",
-		"sveltekit-html-minifier": "^1.0.3"
+		"@unocss/reset": "^0.60.4"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.21.3",
@@ -40,6 +38,7 @@
 		"svelte": "5.0.0-next.175",
 		"svelte-check": "^3.8.4",
 		"svelte-eslint-parser": "^0.36.0",
+		"sveltekit-html-minifier": "^1.0.3",
 		"tslib": "^2.6.3",
 		"typescript": "^5.5.3",
 		"typescript-svelte-plugin": "^0.3.39",
