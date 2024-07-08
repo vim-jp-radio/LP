@@ -21,7 +21,7 @@
 		</div>
 		<div uno-flex-col uno-space-y-6>
 			<p uno-text>
-				ほかにもつぎのプラットフォームで配信しています。
+				ほかにも以下のプラットフォームで配信しています。
 			</p>
 			<div
 				uno-flex
