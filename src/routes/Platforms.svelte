@@ -3,22 +3,45 @@
 	import * as Logo from '$lib/Logo';
 </script>
 
+<!-- それぞれ繰り返し使う部分をsnippetとして定義 -->
+{#snippet desc()}
+<p uno-text>
+	「エンジニアの楽園 vim-jpラジオ」は AuDee（TOKYO FM）の公式番組です。
+</p>
+{/snippet}
+
+{#snippet audeeLink()}
+<div uno-button>
+	<a href='https://audee.jp/program/show/300008578' target='_blank'>AuDeeで聞く</a>
+</div>
+{/snippet}
+
+{#snippet audeeLogo()}
+<div uno-max-w-60 uno-min-w-36 uno-tiny-w-full>
+	<Logo.AuDee />
+</div>
+{/snippet}
+
 <section>
 	<Heading title='配信プラットフォーム' />
 	<div uno-flex-col uno-space-y-12>
-		<div uno-flex uno-space-x-4>
+
+		<!-- 幅がtiny以上であれば、左右に分割して表示 -->
+		<div uno-hidden uno-space-x-4 uno-tiny-flex>
 			<div uno-flex-col uno-space-y-6>
-				<p uno-text>
-					「エンジニアの楽園 vim-jpラジオ」は AuDee（TOKYO FM）の公式番組です。
-				</p>
-				<div uno-button>
-					<a href='https://audee.jp/program/show/300008578' target='_blank'><span>AuDee<span>で聞く</a>
-				</div>
+				{@render desc()}
+				{@render audeeLink()}
 			</div>
-			<div uno-max-w-60 uno-min-w-36 uno-w-full>
-				<Logo.AuDee />
-			</div>
+			{@render audeeLogo()}
 		</div>
+
+		<!-- 幅がtiny未満であれば、上下に分割して表示 -->
+		<div uno-gap-8 uno-grid uno-grid-rows-1 uno-place-items-center uno-tiny-hidden>
+			{@render desc()}
+			{@render audeeLogo()}
+			{@render audeeLink()}
+		</div>
+
 		<div uno-flex-col uno-space-y-6>
 			<p uno-text>
 				ほかにもつぎのプラットフォームで配信しています。
