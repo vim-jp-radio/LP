@@ -6,8 +6,7 @@
 
 	const { ...rest } = $props();
 
-	const alt = `Amazon Music`;
-	const link = LINKS.AmazonMusic;
+	const { label: alt, url: link } = LINKS.AmazonMusic;
 </script>
 
 <Base {alt} {icon} {link} {...rest} />

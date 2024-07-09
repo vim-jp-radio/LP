@@ -6,8 +6,7 @@
 
 	const { ...rest } = $props();
 
-	const alt = `YouTube`;
-	const link = LINKS.Youtube;
+	const { label: alt, url: link } = LINKS.Youtube;
 </script>
 
 <Base {alt} {icon} {link} {...rest} />

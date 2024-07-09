@@ -9,6 +9,6 @@
 		この番組では皆さんからのおたよりを募集しています。 vim-jp Slackの #vim-jp-radio-message チャンネルに投稿してください。
 	</p>
 	<p uno-text>
-		Slackへのご参加は<a href={LINKS.VimJpSlack} target='_blank' uno-underline>こちら</a>から!
+		Slackへのご参加は<a href={LINKS.VimJpSlack.url} target='_blank' uno-underline>こちら</a>から!
 	</p>
 </section>

@@ -6,8 +6,7 @@
 
 	const { ...rest } = $props();
 
-	const alt = `Spotify`;
-	const link = LINKS.Spotify;
+	const { label: alt, url: link } = LINKS.Spotify;
 </script>
 
 <Base {alt} {icon} {link} {...rest} />

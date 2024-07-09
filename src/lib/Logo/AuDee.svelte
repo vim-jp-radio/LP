@@ -6,8 +6,7 @@
 
 	const { ...rest } = $props();
 
-	const alt = `AuDee`;
-	const link = LINKS.AuDee;
+	const { label: alt, url: link } = LINKS.AuDee;
 	const width = 123.836;
 	const height = 66.126;
 </script>

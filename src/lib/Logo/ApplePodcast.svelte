@@ -6,8 +6,7 @@
 
 	const { ...rest } = $props();
 
-	const alt = `Apple Podcast`;
-	const link = LINKS.ApplePodcast;
+	const { label: alt, url: link } = LINKS.ApplePodcast;
 </script>
 
 <Base {alt} {icon} {link} {...rest} />

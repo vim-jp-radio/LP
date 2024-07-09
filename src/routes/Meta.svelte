@@ -7,7 +7,7 @@
 
 	const xAccount = `@vimjpradio`;
 	const locale = `ja_JP`;
-	const url = LINKS.VimJpRadio;
+	const { url } = LINKS.VimJpRadio;
 
 	const image = { src: OGP, alt: `エンジニアの楽園 vim-jpラジオ`, type: `image/png` } as const;
 

@@ -20,7 +20,7 @@
 		<Logo.Spotify />
 		<Logo.AmazonMusic />
 		<Logo.YouTube />
-		<Logo.X link={LINKS.X} />
+		<Logo.X link={LINKS.X.url} />
 	</div>
 
 	<div uno-flex-col uno-space-y-4>
