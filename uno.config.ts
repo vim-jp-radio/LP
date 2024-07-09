@@ -18,6 +18,10 @@ export default defineConfig({
 		transformerDirectives(), // v-bindやv-modelなどのVueのディレクティブを使うための設定。https://unocss.dev/presets/directives
 	],
 	theme: {
+		/**
+		 * color はそれぞれ CSS Variables で設定している。
+		 * それぞれの色の設定は './src/main.css' に記述している。
+		 */
 		colors: {
 			'LP-blue': 'var(--LP-blue)',
 			'LP-pink': 'var(--LP-pink)',
