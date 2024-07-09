@@ -1,4 +1,5 @@
 <script lang='ts'>
+	import { LINKS } from '$/lib/links';
 	import * as Logo from '$lib/Logo';
 </script>
 
@@ -19,7 +20,7 @@
 		<Logo.Spotify />
 		<Logo.AmazonMusic />
 		<Logo.YouTube />
-		<Logo.X link='https://x.com/vimjpradio' />
+		<Logo.X link={LINKS.X} />
 	</div>
 
 	<div uno-flex-col uno-space-y-4>
