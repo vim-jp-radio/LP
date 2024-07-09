@@ -29,21 +29,19 @@
 	uno-max-w='[600px]'
 	uno-mx-auto
 	uno-px-6
+	uno-relative
 	uno-text
 	uno-w-full
+	uno-z-1
 >
 	{@render children()}
 </div>
+
 <style>
 /* css variable でglobal要素に設定する */
 :global(body) {
 	@apply uno-bg-LP-backgroud;
 	margin: 0;
 	min-width: 300px; /* 実際には320pxだが、スクロールバー等を考慮して300pxとしておく */
-}
-
-div {
-  z-index: 1;
-  position: relative;
 }
 </style>
