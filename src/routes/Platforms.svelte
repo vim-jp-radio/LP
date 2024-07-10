@@ -11,9 +11,7 @@
 {/snippet}
 
 {#snippet audeeLink()}
-<div uno-button>
-	<a href='https://audee.jp/program/show/300008578' target='_blank'>AuDeeで聞く</a>
-</div>
+<a href='https://audee.jp/program/show/300008578' target='_blank' uno-button>AuDeeで聞く</a>
 {/snippet}
 
 {#snippet audeeLogo()}
