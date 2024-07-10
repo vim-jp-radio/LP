@@ -5,6 +5,7 @@
 
 	const konami = new Konami(2000);
 
+	/* EASTER_EGG🐰🥚: dev 環境でのみ, consoleに入力されたキーのコードを表示 */
 	if (dev) {
 		$inspect(konami.combo);
 	}
