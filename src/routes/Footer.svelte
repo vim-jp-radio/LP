@@ -1,11 +1,10 @@
 <script lang='ts'>
-	import { LINKS } from '$/lib/links';
 	import * as Logo from '$lib/Logo';
 </script>
 
 <footer uno-pb-20 uno-pt-64>
 	<div uno-mb-24>
-		<Logo.VimJpRadio imageClass='h-auto max-w-100% w-50svh mx-auto' />
+		<Logo.VimJpRadio class='mx-auto h-auto max-w-100% w-50svh' />
 	</div>
 
 	<div
@@ -20,7 +19,7 @@
 		<Logo.Spotify />
 		<Logo.AmazonMusic />
 		<Logo.YouTube />
-		<Logo.X link={LINKS.X.url} />
+		<Logo.X />
 	</div>
 
 	<div uno-flex-col uno-space-y-4>

@@ -16,7 +16,7 @@
 
 {#snippet audeeLogo()}
 <div uno-max-w-60 uno-min-w-36 uno-tiny-w-full>
-	<Logo.AuDee imageClass='h-full object-fill w-full' />
+	<Logo.AuDee class='h-full w-full object-fill' />
 </div>
 {/snippet}
 
