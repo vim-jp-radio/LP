@@ -5,26 +5,15 @@
 
 <section>
 	<Heading title='パーソナリティ' />
-	<div
-		uno-flex
-		uno-flex-col
-		uno-flex-gap-2rem
-	>
-		<div
-			uno-flex
-			uno-flex-col
-			uno-flex-gap-1rem
-		>
+	<div uno-flex='~ col gap-2rem'>
+		<div uno-flex='~ col gap-1rem'>
 			<div
-				uno-flex
-				uno-flex-gap-1rem
+				uno-flex='~ gap-1rem'
 				uno-items-center
 			>
-				<h3
-					pl-1rem
-					uno-text-2xl
-					uno-text-LP-blue
-				>tomoya</h3>
+				<h3 uno-text='2xl LP-blue'>
+					tomoya
+				</h3>
 				<Logo.X
 					class='h-auto w-1.25rem'
 					link='https://x.com/tomoyaton'
@@ -51,21 +40,14 @@
 				</p>
 			</div>
 		</div>
-		<div
-			uno-flex
-			uno-flex-col
-			uno-flex-gap-1rem
-		>
+		<div uno-flex='~ col gap-1rem'>
 			<div
-				uno-flex
-				uno-flex-gap-1rem
+				uno-flex='~ gap-1rem'
 				uno-items-center
 			>
-				<h3
-					pl-1rem
-					uno-text-2xl
-					uno-text-LP-pink
-				>ありすえ</h3>
+				<h3 uno-text='2xl LP-pink'>
+					ありすえ
+				</h3>
 				<Logo.X
 					class='h-auto w-1.25rem'
 					link='https://twitter.com/lambdalisue'
