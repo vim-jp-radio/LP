@@ -6,6 +6,7 @@ import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { favicons } from 'favicons';
 import { isProduction } from 'std-env';
+import { VIM_JP_RADIO_INFO } from '../src/lib/links/_links.js';
 
 const staticDir = join(import.meta.dirname, '../static');
 const assetDir = join(staticDir, '../src/assets');
@@ -18,9 +19,9 @@ const configuration = {
 	path: `/favicons`,
 	theme_color: '#010A01',
 	background: '#010A01',
-	appName: `エンジニアの楽園 vim-jpラジオ`,
-	appShortName: `vim-jpラジオ`,
-	appDescription: `エンジニアの楽園 vim-jpラジオ | 毎週月曜配信の技術系ポッドキャスト`,
+	appName: VIM_JP_RADIO_INFO.title,
+	appShortName: VIM_JP_RADIO_INFO.shortTitle,
+	appDescription: VIM_JP_RADIO_INFO.description,
 	lang: 'ja-JP',
 	orientation: 'portrait',
 };
