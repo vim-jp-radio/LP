@@ -24,7 +24,7 @@
 			alt='error logo'
 			src='$/assets/alisue/beer.png'
 		/>
-		<span uno-text='white'>
+		<span uno-text>
 			{$page.error.message}
 		</span>
 	</h1>
