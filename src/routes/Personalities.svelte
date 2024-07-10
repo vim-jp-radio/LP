@@ -11,10 +11,7 @@
 				uno-flex='~ gap-1rem'
 				uno-items-center
 			>
-				<h3
-					pl-1rem
-					uno-text='2xl LP-blue'
-				>
+				<h3 uno-text='2xl LP-blue'>
 					tomoya
 				</h3>
 				<Logo.X
@@ -48,10 +45,7 @@
 				uno-flex='~ gap-1rem'
 				uno-items-center
 			>
-				<h3
-					pl-1rem
-					uno-text='2xl LP-pink'
-				>
+				<h3 uno-text='2xl LP-pink'>
 					ありすえ
 				</h3>
 				<Logo.X
