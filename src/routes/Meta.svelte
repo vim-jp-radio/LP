@@ -1,12 +1,11 @@
 <script lang='ts'>
 	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
-	import { LINKS, VIM_JP_RADIO_INFO } from '$/lib/links';
+	import { VIM_JP_RADIO_INFO } from '$/lib/links';
 
-	const { shortTitle, title, description } = VIM_JP_RADIO_INFO;
+	const { shortTitle, title, description, url } = VIM_JP_RADIO_INFO;
 
 	const xAccount = `@vimjpradio`;
 	const locale = `ja_JP`;
-	const { url } = LINKS.VimJpRadio;
 
 	const image = { src: OGP, alt: shortTitle, type: `image/png` } as const;
 
