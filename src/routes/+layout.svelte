@@ -40,7 +40,7 @@
 <style>
 /* css variable でglobal要素に設定する */
 :global(body) {
-	@apply uno-bg-LP-backgroud;
+	@apply bg-LP-backgroud p-safe min-h-safe;
 	margin: 0;
 	min-width: 300px; /* 実際には320pxだが、スクロールバー等を考慮して300pxとしておく */
 }

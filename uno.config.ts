@@ -34,6 +34,10 @@ export default defineConfig({
 			tiny: '375px',
 		},
 	},
+	rules: [
+		['p-safe', { padding: 'env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)' }],
+		['min-h-safe', { 'min-height': 'calc(100% + env(safe-area-inset-top))' }],
+	],
 	shortcuts: {
 		text: 'text-base text-LP-text-color',
 		button: 'color-LP-yellow border-solid border-2 border-[var(--LP-yellow)] rounded px-4 py-2 hover:bg-[var(--LP-yellow)] hover:color-[var(--LP-backgroud)] w-fit flex',
