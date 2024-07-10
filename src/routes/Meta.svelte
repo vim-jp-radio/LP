@@ -1,15 +1,13 @@
 <script lang='ts'>
 	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
-	import { LINKS } from '$/lib/links';
+	import { VIM_JP_RADIO_INFO } from '$/lib/links';
 
-	const title = `エンジニアの楽園 vim-jpラジオ | 毎週月曜配信の技術系ポッドキャスト`;
-	const description = `エンジニアが集まるインターネット上のコミュニティvim-jpから生まれた初の音声プログラム。vim-jpはプログラミングから子育てに至るまで無数のチャンネルを抱えたコミュニティです。そんなコミュニティの面白さを生かして、各分野の様々なゲストを交えながら楽しく雑談していきます。`;
+	const { title, titleWithTagline, description, url } = VIM_JP_RADIO_INFO;
 
 	const xAccount = `@vimjpradio`;
 	const locale = `ja_JP`;
-	const { url } = LINKS.VimJpRadio;
 
-	const image = { src: OGP, alt: `エンジニアの楽園 vim-jpラジオ`, type: `image/png` } as const;
+	const image = { src: OGP, alt: title, type: `image/png` } as const;
 
 	type XCardType = 'summary' | 'summary_large_image' | 'app' | 'player';
 </script>
@@ -27,14 +25,14 @@
 {/snippet}
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{titleWithTagline}</title>
 	<meta name='description' content={description} />
 	<meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover' />
 
 	<!-- X -->
 	{@render xMeta('site', xAccount)}
 	{@render xMeta('creator', xAccount)}
-	{@render xMeta('title', title)}
+	{@render xMeta('title', titleWithTagline)}
 	{@render xMeta('description', description)}
 	{@render xMeta('card', `summary_large_image` satisfies XCardType)}
 	{@render xMeta('image', image.src)}
@@ -44,7 +42,7 @@
 	<!-- Open Graph -->
 	{@render ogMeta('url', url)}
 	{@render ogMeta('type', 'website')}
-	{@render ogMeta('title', title)}
+	{@render ogMeta('title', titleWithTagline)}
 	{@render ogMeta('description', description)}
 	{@render ogMeta('locale', locale)}
 	{@render ogMeta('image', image.src)}
