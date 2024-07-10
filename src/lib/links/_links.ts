@@ -12,3 +12,6 @@ export const LINKS = {
 	AuDee: { url: `https://audee.jp/program/show/300008578`, label: `AuDee` },
 	Youtube: { url: `https://www.youtube.com/playlist?list=PLcptmT4PuRVNm5qjf5DhzPYZenncjLWQ8`, label: `Youtube` },
 } as const satisfies Record<string, { url: string; label: string }>;
+export const VIM_JP_RADIO_INFO = {
+	...LINKS.VimJpRadio,
+} as const satisfies Record<string, string>;
