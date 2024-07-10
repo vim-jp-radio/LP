@@ -2,12 +2,12 @@
 	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
 	import { VIM_JP_RADIO_INFO } from '$/lib/links';
 
-	const { shortTitle, title, description, url } = VIM_JP_RADIO_INFO;
+	const { title, titleWithTagline, description, url } = VIM_JP_RADIO_INFO;
 
 	const xAccount = `@vimjpradio`;
 	const locale = `ja_JP`;
 
-	const image = { src: OGP, alt: shortTitle, type: `image/png` } as const;
+	const image = { src: OGP, alt: title, type: `image/png` } as const;
 
 	type XCardType = 'summary' | 'summary_large_image' | 'app' | 'player';
 </script>
@@ -25,14 +25,14 @@
 {/snippet}
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{titleWithTagline}</title>
 	<meta name='description' content={description} />
 	<meta name='viewport' content='width=device-width,initial-scale=1' />
 
 	<!-- X -->
 	{@render xMeta('site', xAccount)}
 	{@render xMeta('creator', xAccount)}
-	{@render xMeta('title', title)}
+	{@render xMeta('title', titleWithTagline)}
 	{@render xMeta('description', description)}
 	{@render xMeta('card', `summary_large_image` satisfies XCardType)}
 	{@render xMeta('image', image.src)}
@@ -42,7 +42,7 @@
 	<!-- Open Graph -->
 	{@render ogMeta('url', url)}
 	{@render ogMeta('type', 'website')}
-	{@render ogMeta('title', title)}
+	{@render ogMeta('title', titleWithTagline)}
 	{@render ogMeta('description', description)}
 	{@render ogMeta('locale', locale)}
 	{@render ogMeta('image', image.src)}

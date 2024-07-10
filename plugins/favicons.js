@@ -20,7 +20,7 @@ const configuration = {
 	theme_color: '#010A01',
 	background: '#010A01',
 	appName: VIM_JP_RADIO_INFO.title,
-	appShortName: VIM_JP_RADIO_INFO.shortTitle,
+	appShortName: VIM_JP_RADIO_INFO.title,
 	appDescription: VIM_JP_RADIO_INFO.description,
 	lang: 'ja-JP',
 	orientation: 'portrait',
