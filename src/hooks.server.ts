@@ -1,9 +1,12 @@
-import type { Handle } from '@sveltejs/kit';
-import faviconLinks from '$/assets/favicons.html?raw';
+import { sequence } from '@sveltejs/kit/hooks';
+import { meta } from './handles/meta';
+import { redirects } from './handles/redirects';
+import { dev } from '$app/environment';
 
-export const handle = (async ({ event, resolve }) => {
-	const response = await resolve(event, {
-		transformPageChunk: ({ html }) => html.replace('</head>', `${faviconLinks}</head>`),
-	});
-	return response;
-}) satisfies Handle;
+/** 最終的な hooks */
+export const handle = sequence(
+	...[
+		meta, // head に favicon を追加する
+		dev ? await redirects() : [], // `_redirects` を元にリダイレクトを行う (dev 時のみ)
+	].flat(),
+);

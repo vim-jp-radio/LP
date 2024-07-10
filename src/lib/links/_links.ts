@@ -1,5 +1,5 @@
-import { ensureURL } from './utils/url';
-import { building } from '$app/environment';
+// このfileは、favicon pluginが使うために検証ロジックを含んでいないfileです
+// sveltekitから使う場合は `$lib/links` でimportしてください
 
 /** リンク集 */
 export const LINKS = {
@@ -12,11 +12,3 @@ export const LINKS = {
 	AuDee: { url: `https://audee.jp/program/show/300008578`, label: `AuDee` },
 	Youtube: { url: `https://www.youtube.com/playlist?list=PLcptmT4PuRVNm5qjf5DhzPYZenncjLWQ8`, label: `Youtube` },
 } as const satisfies Record<string, { url: string; label: string }>;
-
-/* ビルド時にURLをチェックする */
-if (building) {
-	for (const key in LINKS) {
-		const { url } = LINKS[key as keyof typeof LINKS];
-		ensureURL(url);
-	}
-}

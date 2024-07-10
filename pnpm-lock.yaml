@@ -39,6 +39,9 @@ importers:
       '@unocss/preset-attributify':
         specifier: ^0.61.3
         version: 0.61.3
+      cloudflare-redirect-parser:
+        specifier: ^0.1.0
+        version: 0.1.0
       eslint:
         specifier: ^9.6.0
         version: 9.6.0
@@ -1140,6 +1143,9 @@ packages:
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
+
+  cloudflare-redirect-parser@0.1.0:
+    resolution: {integrity: sha512-M4pDIvjLX4wuC9SX1CaQ3ClLIgNOa37gaeL4c31cCJpJ2b+GlaXybnB14iUTtuGbhmS+Eu6JGLoWbiJ2PW8g+A==}
 
   color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
@@ -3839,6 +3845,8 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
+
+  cloudflare-redirect-parser@0.1.0: {}
 
   color-convert@1.9.3:
     dependencies:
