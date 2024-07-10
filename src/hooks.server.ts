@@ -7,6 +7,6 @@ import { dev } from '$app/environment';
 export const handle = sequence(
 	...[
 		meta, // head に favicon を追加する
-		dev ? await redirects() : [], // `_redirects` を元にリダイレクトを行う (dev 時のみ)
+		dev ? redirects : [], // `_redirects` を元にリダイレクトを行う (dev 時のみ)
 	].flat(),
 );
