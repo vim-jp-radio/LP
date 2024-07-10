@@ -26,7 +26,7 @@
 
 <Backgroud />
 <div
-	uno-max-w='[600px]'
+	uno-max-w-600px
 	uno-mx-auto
 	uno-px-6
 	uno-relative
