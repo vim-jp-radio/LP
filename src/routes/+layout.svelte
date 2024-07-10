@@ -43,5 +43,7 @@
 	@apply uno-bg-LP-backgroud;
 	margin: 0;
 	min-width: 300px; /* 実際には320pxだが、スクロールバー等を考慮して300pxとしておく */
+	min-height: calc(100% + env(safe-area-inset-top));
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 </style>
