@@ -20,6 +20,7 @@
 		<Logo.AmazonMusic />
 		<Logo.YouTube />
 		<Logo.X />
+		<Logo.Suzuri />
 	</div>
 
 	<div uno-flex-col uno-space-y-4>
