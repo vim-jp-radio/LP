@@ -1,7 +1,6 @@
 <script lang='ts'>
 	import 'uno.css';
 	import '@unocss/reset/tailwind-compat.css';
-	import '../main.css';
 
 	import Meta from './Meta.svelte';
 	import { Backgroud } from '$lib/Backgroud';

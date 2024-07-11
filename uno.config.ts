@@ -23,12 +23,12 @@ export default defineConfig({
 		 * それぞれの色の設定は './src/main.css' に記述している。
 		 */
 		colors: {
-			'LP-blue': 'var(--LP-blue)',
-			'LP-pink': 'var(--LP-pink)',
-			'LP-yellow': 'var(--LP-yellow)',
-			'LP-gray': 'var(--LP-gray)',
-			'LP-backgroud': 'var(--LP-backgroud)',
-			'LP-text-color': 'var(--LP-text-color)',
+			'LP-blue': '#1ecfff',
+			'LP-pink': '#ff00ff',
+			'LP-yellow': '#ffffb3',
+			'LP-gray': '#909296',
+			'LP-backgroud': '#010a01',
+			'LP-text-color': '#f8f9fa',
 		},
 		breakpoints: {
 			tiny: '375px',
