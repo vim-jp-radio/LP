@@ -5,6 +5,7 @@ import {
 	presetMini,
 	presetUno,
 	transformerDirectives,
+	transformerVariantGroup,
 } from 'unocss';
 
 export default defineConfig({
@@ -15,7 +16,8 @@ export default defineConfig({
 		presetIcons({ autoInstall: true }), // Iconを使うための設定。autoInstallも設定している。https://unocss.dev/presets/icons
 	],
 	transformers: [
-		transformerDirectives(), // v-bindやv-modelなどのVueのディレクティブを使うための設定。https://unocss.dev/presets/directives
+		transformerDirectives(), // @apply等のディレクティブを使うための設定。https://unocss.dev/presets/directives
+		transformerVariantGroup(), // hoverなど `:` で始まるクラスをまとめる設定。https://unocss.dev/presets/variant-group
 	],
 	theme: {
 		/**
@@ -23,12 +25,12 @@ export default defineConfig({
 		 * それぞれの色の設定は './src/main.css' に記述している。
 		 */
 		colors: {
-			'LP-blue': 'var(--LP-blue)',
-			'LP-pink': 'var(--LP-pink)',
-			'LP-yellow': 'var(--LP-yellow)',
-			'LP-gray': 'var(--LP-gray)',
-			'LP-backgroud': 'var(--LP-backgroud)',
-			'LP-text-color': 'var(--LP-text-color)',
+			'LP-blue': '#1ecfff',
+			'LP-pink': '#ff00ff',
+			'LP-yellow': '#ffffb3',
+			'LP-gray': '#909296',
+			'LP-backgroud': '#010a01',
+			'LP-text-color': '#f8f9fa',
 		},
 		breakpoints: {
 			tiny: '375px',
@@ -40,6 +42,6 @@ export default defineConfig({
 	],
 	shortcuts: {
 		text: 'text-base text-LP-text-color',
-		button: 'color-LP-yellow border-solid border-2 border-[var(--LP-yellow)] rounded px-4 py-2 hover:bg-[var(--LP-yellow)] hover:color-[var(--LP-backgroud)] w-fit flex',
+		button: 'color-LP-yellow border-(solid 2 LP-yellow) rounded px-4 py-2 hover:(bg-LP-yellow color-LP-backgroud) w-fit flex',
 	},
 });
