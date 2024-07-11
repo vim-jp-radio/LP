@@ -5,13 +5,13 @@
 
 <!-- それぞれ繰り返し使う部分をsnippetとして定義 -->
 {#snippet desc()}
-<p uno-text>
+<p data-budoux uno-text>
 	「エンジニアの楽園 vim-jpラジオ」は AuDee（TOKYO FM）の公式番組です。
 </p>
 {/snippet}
 
 {#snippet audeeLink()}
-<a href='https://audee.jp/program/show/300008578' target='_blank' uno-button>AuDeeで聞く</a>
+<a data-budoux href='https://audee.jp/program/show/300008578' target='_blank' uno-button>AuDeeで聞く</a>
 {/snippet}
 
 {#snippet audeeLogo()}
@@ -43,7 +43,7 @@
 		</div>
 
 		<div uno-flex-col uno-space-y-6>
-			<p uno-text>
+			<p data-budoux uno-text>
 				ほかにも以下のプラットフォームで配信しています。
 			</p>
 			<div
