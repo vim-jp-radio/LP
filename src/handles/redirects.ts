@@ -10,7 +10,7 @@ import { createRedirect } from 'cloudflare-redirect-parser';
  * @see https://github.com/bluwy/cloudflare-redirect-parser
  */
 export const redirects = (async ({ event, resolve }) => {
-	const redirectFile = path.join(import.meta.dirname, '../static/_redirects');
+	const redirectFile = path.join(import.meta.dirname, '../../static/_redirects');
 
 	if (!existsSync(redirectFile)) {
 		return resolve(event);
