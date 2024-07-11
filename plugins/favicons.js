@@ -7,6 +7,7 @@ import { createHash } from 'node:crypto';
 import { favicons } from 'favicons';
 import { isProduction } from 'std-env';
 import { VIM_JP_RADIO_INFO } from '../src/lib/links/_links.js';
+import UnocssConfig from '../uno.config.js';
 
 const staticDir = join(import.meta.dirname, '../static');
 const assetDir = join(staticDir, '../src/assets');
@@ -14,11 +15,18 @@ const src = join(assetDir, 'vimjp-radio-cover-art/3000x3000-fs8.png');
 const dest = join(staticDir, 'favicons');
 const htmlDest = join(assetDir, 'favicons.html');
 
+// @ts-ignore
+const background = UnocssConfig.theme.colors['LP-backgroud'];
+
+if (!background) {
+	throw new Error('background color is not defined');
+}
+
 /** @satisfies {import('favicons').FaviconOptions} */
 const configuration = {
 	path: `/favicons`,
-	theme_color: '#010A01',
-	background: '#010A01',
+	theme_color: background,
+	background,
 	appName: VIM_JP_RADIO_INFO.title,
 	appShortName: VIM_JP_RADIO_INFO.title,
 	appDescription: VIM_JP_RADIO_INFO.description,
