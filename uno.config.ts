@@ -15,7 +15,7 @@ export default defineConfig({
 		presetIcons({ autoInstall: true }), // Iconを使うための設定。autoInstallも設定している。https://unocss.dev/presets/icons
 	],
 	transformers: [
-		transformerDirectives(), // v-bindやv-modelなどのVueのディレクティブを使うための設定。https://unocss.dev/presets/directives
+		transformerDirectives(), // @apply等のディレクティブを使うための設定。https://unocss.dev/presets/directives
 	],
 	theme: {
 		/**
