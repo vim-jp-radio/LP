@@ -2,7 +2,7 @@
 	import { LINKS } from '../links';
 	import Base from './_Base.svelte';
 	// @ts-ignore
-	import icon from '$/assets/logos/suzuri-logo-white.png?enhanced&w=300;600;800';
+	import icon from '$/assets/logos/logo-surisurikun.png?enhanced&w=300;600;800';
 
 	const { ...rest } = $props();
 
