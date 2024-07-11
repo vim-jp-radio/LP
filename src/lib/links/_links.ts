@@ -11,6 +11,7 @@ export const LINKS = {
 	X: { url: `https://x.com/vimjpradio`, label: `X` },
 	AuDee: { url: `https://audee.jp/program/show/300008578`, label: `AuDee` },
 	Youtube: { url: `https://www.youtube.com/playlist?list=PLcptmT4PuRVNm5qjf5DhzPYZenncjLWQ8`, label: `Youtube` },
+	Suzuri: { url: `https://suzuri.jp/vim-jp-radio`, label: `Suzuri` },
 } as const satisfies Record<string, { url: string; label: string }>;
 
 export const VIM_JP_RADIO_INFO = {
