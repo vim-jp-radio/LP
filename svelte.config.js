@@ -3,6 +3,7 @@ import path from 'node:path';
 import adapter from '@sveltejs/adapter-static';
 import htmlMinifierAdaptor from 'sveltekit-html-minifier';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { budouxPreprocess } from 'svelte-preprocess-budoux';
 import { isDevelopment } from 'std-env';
 
 /** @param {...string} args */
@@ -14,7 +15,10 @@ function relativePath(...args) {
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: vitePreprocess(),
+	preprocess: [
+		vitePreprocess(),
+		budouxPreprocess({ language: 'ja', attribute: 'data-budoux' }), // budouxを使って日本語の改行をいい感じにする。 https://github.com/google/budoux/tree/main/javascript https://github.com/ryoppippi/svelte-preprocess-budoux
+	],
 
 	compilerOptions: {
 		runes: true,
