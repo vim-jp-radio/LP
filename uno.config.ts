@@ -5,6 +5,7 @@ import {
 	presetMini,
 	presetUno,
 	transformerDirectives,
+	transformerVariantGroup,
 } from 'unocss';
 
 export default defineConfig({
@@ -16,6 +17,7 @@ export default defineConfig({
 	],
 	transformers: [
 		transformerDirectives(), // @apply等のディレクティブを使うための設定。https://unocss.dev/presets/directives
+		transformerVariantGroup(), // hoverなど `:` で始まるクラスをまとめる設定。https://unocss.dev/presets/variant-group
 	],
 	theme: {
 		/**
@@ -40,6 +42,6 @@ export default defineConfig({
 	],
 	shortcuts: {
 		text: 'text-base text-LP-text-color',
-		button: 'color-LP-yellow border-solid border-2 border-LP-yellow rounded px-4 py-2 hover:bg-LP-yellow hover:color-LP-backgroud w-fit flex',
+		button: 'color-LP-yellow border-solid border-2 border-LP-yellow rounded px-4 py-2 hover:(bg-LP-yellow color-LP-backgroud) w-fit flex',
 	},
 });
