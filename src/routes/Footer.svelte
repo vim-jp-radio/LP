@@ -24,7 +24,7 @@
 	</div>
 
 	<div uno-flex-col uno-space-y-4>
-		<p uno-color-LP-gray uno-text-sm>
+		<p data-budoux uno-color-LP-gray uno-text-sm>
 			Personality: lambdalisue & tomoya<br />
 			Theme music: Jun Tanaka (GENTOUKI)<br />
 			Cover art design: Kazuaki Komai (こまゐ図考室)<br />
