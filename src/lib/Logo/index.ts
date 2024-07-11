@@ -7,6 +7,7 @@ import AuDee from './AuDee.svelte';
 import X from './X.svelte';
 import GitHub from './GitHub.svelte';
 import Home from './Home.svelte';
+import Suzuri from './Suzuri.svelte';
 
 export {
 	VimJpRadio,
@@ -18,4 +19,5 @@ export {
 	X,
 	GitHub,
 	Home,
+	Suzuri,
 };
