@@ -1,4 +1,4 @@
-<section uno-flex='~ col' uno-gap-1.5>
+<section data-budoux uno-flex='~ col' uno-gap-1.5>
 	<p uno-text>
 		エンジニアが集まるインターネット上のコミュニティvim-jpから生まれた初の音声プログラム。<br />
 		vim-jpはプログラミングから子育てに至るまで無数のチャンネルを抱えたコミュニティです。<br />

@@ -34,7 +34,7 @@
 					alt='tomoya'
 					src='$/assets/avatar/tomoya.jpg?enhanced'
 				/>
-				<p uno-text>
+				<p data-budoux uno-text>
 					1983年生まれ。起業家、及びフロントエンドからバックエンドまで幅広くカバーするWebエンジニア。
 					2010年に起業。2015年にイグジット。2017年にフォーコード株式会社を設立して、現在は日本で一番多くのVimmerと一緒に仕事するEmacserとして、大企業システムを作ったりしています。著書に『Atom実践入門』、『［改訂新版］Emacs実践入門』、『CircleCI実践入門』（共に技術評論社）がある。
 				</p>
@@ -64,7 +64,7 @@
 					alt='ありすえ'
 					src='$/assets/avatar/lambdalisue.png?enhanced'
 				/>
-				<p uno-text>
+				<p data-budoux uno-text>
 					Vim/Neovimのプラグイン開発用エコシステムDenopsの作者。
 					小学校の時に「ゲームを作ってみたい」と思ったことがきっかけでプログラミングにハマる。
 					私生活のほとんどの時間をプログラミングに費やした。『Software
