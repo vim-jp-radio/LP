@@ -3,7 +3,7 @@
 </script>
 
 <!-- svelte-ignore element_invalid_self_closing_tag -->
-<!-- groupはclassじゃないとうまくいかないっぽい -->
+<!-- groupはclassじゃないとうまくいかないっぽい https://github.com/unocss/unocss/issues/655#issuecomment-1052934514 -->
 <!-- アイコンとタイトルの間に謎の隙間ができるので整形に失敗したHTMLみたいになっている -->
 <h2
 	id={title}
