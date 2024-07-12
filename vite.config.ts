@@ -11,8 +11,6 @@ import UnocssConfig from './uno.config.js';
 import { LINKS, VIM_JP_RADIO_INFO } from './src/lib/links/_links.js';
 
 function relativePath(...args: string[]): string {
-	// @ts-expect-error import.meta.dirname  is not defined in typescript
-	// eslint-disable-next-line ts/no-unsafe-argument
 	return path.resolve(import.meta.dirname, ...args);
 }
 
