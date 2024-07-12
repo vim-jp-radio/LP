@@ -12,7 +12,7 @@
 	}: {
 		name: string;
 		imgSrc: string;
-		children?: Snippet<[]>;
+		children: Snippet<[]>;
 		xLink?: string;
 		ghLink?: string;
 		homeLink?: string;
@@ -67,9 +67,7 @@
 
 		<!-- 説明文。必ず p.textで囲むこと -->
 		<!-- 文字列を渡すだけだとBudouXが処理できない（コードにあるtagをpreprocessしなければならない都合）ので、pタグで囲む -->
-		{#if children != null}
-			{@render children()}
-		{/if}
+		{@render children()}
 	</div>
 
 </div>
