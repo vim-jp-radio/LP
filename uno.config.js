@@ -26,6 +26,7 @@ export default defineConfig({
 			'LP-pink': '#ff00ff',
 			'LP-yellow': '#ffffb3',
 			'LP-gray': '#909296',
+			'LP-dark-gray': '#5C5F66',
 			'LP-backgroud': '#010a01',
 			'LP-text-color': '#f8f9fa',
 		},
