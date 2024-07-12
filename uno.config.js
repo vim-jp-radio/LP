@@ -20,10 +20,6 @@ export default defineConfig({
 		transformerVariantGroup(), // hoverなど `:` で始まるクラスをまとめる設定。https://unocss.dev/presets/variant-group
 	],
 	theme: {
-		/**
-		 * color はそれぞれ CSS Variables で設定している。
-		 * それぞれの色の設定は './src/main.css' に記述している。
-		 */
 		colors: {
 			'LP-blue': '#1ecfff',
 			'LP-pink': '#ff00ff',
