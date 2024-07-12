@@ -15,6 +15,9 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.21.3
         version: 2.21.3(@unocss/eslint-plugin@0.60.4(eslint@9.6.0)(typescript@5.5.3))(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.2(eslint@9.6.0))(eslint-plugin-svelte@2.41.0(eslint@9.6.0)(svelte@5.0.0-next.175))(eslint@9.6.0)(svelte-eslint-parser@0.36.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.3)
+      '@ryoppippi/vite-plugin-cloudflare-redirect':
+        specifier: npm:@jsr/ryoppippi__vite-plugin-cloudflare-redirect@^1.0.0
+        version: '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.0(@types/node@20.14.10)(terser@5.31.1)'
       '@sveltejs/adapter-static':
         specifier: ^3.0.2
         version: 3.0.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1)))(svelte@5.0.0-next.175)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1)))
@@ -39,9 +42,6 @@ importers:
       '@unocss/preset-attributify':
         specifier: ^0.61.3
         version: 0.61.3
-      cloudflare-redirect-parser:
-        specifier: ^0.1.0
-        version: 0.1.0
       eslint:
         specifier: ^9.6.0
         version: 9.6.0
@@ -640,6 +640,9 @@ packages:
   '@jsdevtools/ez-spawn@3.0.4':
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
+
+  '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.0':
+    resolution: {integrity: sha512-Detmh1WVao3pWkxxjgTMO2raoo4S6s1J+2O7KEvGkIPK+eDMsR8F4FwwxZDK7rGXYedT0761G7OSrUKEo/2+5Q==, tarball: https://npm.jsr.io/~/11/@jsr/ryoppippi__vite-plugin-cloudflare-redirect/1.0.0.tgz}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3407,6 +3410,20 @@ snapshots:
       cross-spawn: 7.0.3
       string-argv: 0.3.2
       type-detect: 4.0.8
+
+  '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.0(@types/node@20.14.10)(terser@5.31.1)':
+    dependencies:
+      cloudflare-redirect-parser: 0.1.0
+      defu: 6.1.4
+      vite: 5.3.3(@types/node@20.14.10)(terser@5.31.1)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - terser
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
