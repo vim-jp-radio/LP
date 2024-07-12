@@ -26,6 +26,7 @@ async function main() {
 		{ from: '/amazon', to: LINKS.AmazonMusic.url },
 		{ from: '/spotify', to: LINKS.Spotify.url },
 		{ from: '/youtube', to: LINKS.Youtube.url },
+		{ from: '/suzuri', to: LINKS.Suzuri.url },
 	]);
 
 	const content = generateRedirect(entries);
