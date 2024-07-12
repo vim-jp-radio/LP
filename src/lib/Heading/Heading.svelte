@@ -5,24 +5,25 @@
 <!-- svelte-ignore element_invalid_self_closing_tag -->
 <!-- groupはclassじゃないとうまくいかないっぽい https://github.com/unocss/unocss/issues/655#issuecomment-1052934514 -->
 <!-- アイコンとタイトルの間に謎の隙間ができるので整形に失敗したHTMLみたいになっている -->
-<h2
-	id={title}
-	class='group'
-	uno-flex
-	uno-items-center
-	uno-mb-6
-	uno-text='LP-blue 3xl'
->
-	<a href='#{title}'>{title}<div
-		class='group-hover:visible'
-		uno-i-ph='hash-bold'
-		uno-inline-block
-		uno-invisible
-		uno-mx-0
-		uno-opacity-70
-		uno-text='90%'
-	/></a>
-</h2>
+<a href='#{title}'>
+	<h2
+		id={title}
+		class='group'
+		uno-flex
+		uno-items-center
+		uno-mb-6
+		uno-text='LP-blue 3xl'
+	>
+		{title}<span
+			class='group-hover:visible'
+			uno-color-LP-dark-gray
+			uno-i-ph='hash-bold'
+			uno-invisible
+			uno-ml-1
+			uno-text-2xl
+		/>
+	</h2>
+</a>
 
 <style>
 h2 {
