@@ -13,11 +13,10 @@ export interface Options extends FaviconOptions {
 	imgSrc: string;
 
 	/** faviconの出力先のDirectory */
-	dest: string;
+	faviconAssetsDest: string;
 
 	/** faviconのhtmlの出力先のFile */
 	htmlDest: string;
-
 }
 
 function getParentDirPath(p: string): string {
@@ -25,7 +24,7 @@ function getParentDirPath(p: string): string {
 }
 
 export function faviconPlugin(options: Options): Plugin {
-	const { imgSrc, dest, htmlDest, ...faviconConfig } = options;
+	const { imgSrc, faviconAssetsDest, htmlDest, ...faviconConfig } = options;
 	return {
 		name: `favicons`,
 		enforce: `pre`,
@@ -46,8 +45,8 @@ export function faviconPlugin(options: Options): Plugin {
 			}
 
 			/* 既存のファイルを削除 */
-			if (existsSync(dest)) {
-				await fs.rm(dest, { recursive: true });
+			if (existsSync(faviconAssetsDest)) {
+				await fs.rm(faviconAssetsDest, { recursive: true });
 			}
 
 			/* 既存のhtmlを削除 */
@@ -56,7 +55,7 @@ export function faviconPlugin(options: Options): Plugin {
 			}
 
 			/* faviconのdirectoryをstaticに作成 */
-			await fs.mkdir(dest, { recursive: true });
+			await fs.mkdir(faviconAssetsDest, { recursive: true });
 			await fs.mkdir(getParentDirPath(htmlDest), { recursive: true });
 
 			/* faviconsの生成 */
@@ -64,9 +63,9 @@ export function faviconPlugin(options: Options): Plugin {
 
 			await Promise.all([
 				/* 生成したfavicon 画像を書き出し */
-				...response.images.map(async image => fs.writeFile(path.resolve(dest, image.name), image.contents)),
+				...response.images.map(async image => fs.writeFile(path.resolve(faviconAssetsDest, image.name), image.contents)),
 				/* 生成したfavicon ファイルを書き出し */
-				...response.files.map(async file => fs.writeFile(path.resolve(dest, file.name), file.contents)),
+				...response.files.map(async file => fs.writeFile(path.resolve(faviconAssetsDest, file.name), file.contents)),
 				/* 生成したhtmlを書き出し 末尾にcache keyを追加 */
 				fs.writeFile(htmlDest, response.html.join('\n') + cacheKey),
 			]);

@@ -31,7 +31,7 @@ export default defineConfig({
 		faviconPlugin({
 			/** ===== faviconsの設定 ===== */
 			imgSrc: relativePath('./src/assets/vimjp-radio-cover-art/3000x3000-fs8.png'),
-			dest: relativePath('./static/favicons'),
+			faviconAssetsDest: relativePath('./static/favicons'),
 			htmlDest: relativePath('./src/assets/favicons.html'),
 			/** ========================= */
 
