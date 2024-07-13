@@ -38,7 +38,6 @@
 
 <style>
 /*
-* css variable でglobal要素に設定する
 * @apply は --at-apply で代用する https://unocss.dev/transformers/directives#at-apply
 */
 
