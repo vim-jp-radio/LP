@@ -38,13 +38,13 @@
 
 <style>
 /*
-* css variable でglobal要素に設定する
 * @apply は --at-apply で代用する https://unocss.dev/transformers/directives#at-apply
 */
-
-:global(body) {
-	--at-apply: bg-LP-backgroud p-safe min-h-safe;
-	margin: 0;
-	min-width: 300px; /* 実際には320pxだが、スクロールバー等を考慮して300pxとしておく */
+:global {
+	body {
+		--at-apply: bg-LP-backgroud p-safe min-h-safe;
+		margin: 0;
+		min-width: 300px; /* 実際には320pxだが、スクロールバー等を考慮して300pxとしておく */
+	}
 }
 </style>
