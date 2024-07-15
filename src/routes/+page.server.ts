@@ -1,3 +1,4 @@
+import { error } from '@sveltejs/kit';
 import { getTweet } from 'sveltekit-tweet/server';
 import type { ITweet } from 'sveltekit-tweet';
 
@@ -13,16 +14,12 @@ const TWEET_IDS = [
 /* tweet を取得する。 */
 export async function load() {
 	const tweets: ITweet[] = [];
-		try {
-			const tweet = await getTweet(id);
-			if (tweet != null) {
-				tweets.push(tweet);
-			}
-		}
-		catch (error) {
-			console.error(error);
 	for (const id of TWEET_IDS) {
+		const tweet = await getTweet(id);
+		if (tweet == null) {
+			error(404, `Tweet not found: ${id}`);
 		}
+		tweets.push(tweet);
 	}
 
 	return { tweets };
