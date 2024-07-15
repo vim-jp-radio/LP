@@ -5,6 +5,7 @@
 	import Platforms from './Platforms.svelte';
 	import Personalities from './Personalities.svelte';
 	import Footer from './Footer.svelte';
+	import ListenersTweets from './ListenersTweets.svelte';
 
 	/* +page.server.ts からデータを取得 */
 	const { data } = $props();
@@ -17,9 +18,7 @@
 	<Platforms />
 	<Personalities />
 	<RadioLetter />
-	{#await import('./ListenersTweets.svelte') then { default: ListenersTweets }}
-		<ListenersTweets tweets={data.tweets} />
-	{/await}
+	<ListenersTweets tweets={data.tweets} />
 </main>
 
 <Footer />
