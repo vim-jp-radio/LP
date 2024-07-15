@@ -7,10 +7,7 @@
 
 <section>
 	<Heading title='リスナーの声' />
-	<div
-		data-theme='dark'
-		uno-grid='~ cols-1 gap-4'
-	>
+	<div data-theme='dark'>
 		{#each tweets as tweet (tweet.id_str)}
 			<Tweet {tweet} />
 		{/each}
