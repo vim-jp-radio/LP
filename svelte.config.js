@@ -20,8 +20,13 @@ const config = {
 		budouxPreprocess({ language: 'ja', attribute: 'data-budoux' }), // budouxを使って日本語の改行をいい感じにする。 https://github.com/google/budoux/tree/main/javascript https://github.com/ryoppippi/svelte-preprocess-budoux
 	],
 
-	compilerOptions: {
-		runes: true,
+	vitePlugin: {
+		dynamicCompileOptions({ filename }) {
+			/* sveltekit-tweet が rune に対応していないので、user script のみ rune を強制する https://github.com/sveltejs/svelte/issues/9632#issuecomment-1825498213 */
+			if (!filename.includes('node_modules')) {
+				return { runes: true };
+			}
+		},
 	},
 
 	kit: {
