@@ -37,13 +37,20 @@
 	});
 
 	$effect(() => {
+		let cancelAnimation: (() => void) | undefined;
 		if (
 			circles?.length > 0
 			&& canvas != null
 			&& ctx != null
 		) {
-			animate(canvas, ctx, circles);
+			cancelAnimation = animate(canvas, ctx, circles);
 		}
+
+		return () => {
+			if (cancelAnimation != null) {
+				cancelAnimation();
+			}
+		};
 	});
 </script>
 
