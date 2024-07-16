@@ -45,6 +45,7 @@
 			animate(canvas, ctx, circles);
 		}
 
+		/** ページ遷移時にアニメーションをキャンセル */
 		return () => {
 			cancelAnimate();
 		};
