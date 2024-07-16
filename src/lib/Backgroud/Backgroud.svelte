@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import { animate, createCircles } from './circle.js';
+	import { animate, cancelAnimate, createCircles } from './circle.js';
 	import { PrefersReducedMotion } from '$lib/utils/runes.svelte.js';
 
 	/**
@@ -37,19 +37,16 @@
 	});
 
 	$effect(() => {
-		let cancelAnimation: (() => void) | undefined;
 		if (
 			circles?.length > 0
 			&& canvas != null
 			&& ctx != null
 		) {
-			cancelAnimation = animate(canvas, ctx, circles);
+			animate(canvas, ctx, circles);
 		}
 
 		return () => {
-			if (cancelAnimation != null) {
-				cancelAnimation();
-			}
+			cancelAnimate();
 		};
 	});
 </script>
