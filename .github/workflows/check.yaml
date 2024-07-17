@@ -30,4 +30,6 @@ jobs:
       - name: Run check
         run: pnpm check
       - name: Run lint
-        run: pnpm lint
+        run: |
+          pnpm lint
+          pnpm lint:renovate
