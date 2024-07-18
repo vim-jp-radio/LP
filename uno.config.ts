@@ -18,6 +18,13 @@ export default defineConfig({
 		transformerDirectives(), // @apply等のディレクティブを使うための設定。https://unocss.dev/presets/directives
 		transformerVariantGroup(), // hoverなど `:` で始まるクラスをまとめる設定。https://unocss.dev/presets/variant-group
 	],
+	content: {
+		pipeline: {
+			exclude: [
+				/sveltekit-tweet/,
+			],
+		},
+	},
 	theme: {
 		colors: {
 			'LP-blue': '#1ecfff',
