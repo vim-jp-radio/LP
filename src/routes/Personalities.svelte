@@ -36,7 +36,7 @@
 		>
 			<!-- 文字列を渡すだけだとBudouXが処理できない（コードにあるtagをpreprocessしなければならない都合）ので、pタグで囲む -->
 			<p data-budoux uno-text>
-				Vim / Neovim のプラグイン開発用エコシステム Denops の作者。
+				Vim/Neovim のプラグイン開発用エコシステム Denops の作者。
 				小学校の時に「ゲームを作ってみたい」と思ったことがきっかけでプログラミングにハマる。
 				私生活のほとんどの時間をプログラミングに費やした。『Software Design』への寄稿や、『VimConf』、『Deno Fest』など多数のイベント登壇あり。トヨクモ株式会社の『Thanks OSS Award 2022』を受賞。
 				好物は 🍣 と 🍺 と 🍜 。
