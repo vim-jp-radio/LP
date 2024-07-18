@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import { animate, createCircles } from './circle.js';
+	import { animate, cancelAnimate, createCircles } from './circle.js';
 	import { PrefersReducedMotion } from '$lib/utils/runes.svelte.js';
 
 	/**
@@ -44,6 +44,11 @@
 		) {
 			animate(canvas, ctx, circles);
 		}
+
+		/** ページ遷移時にアニメーションをキャンセル */
+		return () => {
+			cancelAnimate();
+		};
 	});
 </script>
 

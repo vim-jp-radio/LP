@@ -147,16 +147,27 @@ function createCircles(
 	return circles;
 }
 
+/** 現在のアニメーションフレーム */
+let frame: number | undefined;
+
 function animate(
 	canvas: HTMLCanvasElement,
 	ctx: CanvasRenderingContext2D,
 	circles: Circle[],
 ): void {
-	requestAnimationFrame(() => animate(canvas, ctx, circles));
+	frame = requestAnimationFrame(() => animate(canvas, ctx, circles));
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	circles.forEach(circle => circle.update(circles));
 	ctx.save();
 	ctx.restore();
 }
 
-export { createCircles, animate };
+function cancelAnimate(): void {
+	if (frame == null) {
+		return;
+	}
+	cancelAnimationFrame(frame);
+	frame = undefined;
+}
+
+export { createCircles, animate, cancelAnimate };
