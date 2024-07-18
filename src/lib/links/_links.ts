@@ -20,3 +20,14 @@ export const VIM_JP_RADIO_INFO = {
 	titleWithTagline: `エンジニアの楽園 vim-jpラジオ | 毎週月曜配信の技術系ポッドキャスト`,
 	description: `エンジニアが集まるインターネット上のコミュニティvim-jpから生まれた初の音声プログラム。vim-jpはプログラミングから子育てに至るまで無数のチャンネルを抱えたコミュニティです。そんなコミュニティの面白さを生かして、各分野の様々なゲストを交えながら楽しく雑談していきます。`,
 } as const satisfies Record<string, string>;
+
+/** リスナーの声で表示する X ID のリスト。 */
+export const LISTENERS_TWEET_IDS = [
+	'1810659027053154344', // @yoosee
+	'1810553887545532868', // @engineer_tetta
+	'1810159818499567970', // @Matthew238
+	'1810160793507483680', // @mattn_jp
+	'1811006835534811272', // @ken_c_lo
+	'1810492472386257249', // @the_uhooi
+	'1810824539372409032', // @hirataq__
+] as const satisfies string[];
