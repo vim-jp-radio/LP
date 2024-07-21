@@ -50,6 +50,10 @@ const config = {
 		},
 
 		paths: {
+			/**
+      @see https://developers.cloudflare.com/pages/configuration/build-configuration#environment-variables
+      @see https://kit.svelte.jp/docs/configuration#paths
+			 */
 			assets: isDevelopment
 				? '' // もし開発環境ならば、相対パスでアクセスする
 				: process.env.CF_PAGES_BRANCH === 'main'
