@@ -6,7 +6,7 @@
 
 	const _defaultClassName = `h-full object-scale-down w-auto`;
 	const _className = className ?? _defaultClassName;
-	const loading = rest.loading ?? 'lazy';
+	const loading: typeof rest.loading = 'loading' in rest ? rest.loading : `lazy`;
 
 </script>
 {#snippet image()}
