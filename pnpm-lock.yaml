@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  sveltekit-tweet@0.0.18:
+    hash: kakmzkcvrejldgrmunenwizfwm
+    path: patches/sveltekit-tweet@0.0.18.patch
+
 importers:
 
   .:
@@ -80,7 +85,7 @@ importers:
         version: 1.0.3(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1)))(svelte@5.0.0-next.175)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1)))
       sveltekit-tweet:
         specifier: ^0.0.18
-        version: 0.0.18(svelte@5.0.0-next.175)
+        version: 0.0.18(patch_hash=kakmzkcvrejldgrmunenwizfwm)(svelte@5.0.0-next.175)
       tslib:
         specifier: ^2.6.3
         version: 2.6.3
@@ -11321,7 +11326,7 @@ snapshots:
       '@sveltejs/kit': 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1)))(svelte@5.0.0-next.175)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.1))
       html-minifier-terser: 7.2.0
 
-  sveltekit-tweet@0.0.18(svelte@5.0.0-next.175):
+  sveltekit-tweet@0.0.18(patch_hash=kakmzkcvrejldgrmunenwizfwm)(svelte@5.0.0-next.175):
     dependencies:
       date-fns: 2.30.0
       scn: 1.0.19
