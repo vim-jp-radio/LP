@@ -1,3 +1,4 @@
+import { on } from 'svelte/events';
 import { browser } from '$app/environment';
 
 /**
@@ -27,7 +28,8 @@ export class PrefersReducedMotion {
 
 		this.#mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 		this.#isReduced = this.#mediaQuery.matches;
-		this.#mediaQuery.addEventListener('change', (event) => {
+		on(this.#mediaQuery, 'change', (_event) => {
+			const event = _event as MediaQueryListEvent;
 			this.#isReduced = event.matches;
 		});
 	}
