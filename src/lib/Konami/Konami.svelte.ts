@@ -1,3 +1,4 @@
+import { on } from 'svelte/events';
 import { browser } from '$app/environment';
 
 /** Konami コマンド */
@@ -43,29 +44,27 @@ export class Konami {
 			return;
 		}
 
-		window.addEventListener(
-			'keyup',
-			({ key }) => {
-				const now = Date.now();
+		on(window, 'keyup', (_event) => {
+			const { key } = _event as KeyboardEvent;
+			const now = Date.now();
 
-				/** 有効なキーが入力されていない場合はコンボをリセット */
-				if (!isKonamiCode(key)) {
-					this._log('combo has reset because of invalid key');
-					this.reset();
-					return;
-				}
+			/** 有効なキーが入力されていない場合はコンボをリセット */
+			if (!isKonamiCode(key)) {
+				this._log('combo has reset because of invalid key');
+				this.reset();
+				return;
+			}
 
-				/** 入力と入力間の時間がタイムアウトを超えた場合はコンボをリセット */
-				if (now - this.#time > timeout) {
-					this._log('combo has reset because of timeout');
-					this.reset();
-				}
+			/** 入力と入力間の時間がタイムアウトを超えた場合はコンボをリセット */
+			if (now - this.#time > timeout) {
+				this._log('combo has reset because of timeout');
+				this.reset();
+			}
 
-				/** コンボにキーを追加 */
-				this.#combo.push(key);
-				this.#time = now;
-			},
-		);
+			/** コンボにキーを追加 */
+			this.#combo.push(key);
+			this.#time = now;
+		});
 	}
 
 	/** Konami コマンドが入力されたかどうか */
