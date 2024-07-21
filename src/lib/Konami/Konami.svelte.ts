@@ -88,6 +88,6 @@ export class Konami {
 	 * @internal
 	 */
 	_log(...args: unknown[]) {
-		console.info(...args); // eslint-disable-line no-console
+		console.log(...args); // eslint-disable-line no-console
 	}
 }

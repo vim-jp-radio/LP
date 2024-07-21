@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 import UnoCss from 'unocss/vite';
 import extractorSvelte from '@unocss/extractor-svelte';
 import { cloudflareRedirect } from '@ryoppippi/vite-plugin-cloudflare-redirect';
+import { isProduction } from 'std-env';
 import { faviconPlugin } from './plugins';
 
 import UnocssConfig from './uno.config.js';
@@ -24,6 +25,9 @@ if (typeof background !== 'string') {
 }
 
 export default defineConfig({
+	esbuild: {
+		pure: isProduction ? ['console.info'] : [],
+	},
 	plugins: [
 		/* favicon と metadata の設定 */
 		faviconPlugin({
