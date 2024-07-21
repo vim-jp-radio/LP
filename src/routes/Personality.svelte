@@ -60,6 +60,7 @@
 		<enhanced:img
 			class='float-right ml-10px h-auto w-100px'
 			alt={name}
+			loading='lazy'
 			src={imgSrc}
 		/>
 

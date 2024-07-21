@@ -14,6 +14,7 @@
 		<img
 			class={_className}
 			{alt}
+			loading='lazy'
 			src={icon}
 			{...rest}
 		/>
@@ -22,6 +23,7 @@
 	<enhanced:img
 		class={_className}
 		{alt}
+		loading='lazy'
 		src={icon}
 		{...rest}
 	/>

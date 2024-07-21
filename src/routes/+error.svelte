@@ -23,6 +23,7 @@
 		<enhanced:img
 			class:animate-spin={konami.activated}
 			alt='error logo'
+			loading='lazy'
 			src='$/assets/alisue/beer.png'
 		/>
 		<span uno-text>
