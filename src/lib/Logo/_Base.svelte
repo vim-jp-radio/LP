@@ -6,6 +6,7 @@
 
 	const _defaultClassName = `h-full object-scale-down w-auto`;
 	const _className = className ?? _defaultClassName;
+	const loading = rest.loading ?? 'lazy';
 
 </script>
 {#snippet image()}
@@ -14,7 +15,7 @@
 		<img
 			class={_className}
 			{alt}
-			loading='lazy'
+			{loading}
 			src={icon}
 			{...rest}
 		/>
@@ -23,7 +24,7 @@
 	<enhanced:img
 		class={_className}
 		{alt}
-		loading='lazy'
+		{loading}
 		src={icon}
 		{...rest}
 	/>
