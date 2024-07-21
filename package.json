@@ -50,5 +50,10 @@
 		"typescript-svelte-plugin": "^0.3.39",
 		"unocss": "^0.60.4",
 		"vite": "^5.3.3"
+	},
+	"pnpm": {
+		"patchedDependencies": {
+			"sveltekit-tweet@0.0.18": "patches/sveltekit-tweet@0.0.18.patch"
+		}
 	}
 }
