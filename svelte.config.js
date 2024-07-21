@@ -50,7 +50,15 @@ const config = {
 		},
 
 		paths: {
-			assets: isDevelopment ? '' : process.env.CF_PAGES_URL,
+			/**
+      @see https://developers.cloudflare.com/pages/configuration/build-configuration#environment-variables
+      @see https://kit.svelte.jp/docs/configuration#paths
+			 */
+			assets: isDevelopment
+				? '' // もし開発環境ならば、相対パスでアクセスする
+				: process.env.CF_PAGES_BRANCH === 'main'
+					? `https:///vim-jp-radio.com` // もし本番環境で、main ブランチならば、vim-jp-radio.com からアクセスする
+					: process.env.CF_PAGES_URL, // それ以外の場合は、CF_PAGES_URL からアクセスする
 		},
 	},
 };
