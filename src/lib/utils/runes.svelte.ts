@@ -4,7 +4,7 @@ import { browser } from '$app/environment';
 /**
  *
  * MediaQueryの`prefers-reduced-motion`を監視する
- * @see https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data
+ * @see https://developer.mozilla.org/ja/docs/Web/CSS/@media/prefers-reduced-motion
  *
  * @example
  * ```svelte
