@@ -1,5 +1,6 @@
 <script lang='ts'>
 	import { Heading } from '$/lib/Heading';
+	import { LINKS } from '$/lib/links';
 	import * as Logo from '$lib/Logo';
 </script>
 
@@ -11,7 +12,7 @@
 {/snippet}
 
 {#snippet audeeLink()}
-<a data-budoux href='https://audee.jp/program/show/300008578' target='_blank' uno-button>AuDeeで聞く</a>
+<a data-budoux href={LINKS.AuDee.url} target='_blank' uno-button>AuDeeで聞く</a>
 {/snippet}
 
 {#snippet audeeLogo()}
