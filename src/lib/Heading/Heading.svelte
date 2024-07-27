@@ -15,9 +15,9 @@
 		uno-text='LP-blue 3xl'
 	>
 		{title}<span
-			class='group-hover:visible'
 			uno-color-LP-dark-gray
-			uno-i-ph='hash-bold'
+			uno-group-hover-visible
+			uno-i-ph-hash-bold
 			uno-invisible
 			uno-ml-1
 			uno-text-2xl
