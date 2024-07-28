@@ -4,7 +4,7 @@
 
 	import Meta from './Meta.svelte';
 	import EasterEgg from './EasterEgg.svelte';
-	import { Backgroud } from '$lib/Backgroud';
+	// import { Backgroud } from '$lib/Backgroud';
 
 	const { children } = $props();
 </script>
@@ -14,7 +14,7 @@
 <!-- EASTER_EGG🐰🥚 -->
 <EasterEgg />
 
-<Backgroud />
+<!-- <Backgroud /> -->
 <div
 	uno-max-w-600px
 	uno-mx-auto
