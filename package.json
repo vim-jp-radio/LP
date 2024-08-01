@@ -44,16 +44,10 @@
 		"svelte-eslint-parser": "^0.36.0",
 		"svelte-preprocess-budoux": "^0.4.0",
 		"sveltekit-html-minifier": "^1.0.3",
-		"sveltekit-tweet": "^0.0.18",
 		"tslib": "^2.6.3",
 		"typescript": "^5.5.4",
 		"typescript-svelte-plugin": "^0.3.39",
 		"unocss": "^0.60.4",
 		"vite": "^5.3.4"
-	},
-	"pnpm": {
-		"patchedDependencies": {
-			"sveltekit-tweet@0.0.18": "patches/sveltekit-tweet@0.0.18.patch"
-		}
 	}
 }
