@@ -2,10 +2,7 @@
 	import Personality from './Personality.svelte';
 	import { Heading } from '$/lib/Heading';
 
-	// @ts-ignore
 	import tomoyaImg from '$/assets/avatar/tomoya.jpg?enhanced';
-
-	// @ts-ignore
 	import lambdalisueImg from '$/assets/avatar/lambdalisue.png?enhanced';
 </script>
 
