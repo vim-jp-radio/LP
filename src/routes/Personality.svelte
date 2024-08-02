@@ -1,6 +1,9 @@
 <script lang='ts'>
 	import type { Snippet } from 'svelte';
 	import * as Logo from '$lib/Logo';
+	import type dummyEnhanced from '*?enhanced';
+
+	type Picture = typeof dummyEnhanced;
 
 	const {
 		name,
@@ -11,7 +14,7 @@
 		homeLink,
 	}: {
 		name: string;
-		imgSrc: string;
+		imgSrc: Picture;
 		children: Snippet<[]>;
 		xLink?: string;
 		ghLink?: string;
