@@ -80,7 +80,7 @@ importers:
         version: 1.0.3(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))
       sveltweet:
         specifier: ^0.2.1
-        version: 0.2.1(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(svelte@5.0.0-next.175)
+        version: 0.2.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(svelte@5.0.0-next.175)
       tslib:
         specifier: ^2.6.3
         version: 2.6.3
@@ -4861,8 +4861,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': '>=1.5.0 <3.0.0'
 
-  sveltweet@0.2.1:
-    resolution: {integrity: sha512-uZ9zpeuohsmqkJtHdsloBYLHGwTSoMHZKUJlGliS/DpQege+w+JhffHv1q9OCaCWqSFkgxw0/ZDJTJUCimywiw==}
+  sveltweet@0.2.2:
+    resolution: {integrity: sha512-wYg4LN9o4qhUqV0c+SYumhgxbtMVj1Te7/zeW5P9ZRxddajxPn8hzDYd4TChmM7LKa0a5gvi0lcdRYI491jLUg==}
     peerDependencies:
       '@sveltejs/kit': ^2.5.18
       svelte: ^5.0.0
@@ -11675,7 +11675,7 @@ snapshots:
       '@sveltejs/kit': 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))
       html-minifier-terser: 7.2.0
 
-  sveltweet@0.2.1(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(svelte@5.0.0-next.175):
+  sveltweet@0.2.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(svelte@5.0.0-next.175):
     dependencies:
       '@sveltejs/kit': 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))
       esm-env: 1.0.0
