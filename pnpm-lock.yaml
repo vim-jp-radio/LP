@@ -14,7 +14,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.23.2
-        version: 2.24.1(@unocss/eslint-plugin@0.61.9(eslint@9.8.0)(typescript@5.5.4))(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.2(eslint@9.8.0))(eslint-plugin-svelte@2.43.0(eslint@9.8.0)(svelte@5.0.0-next.175))(eslint@9.8.0)(svelte-eslint-parser@0.36.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)
+        version: 2.24.1(@unocss/eslint-plugin@0.61.9(eslint@9.8.0)(typescript@5.5.4))(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.2(eslint@9.8.0))(eslint-plugin-svelte@2.43.0(eslint@9.8.0)(svelte@5.0.0-next.175))(eslint@9.8.0)(svelte-eslint-parser@0.40.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)
       '@iconify-json/ph':
         specifier: ^1.1.13
         version: 1.1.13
@@ -68,10 +68,10 @@ importers:
         version: 5.0.0-next.175
       svelte-check:
         specifier: ^3.8.4
-        version: 3.8.5(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.175)
+        version: 3.8.5(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.40))(postcss@8.4.40)(svelte@5.0.0-next.175)
       svelte-eslint-parser:
-        specifier: ^0.36.0
-        version: 0.36.0(svelte@5.0.0-next.175)
+        specifier: ^0.40.0
+        version: 0.40.0(svelte@5.0.0-next.175)
       svelte-preprocess-budoux:
         specifier: ^0.4.0
         version: 0.4.1
@@ -92,7 +92,7 @@ importers:
         version: 0.3.40(svelte@5.0.0-next.175)(typescript@5.5.4)
       unocss:
         specifier: ^0.61.0
-        version: 0.61.9(postcss@8.4.39)(rollup@4.19.2)(vite@5.3.5(@types/node@20.14.14)(terser@5.31.3))
+        version: 0.61.9(postcss@8.4.40)(rollup@4.19.2)(vite@5.3.5(@types/node@20.14.14)(terser@5.31.3))
       vite:
         specifier: ^5.3.4
         version: 5.3.5(@types/node@20.14.14)(terser@5.31.3)
@@ -4894,11 +4894,11 @@ packages:
     peerDependencies:
       svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
 
-  svelte-eslint-parser@0.36.0:
-    resolution: {integrity: sha512-/6YmUSr0FAVxW8dXNdIMydBnddPMHzaHirAZ7RrT21XYdgGGZMh0LQG6CZsvAFS4r2Y4ItUuCQc8TQ3urB30mQ==}
+  svelte-eslint-parser@0.40.0:
+    resolution: {integrity: sha512-M+v1HhC5T1WKYVxWexUCS4o6oIBS88XKzOZuhl2ew+eGxol7eC21e+VE8TC4rXJ3iT3iXT0qlZsZcpKjVo5/zQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
-      svelte: ^3.37.0 || ^4.0.0 || ^5.0.0-next.115
+      svelte: ^3.37.0 || ^4.0.0 || ^5.0.0-next.181
     peerDependenciesMeta:
       svelte:
         optional: true
@@ -5528,7 +5528,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@antfu/eslint-config@2.24.1(@unocss/eslint-plugin@0.61.9(eslint@9.8.0)(typescript@5.5.4))(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.2(eslint@9.8.0))(eslint-plugin-svelte@2.43.0(eslint@9.8.0)(svelte@5.0.0-next.175))(eslint@9.8.0)(svelte-eslint-parser@0.36.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)':
+  '@antfu/eslint-config@2.24.1(@unocss/eslint-plugin@0.61.9(eslint@9.8.0)(typescript@5.5.4))(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.2(eslint@9.8.0))(eslint-plugin-svelte@2.43.0(eslint@9.8.0)(svelte@5.0.0-next.175))(eslint@9.8.0)(svelte-eslint-parser@0.40.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)':
     dependencies:
       '@antfu/install-pkg': 0.3.3
       '@clack/prompts': 0.7.0
@@ -5548,7 +5548,7 @@ snapshots:
       eslint-plugin-markdown: 5.1.0(eslint@9.8.0)
       eslint-plugin-n: 17.10.1(eslint@9.8.0)
       eslint-plugin-no-only-tests: 3.1.0
-      eslint-plugin-perfectionist: 3.1.0(eslint@9.8.0)(svelte-eslint-parser@0.36.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.8.0))
+      eslint-plugin-perfectionist: 3.1.0(eslint@9.8.0)(svelte-eslint-parser@0.40.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.8.0))
       eslint-plugin-regexp: 2.6.0(eslint@9.8.0)
       eslint-plugin-toml: 0.11.1(eslint@9.8.0)
       eslint-plugin-unicorn: 55.0.0(eslint@9.8.0)
@@ -5570,7 +5570,7 @@ snapshots:
       '@unocss/eslint-plugin': 0.61.9(eslint@9.8.0)(typescript@5.5.4)
       eslint-plugin-format: 0.1.2(eslint@9.8.0)
       eslint-plugin-svelte: 2.43.0(eslint@9.8.0)(svelte@5.0.0-next.175)
-      svelte-eslint-parser: 0.36.0(svelte@5.0.0-next.175)
+      svelte-eslint-parser: 0.40.0(svelte@5.0.0-next.175)
     transitivePeerDependencies:
       - '@vue/compiler-sfc'
       - supports-color
@@ -8170,7 +8170,7 @@ snapshots:
       gzip-size: 6.0.0
       sirv: 2.0.4
 
-  '@unocss/postcss@0.61.9(postcss@8.4.39)':
+  '@unocss/postcss@0.61.9(postcss@8.4.40)':
     dependencies:
       '@unocss/config': 0.61.9
       '@unocss/core': 0.61.9
@@ -8178,7 +8178,7 @@ snapshots:
       css-tree: 2.3.1
       fast-glob: 3.3.2
       magic-string: 0.30.11
-      postcss: 8.4.39
+      postcss: 8.4.40
     transitivePeerDependencies:
       - supports-color
 
@@ -9333,7 +9333,7 @@ snapshots:
 
   eslint-plugin-no-only-tests@3.1.0: {}
 
-  eslint-plugin-perfectionist@3.1.0(eslint@9.8.0)(svelte-eslint-parser@0.36.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.8.0)):
+  eslint-plugin-perfectionist@3.1.0(eslint@9.8.0)(svelte-eslint-parser@0.40.0(svelte@5.0.0-next.175))(svelte@5.0.0-next.175)(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.8.0)):
     dependencies:
       '@typescript-eslint/types': 8.0.0
       '@typescript-eslint/utils': 8.0.0(eslint@9.8.0)(typescript@5.5.4)
@@ -9342,7 +9342,7 @@ snapshots:
       natural-compare-lite: 1.4.0
     optionalDependencies:
       svelte: 5.0.0-next.175
-      svelte-eslint-parser: 0.36.0(svelte@5.0.0-next.175)
+      svelte-eslint-parser: 0.40.0(svelte@5.0.0-next.175)
       vue-eslint-parser: 9.4.3(eslint@9.8.0)
     transitivePeerDependencies:
       - supports-color
@@ -10956,13 +10956,21 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.39
 
+  postcss-load-config@3.1.4(postcss@8.4.40):
+    dependencies:
+      lilconfig: 2.1.0
+      yaml: 1.10.2
+    optionalDependencies:
+      postcss: 8.4.40
+    optional: true
+
   postcss-safe-parser@6.0.0(postcss@8.4.39):
     dependencies:
       postcss: 8.4.39
 
-  postcss-scss@4.0.9(postcss@8.4.39):
+  postcss-scss@4.0.9(postcss@8.4.40):
     dependencies:
-      postcss: 8.4.39
+      postcss: 8.4.40
 
   postcss-selector-parser@6.1.1:
     dependencies:
@@ -11722,14 +11730,14 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@3.8.5(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.175):
+  svelte-check@3.8.5(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.40))(postcss@8.4.40)(svelte@5.0.0-next.175):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 3.6.0
       picocolors: 1.0.1
       sade: 1.8.1
       svelte: 5.0.0-next.175
-      svelte-preprocess: 5.1.4(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.175)(typescript@5.5.4)
+      svelte-preprocess: 5.1.4(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.40))(postcss@8.4.40)(svelte@5.0.0-next.175)(typescript@5.5.4)
       typescript: 5.5.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -11742,13 +11750,13 @@ snapshots:
       - stylus
       - sugarss
 
-  svelte-eslint-parser@0.36.0(svelte@5.0.0-next.175):
+  svelte-eslint-parser@0.40.0(svelte@5.0.0-next.175):
     dependencies:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      postcss: 8.4.39
-      postcss-scss: 4.0.9(postcss@8.4.39)
+      postcss: 8.4.40
+      postcss-scss: 4.0.9(postcss@8.4.40)
     optionalDependencies:
       svelte: 5.0.0-next.175
 
@@ -11757,8 +11765,8 @@ snapshots:
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
-      postcss: 8.4.39
-      postcss-scss: 4.0.9(postcss@8.4.39)
+      postcss: 8.4.40
+      postcss-scss: 4.0.9(postcss@8.4.40)
     optionalDependencies:
       svelte: 5.0.0-next.175
 
@@ -11788,7 +11796,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  svelte-preprocess@5.1.4(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.175)(typescript@5.5.4):
+  svelte-preprocess@5.1.4(@babel/core@7.25.2)(postcss-load-config@3.1.4(postcss@8.4.40))(postcss@8.4.40)(svelte@5.0.0-next.175)(typescript@5.5.4):
     dependencies:
       '@types/pug': 2.0.10
       detect-indent: 6.1.0
@@ -11798,8 +11806,8 @@ snapshots:
       svelte: 5.0.0-next.175
     optionalDependencies:
       '@babel/core': 7.25.2
-      postcss: 8.4.39
-      postcss-load-config: 3.1.4(postcss@8.4.39)
+      postcss: 8.4.40
+      postcss-load-config: 3.1.4(postcss@8.4.40)
       typescript: 5.5.4
 
   svelte2tsx@0.7.15(svelte@5.0.0-next.175)(typescript@5.5.4):
@@ -12149,13 +12157,13 @@ snapshots:
 
   universalify@2.0.1: {}
 
-  unocss@0.61.9(postcss@8.4.39)(rollup@4.19.2)(vite@5.3.5(@types/node@20.14.14)(terser@5.31.3)):
+  unocss@0.61.9(postcss@8.4.40)(rollup@4.19.2)(vite@5.3.5(@types/node@20.14.14)(terser@5.31.3)):
     dependencies:
       '@unocss/astro': 0.61.9(rollup@4.19.2)(vite@5.3.5(@types/node@20.14.14)(terser@5.31.3))
       '@unocss/cli': 0.61.9(rollup@4.19.2)
       '@unocss/core': 0.61.9
       '@unocss/extractor-arbitrary-variants': 0.61.9
-      '@unocss/postcss': 0.61.9(postcss@8.4.39)
+      '@unocss/postcss': 0.61.9(postcss@8.4.40)
       '@unocss/preset-attributify': 0.61.9
       '@unocss/preset-icons': 0.61.9
       '@unocss/preset-mini': 0.61.9
