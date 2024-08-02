@@ -23,7 +23,6 @@
 	{...rest}
 />
 {:else}
-	<!-- svelte-ignore element_invalid_self_closing_tag -->
 	<enhanced:img
 		class={_className}
 		{alt}
