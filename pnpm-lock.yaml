@@ -74,7 +74,7 @@ importers:
         version: 0.36.0(svelte@5.0.0-next.175)
       svelte-preprocess-budoux:
         specifier: ^0.4.0
-        version: 0.4.0
+        version: 0.4.1
       sveltekit-html-minifier:
         specifier: ^1.0.3
         version: 1.0.3(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))
@@ -4755,8 +4755,8 @@ packages:
     peerDependencies:
       svelte: ^3.0.0 || ^4.0.0 || ^5.0.0-next.1
 
-  svelte-preprocess-budoux@0.4.0:
-    resolution: {integrity: sha512-kSCJbFb2taVNDsg+wZOIlT/d27kZ3/OU8ecbDtrzN3PLdJkXef11h258C11BzWA7RhqKTVzo0LSQpRJbXsyFjQ==}
+  svelte-preprocess-budoux@0.4.1:
+    resolution: {integrity: sha512-2uIgdWXO1qu6ekPhEVbOak/8/DR3+aUYqydjxA0qkSjrcWbyZUNK9Y8D/TAW3nn0nKgVuu+nQjO0MTv0eBulzg==}
 
   svelte-preprocess@5.1.4:
     resolution: {integrity: sha512-IvnbQ6D6Ao3Gg6ftiM5tdbR6aAETwjhHV+UKGf5bHGYR69RQvF1ho0JKPcbUON4vy4R7zom13jPjgdOWCQ5hDA==}
@@ -4805,8 +4805,8 @@ packages:
     resolution: {integrity: sha512-fWMI0O3PiKFWvTohAEJRkd6RymR3uo7PO8GrNfyx57KDvmmK1KYRzAdHjx+RsKl8oZhfWeJHiot6iebgY8lJng==}
     engines: {node: '>=18'}
 
-  svelte@5.0.0-next.195:
-    resolution: {integrity: sha512-aVWhY24T48SI3eAQCZ3RiLY12VP36KWxW0Jb9GqasZC4BVBZTsKJGAY+Uwg3Cv9Ce/QeV+FWoZrom5bJrjR6VA==}
+  svelte@5.0.0-next.207:
+    resolution: {integrity: sha512-04z2J15lO/syrvHeUt6oC9Bc3uIgbmTxLlKNeVX4nkoWTnaf6jRu1ZYLcwfb5Di2Jb3cTdkOwn0vbc3wojn1cQ==}
     engines: {node: '>=18'}
 
   sveltekit-html-minifier@1.0.3:
@@ -10123,7 +10123,7 @@ snapshots:
 
   magic-string-ast@0.6.2:
     dependencies:
-      magic-string: 0.30.10
+      magic-string: 0.30.11
 
   magic-string@0.30.10:
     dependencies:
@@ -11461,18 +11461,18 @@ snapshots:
     dependencies:
       svelte: 5.0.0-next.175
 
-  svelte-parse-markup@0.1.5(svelte@5.0.0-next.195):
+  svelte-parse-markup@0.1.5(svelte@5.0.0-next.207):
     dependencies:
-      svelte: 5.0.0-next.195
+      svelte: 5.0.0-next.207
 
-  svelte-preprocess-budoux@0.4.0:
+  svelte-preprocess-budoux@0.4.1:
     dependencies:
       budoux: 0.6.2
       defu: 6.1.4
       estree-walker: 3.0.3
       magic-string-ast: 0.6.2
-      svelte: 5.0.0-next.195
-      svelte-parse-markup: 0.1.5(svelte@5.0.0-next.195)
+      svelte: 5.0.0-next.207
+      svelte-parse-markup: 0.1.5(svelte@5.0.0-next.207)
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -11516,7 +11516,7 @@ snapshots:
       magic-string: 0.30.10
       zimmerframe: 1.1.2
 
-  svelte@5.0.0-next.195:
+  svelte@5.0.0-next.207:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -11529,7 +11529,7 @@ snapshots:
       esrap: 1.2.2
       is-reference: 3.0.2
       locate-character: 3.0.0
-      magic-string: 0.30.10
+      magic-string: 0.30.11
       zimmerframe: 1.1.2
 
   sveltekit-html-minifier@1.0.3(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))):
