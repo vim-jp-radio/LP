@@ -26,7 +26,7 @@ importers:
         version: 3.0.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))
       '@sveltejs/enhanced-img':
         specifier: ^0.3.0
-        version: 0.3.0(rollup@4.19.0)(svelte@5.0.0-next.175)
+        version: 0.3.1(rollup@4.19.0)(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))
       '@sveltejs/kit':
         specifier: ^2.5.18
         version: 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))
@@ -1549,8 +1549,11 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/enhanced-img@0.3.0':
-    resolution: {integrity: sha512-o8FdEUyJR/+LjUUl4sgB9QeM9rSGpOzTO6/CH0AmO/FgwWkcJdj/MwVNtr2F/AtaPgNfzvRpnExjklmuuDOtPA==}
+  '@sveltejs/enhanced-img@0.3.1':
+    resolution: {integrity: sha512-75A4YiXQp+GRc54EyiNOlhHnHt9O8e0CdCHLm3RWESLRaazd5OIciSa4SbKIo9DM84yGwSVShU0buyUmNJvgWg==}
+    peerDependencies:
+      svelte: ^4.0.0 || ^5.0.0-next.0
+      vite: '>= 5.0.0'
 
   '@sveltejs/kit@2.5.18':
     resolution: {integrity: sha512-+g06hvpVAnH7b4CDjhnTDgFWBKBiQJpuSmQeGYOuzbO3SC3tdYjRNlDCrafvDtKbGiT2uxY5Dn9qdEUGVZdWOQ==}
@@ -7595,14 +7598,15 @@ snapshots:
     dependencies:
       '@sveltejs/kit': 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))
 
-  '@sveltejs/enhanced-img@0.3.0(rollup@4.19.0)(svelte@5.0.0-next.175)':
+  '@sveltejs/enhanced-img@0.3.1(rollup@4.19.0)(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))':
     dependencies:
-      magic-string: 0.30.10
+      magic-string: 0.30.11
+      svelte: 5.0.0-next.175
       svelte-parse-markup: 0.1.5(svelte@5.0.0-next.175)
+      vite: 5.3.4(@types/node@20.14.14)(terser@5.31.3)
       vite-imagetools: 7.0.4(rollup@4.19.0)
     transitivePeerDependencies:
       - rollup
-      - svelte
 
   '@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3)))(svelte@5.0.0-next.175)(vite@5.3.4(@types/node@20.14.14)(terser@5.31.3))':
     dependencies:

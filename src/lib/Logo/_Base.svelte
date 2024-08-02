@@ -1,8 +1,11 @@
 <script lang='ts'>
 	import type { HTMLImgAttributes } from 'svelte/elements';
 	import { ensureURL } from '../utils/url';
+	import type dummyEnhanced from '*?enhanced';
 
-	const { link, icon, alt, class: className, ...rest }: { link?: string; icon: string } & Omit<HTMLImgAttributes, 'src'> = $props();
+	type Picture = typeof dummyEnhanced;
+
+	const { link, icon, alt, class: className, ...rest }: { link?: string; icon: string | Picture } & Omit<HTMLImgAttributes, 'src'> = $props();
 
 	const _defaultClassName = `h-full object-scale-down w-auto`;
 	const _className = className ?? _defaultClassName;
@@ -10,15 +13,15 @@
 
 </script>
 {#snippet image()}
-	{#if typeof icon === 'string' && icon.endsWith('.svg')}
-    <!-- svg image -->
-		<img
-			class={_className}
-			{alt}
-			{loading}
-			src={icon}
-			{...rest}
-		/>
+{#if typeof icon === 'string' && icon.endsWith('.svg')}
+<!-- svg image -->
+<img
+	class={_className}
+	{alt}
+	{loading}
+	src={icon}
+	{...rest}
+/>
 {:else}
 	<!-- svelte-ignore element_invalid_self_closing_tag -->
 	<enhanced:img
@@ -28,7 +31,7 @@
 		src={icon}
 		{...rest}
 	/>
-{/if}
+  {/if}
 {/snippet}
 
 {#if link != null}
