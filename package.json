@@ -41,7 +41,7 @@
 		"std-env": "^3.7.0",
 		"svelte": "5.0.0-next.175",
 		"svelte-check": "^3.8.4",
-		"svelte-eslint-parser": "^0.40.0",
+		"svelte-eslint-parser": "^0.41.0",
 		"svelte-preprocess-budoux": "^0.4.0",
 		"sveltekit-html-minifier": "^1.0.3",
 		"sveltweet": "^0.2.1",
