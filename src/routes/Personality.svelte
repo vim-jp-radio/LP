@@ -59,7 +59,6 @@
 
 	<div>
 		<!-- プロフ画像 -->
-		<!-- svelte-ignore element_invalid_self_closing_tag -->
 		<enhanced:img
 			class='float-right ml-10px h-auto w-100px'
 			alt={name}
