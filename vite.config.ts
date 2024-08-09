@@ -24,9 +24,6 @@ if (typeof background !== 'string') {
 }
 
 export default defineConfig({
-	ssr: {
-		noExternal: ['react-tweet'],
-	},
 	plugins: [
 		/* favicon と metadata の設定 */
 		faviconPlugin({
