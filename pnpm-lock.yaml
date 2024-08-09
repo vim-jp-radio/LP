@@ -17,7 +17,7 @@ importers:
         version: 2.24.1(@unocss/eslint-plugin@0.61.9(eslint@9.8.0)(typescript@5.5.4))(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.2(eslint@9.8.0))(eslint-plugin-svelte@2.43.0(eslint@9.8.0)(svelte@5.0.0-next.208))(eslint@9.8.0)(svelte-eslint-parser@0.41.0(svelte@5.0.0-next.208))(svelte@5.0.0-next.208)(typescript@5.5.4)
       '@iconify-json/ph':
         specifier: ^1.1.13
-        version: 1.1.13
+        version: 1.1.14
       '@ryoppippi/vite-plugin-cloudflare-redirect':
         specifier: npm:@jsr/ryoppippi__vite-plugin-cloudflare-redirect@^1.0.1
         version: '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.1(@types/node@20.14.14)(terser@5.31.3)'
@@ -897,8 +897,8 @@ packages:
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/ph@1.1.13':
-    resolution: {integrity: sha512-xtM4JJ63HCKj09WRqrBswXiHrpliBlqboWSZH8odcmqYXbvIFceU9/Til4V+MQr6+MoUC+KB72cxhky2+A6r/g==}
+  '@iconify-json/ph@1.1.14':
+    resolution: {integrity: sha512-s1hZVaxIpl40qLEhjqPRMcZl4A3M4fZ+77Fi+VuOb/eKkIHIMutAoBHIR+0a3l7psUweZQGj9hSyL2P5CIj6qA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -6861,7 +6861,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
-  '@iconify-json/ph@1.1.13':
+  '@iconify-json/ph@1.1.14':
     dependencies:
       '@iconify/types': 2.0.0
 
