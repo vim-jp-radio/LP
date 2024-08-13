@@ -36,6 +36,7 @@ export default defineConfig({
 			'LP-text-color': '#f8f9fa',
 		},
 		breakpoints: {
+			...presetUno()?.theme?.breakpoints ?? {}, // https://github.com/unocss/unocss/issues/3038
 			tiny: '375px',
 		},
 	},
