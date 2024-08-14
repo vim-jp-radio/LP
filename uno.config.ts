@@ -1,4 +1,5 @@
 import { isDevelopment } from 'std-env';
+import { deepMerge } from '@std/collections/deep-merge';
 import {
 	defineConfig,
 	presetAttributify,
@@ -25,9 +26,7 @@ export const theme = {
 
 export default defineConfig({
 	presets: [
-		presetUno({
-			extendTheme: theme, // `extendTheme` を用いないと deep-merge されない https://github.com/unocss/unocss/issues/3038#issuecomment-2287766398
-		}),
+		presetUno(),
 		presetAttributify({ prefix: 'uno-', prefixedOnly: true }), // class属性ではなく、属性地に直接書く設定。https://unocss.dev/presets/attributify
 		presetIcons({ autoInstall: isDevelopment }), // Iconを使うための設定。autoInstallも設定している。https://unocss.dev/presets/icons
 	],
@@ -42,6 +41,8 @@ export default defineConfig({
 			],
 		},
 	},
+	// `extendTheme` を用いないと deep-merge されない https://github.com/unocss/unocss/issues/3038#issuecomment-2287766398
+	extendTheme: _theme => deepMerge(_theme, theme),
 	rules: [
 		['p-safe', { padding: 'env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)' }],
 		['min-h-safe', { 'min-height': 'calc(100% + env(safe-area-inset-top))' }],

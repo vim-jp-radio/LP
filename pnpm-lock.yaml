@@ -21,6 +21,9 @@ importers:
       '@ryoppippi/vite-plugin-cloudflare-redirect':
         specifier: npm:@jsr/ryoppippi__vite-plugin-cloudflare-redirect@^1.0.1
         version: '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.1(@types/node@20.14.15)(terser@5.31.3)'
+      '@std/collections':
+        specifier: npm:@jsr/std__collections@^1.0.5
+        version: '@jsr/std__collections@1.0.5'
       '@sveltejs/adapter-static':
         specifier: ^3.0.2
         version: 3.0.4(@sveltejs/kit@2.5.22(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))
@@ -1024,6 +1027,9 @@ packages:
 
   '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.1':
     resolution: {integrity: sha512-2I4kbUt7bd8XK7ocnNk5KXvrpJ3i5YZDj4UrZ10uZWnGu0XKBMz7845XpnK6Hubpfw14UC4/gTrIq0Ns92M3tA==, tarball: https://npm.jsr.io/~/11/@jsr/ryoppippi__vite-plugin-cloudflare-redirect/1.0.1.tgz}
+
+  '@jsr/std__collections@1.0.5':
+    resolution: {integrity: sha512-bL+K7aDs6uozic3U6qw0ll3zAmIO/sxb+764Dbqiavv/yo4qXrTjJf75wkkPWUECsXvIjLm34xAone/O0P0tyw==, tarball: https://npm.jsr.io/~/11/@jsr/std__collections/1.0.5.tgz}
 
   '@kwsites/file-exists@1.1.1':
     resolution: {integrity: sha512-m9/5YGR18lIwxSFDwfE3oA7bWuq9kdau6ugN4H2rJeyhFQZcG9AgSHkQtSD15a8WvTgfz9aikZMrKPHvbpqFiw==}
@@ -6824,6 +6830,8 @@ snapshots:
       - stylus
       - sugarss
       - terser
+
+  '@jsr/std__collections@1.0.5': {}
 
   '@kwsites/file-exists@1.1.1':
     dependencies:
