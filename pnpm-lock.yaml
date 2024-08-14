@@ -23,7 +23,7 @@ importers:
         version: '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.1(@types/node@20.14.15)(terser@5.31.3)'
       '@sveltejs/adapter-static':
         specifier: ^3.0.2
-        version: 3.0.3(@sveltejs/kit@2.5.21(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))
+        version: 3.0.4(@sveltejs/kit@2.5.21(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))
       '@sveltejs/enhanced-img':
         specifier: ^0.3.0
         version: 0.3.3(rollup@4.20.0)(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3))
@@ -1662,8 +1662,8 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@sveltejs/adapter-static@3.0.3':
-    resolution: {integrity: sha512-VAz71MwpPJ9jO4vQvqfLKhx+bEoL9007AnZzmOOKIz+YPPEC7tHRYC5F4ZIws20mDyTF/9mHJ6HqEq+8cKtaaQ==}
+  '@sveltejs/adapter-static@3.0.4':
+    resolution: {integrity: sha512-Qm4GAHCnRXwfWG9/AtnQ7mqjyjTs7i0Opyb8H2KH9rMR7fLxqiPx/tXeoE6HHo66+72CjyOb4nFH3lrejY4vzA==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -7626,7 +7626,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@sveltejs/adapter-static@3.0.3(@sveltejs/kit@2.5.21(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))':
+  '@sveltejs/adapter-static@3.0.4(@sveltejs/kit@2.5.21(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))':
     dependencies:
       '@sveltejs/kit': 2.5.21(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3)))(svelte@5.0.0-next.216)(vite@5.4.0(@types/node@20.14.15)(terser@5.31.3))
 
