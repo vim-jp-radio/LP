@@ -7,7 +7,7 @@ import extractorSvelte from '@unocss/extractor-svelte';
 import { cloudflareRedirect } from '@ryoppippi/vite-plugin-cloudflare-redirect';
 import { faviconPlugin } from './plugins';
 
-import UnocssConfig from './uno.config.js';
+import { theme } from './uno.config.js';
 import { LINKS, VIM_JP_RADIO_INFO } from './src/lib/links/_links.js';
 
 function relativePath(...args: string[]): string {
@@ -15,9 +15,7 @@ function relativePath(...args: string[]): string {
 }
 
 /* unocss から background color を取得 */
-// @ts-expect-error background color may be undefined
-// eslint-disable-next-line ts/no-unsafe-member-access
-const background = UnocssConfig?.theme?.colors?.['LP-backgroud'] as unknown;
+const background = theme.colors['LP-backgroud'];
 
 if (typeof background !== 'string') {
 	throw new TypeError('background color is not defined');
