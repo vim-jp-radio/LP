@@ -42,7 +42,7 @@
 		"svelte": "5.0.0-next.216",
 		"svelte-check": "^3.8.4",
 		"svelte-eslint-parser": "^0.41.0",
-		"svelte-preprocess-budoux": "^0.4.0",
+		"svelte-preprocess-budoux": "^1.0.0",
 		"sveltekit-html-minifier": "^1.0.3",
 		"sveltweet": "^0.2.3",
 		"tslib": "^2.6.3",
