@@ -11,13 +11,15 @@ import {
 
 export const theme = {
 	colors: {
-		'LP-blue': '#1ecfff',
-		'LP-pink': '#ff00ff',
-		'LP-yellow': '#ffffb3',
-		'LP-gray': '#909296',
-		'LP-dark-gray': '#5C5F66',
-		'LP-backgroud': '#010a01',
-		'LP-text-color': '#f8f9fa',
+		LP: {
+			blue: '#1ecfff',
+			pink: '#ff00ff',
+			yellow: '#ffffb3',
+			gray: '#909296',
+			darkGray: '#5C5F66',
+			backgroud: '#010a01',
+			textColor: '#f8f9fa',
+		},
 	},
 	breakpoints: {
 		tiny: '375px',
@@ -48,7 +50,7 @@ export default defineConfig({
 		['min-h-safe', { 'min-height': 'calc(100% + env(safe-area-inset-top))' }],
 	],
 	shortcuts: {
-		text: 'text-base text-LP-text-color',
+		text: 'text-base text-LP-textColor',
 		button: 'color-LP-yellow border-(solid 2 LP-yellow) rounded px-4 py-2 hover:(bg-LP-yellow color-LP-backgroud) w-fit flex',
 	},
 });
