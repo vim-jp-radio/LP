@@ -25,6 +25,7 @@
 		"@antfu/eslint-config": "^2.23.2",
 		"@iconify-json/ph": "^1.1.13",
 		"@ryoppippi/vite-plugin-cloudflare-redirect": "npm:@jsr/ryoppippi__vite-plugin-cloudflare-redirect@^1.0.1",
+		"@std/collections": "npm:@jsr/std__collections@^1.0.5",
 		"@sveltejs/adapter-static": "^3.0.2",
 		"@sveltejs/enhanced-img": "^0.3.0",
 		"@sveltejs/kit": "^2.5.18",
