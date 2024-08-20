@@ -77,7 +77,7 @@ importers:
         version: 0.41.0(svelte@5.0.0-next.223)
       svelte-preprocess-budoux:
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.0.1
       sveltekit-html-minifier:
         specifier: ^1.0.3
         version: 1.0.3(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.1(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.1(@types/node@20.16.1)(terser@5.31.3)))
@@ -4819,8 +4819,8 @@ packages:
     peerDependencies:
       svelte: ^3.0.0 || ^4.0.0 || ^5.0.0-next.1
 
-  svelte-preprocess-budoux@1.0.0:
-    resolution: {integrity: sha512-/+rALYYX2JF6UDLiRqaHrkAYN4XOHnLf4eBc/fJs1XNF8Mx1vlbVsMeM+H+/yCgWJGaa4TcKglwNnU/AXbA1xQ==}
+  svelte-preprocess-budoux@1.0.1:
+    resolution: {integrity: sha512-1dVWv4bjBSDAJbcR6Mvot9rRNjYICoLCDltLmBDD3yKDF1sLVvhT04SJ3JakGv9tP8oBHYr+cCAvBeKqCqew8Q==}
 
   svelte-preprocess@5.1.4:
     resolution: {integrity: sha512-IvnbQ6D6Ao3Gg6ftiM5tdbR6aAETwjhHV+UKGf5bHGYR69RQvF1ho0JKPcbUON4vy4R7zom13jPjgdOWCQ5hDA==}
@@ -11427,13 +11427,15 @@ snapshots:
     dependencies:
       svelte: 5.0.0-next.223
 
-  svelte-preprocess-budoux@1.0.0:
+  svelte-preprocess-budoux@1.0.1:
     dependencies:
       budoux: 0.6.2
       defu: 6.1.4
       magic-string: 0.30.11
+      node-html-parser: 6.1.13
       svelte: 5.0.0-next.223
       svelte-parse-markup: 0.1.5(svelte@5.0.0-next.223)
+      zimmerframe: 1.1.2
     transitivePeerDependencies:
       - bufferutil
       - canvas
