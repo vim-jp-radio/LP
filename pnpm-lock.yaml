@@ -100,8 +100,8 @@ importers:
         specifier: ^5.3.4
         version: 5.4.2(@types/node@20.16.1)(terser@5.31.3)
       vite-plugin-favicons:
-        specifier: ^0.1.1
-        version: 0.1.1(typescript@5.5.4)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3))
+        specifier: ^0.1.4
+        version: 0.1.4(typescript@5.5.4)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3))
 
 packages:
 
@@ -5195,8 +5195,8 @@ packages:
     resolution: {integrity: sha512-C9C7b2p/8/TCN2g26tE9haoer2i8K4x0v2RXUiHsIjiz221vQuKItCQ+VyiVCsUMPXfJC/tlZsmCZVBz5jh7uA==}
     engines: {node: '>=18.0.0'}
 
-  vite-plugin-favicons@0.1.1:
-    resolution: {integrity: sha512-Pgrs3GVKoWWGWD/Cq95fx+XHZiUBGjIflXv/+SpJZn5/vHOUXB3KXahzAihEiewT2GZr6r4qt599/dFY9+HKjQ==}
+  vite-plugin-favicons@0.1.4:
+    resolution: {integrity: sha512-HHROYysNTSyeaisEG4YVxgMuGFS9rle9bGoqqFEl3hF5UmSlUUDPgAvyq8pVYFYRRIe9RPZapLATEVUJ9oSWgg==}
     peerDependencies:
       typescript: ^5.0.0
       vite: ^5.4.2
@@ -11900,7 +11900,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite-plugin-favicons@0.1.1(typescript@5.5.4)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)):
+  vite-plugin-favicons@0.1.4(typescript@5.5.4)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)):
     dependencies:
       consola: 3.2.3
       favicons: 7.2.0
