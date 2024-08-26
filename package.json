@@ -50,6 +50,7 @@
 		"typescript": "^5.5.4",
 		"typescript-svelte-plugin": "^0.3.39",
 		"unocss": "^0.62.0",
-		"vite": "^5.3.4"
+		"vite": "^5.3.4",
+		"vite-plugin-favicons": "^0.1.1"
 	}
 }

@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 import UnoCss from 'unocss/vite';
 import extractorSvelte from '@unocss/extractor-svelte';
 import { cloudflareRedirect } from '@ryoppippi/vite-plugin-cloudflare-redirect';
-import { faviconPlugin } from './plugins';
+import { faviconsPlugin } from 'vite-plugin-favicons';
 
 import { theme } from './uno.config.js';
 import { LINKS, VIM_JP_RADIO_INFO } from './src/lib/links/_links.js';
@@ -20,11 +20,10 @@ const background = theme.colors.LP.backgroud;
 export default defineConfig({
 	plugins: [
 		/* favicon と metadata の設定 */
-		faviconPlugin({
+		faviconsPlugin({
 			/** ===== faviconsの設定 ===== */
 			imgSrc: relativePath('./src/assets/vimjp-radio-cover-art/3000x3000-fs8.png'),
 			faviconAssetsDest: relativePath('./static/favicons'),
-			htmlDest: relativePath('./src/assets/favicons.html'),
 			/** ========================= */
 
 			/* ===== metadataの設定 ===== */
