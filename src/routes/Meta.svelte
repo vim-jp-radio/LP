@@ -1,4 +1,6 @@
 <script lang='ts'>
+	// import FaviconsHead from 'vite-plugin-favicons/svelte';
+	import faviconLinks from 'virtual:favicons';
 	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
 	import { VIM_JP_RADIO_INFO } from '$/lib/links';
 
@@ -48,4 +50,8 @@
 	{@render ogMeta('image', image.src)}
 	{@render ogMeta('image:alt', image.alt)}
 	{@render ogMeta('image:type', image.type)}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html faviconLinks}
 </svelte:head>
+
+<!-- <FaviconsHead /> -->
