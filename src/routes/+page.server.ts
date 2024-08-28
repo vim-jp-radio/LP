@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import pRetry from 'p-retry';
 import { getTweet } from 'sveltweet/api';
 import type { Tweet } from 'sveltweet';
 import { LISTENERS_TWEET_IDS } from '$/lib/links';
@@ -7,7 +8,7 @@ import { LISTENERS_TWEET_IDS } from '$/lib/links';
 export async function load() {
 	const tweets: Tweet[] = [];
 	for (const id of LISTENERS_TWEET_IDS) {
-		const tweet = await getTweet(id);
+		const tweet = await pRetry(async () => getTweet(id), { retries: 5 });
 		if (tweet == null) {
 			error(404, `Tweet not found: ${id}`);
 		}
