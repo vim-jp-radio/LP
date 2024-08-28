@@ -86,7 +86,7 @@ importers:
         version: 1.0.3(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))
       sveltweet:
         specifier: ^0.2.3
-        version: 0.2.3(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)
+        version: 0.2.4(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)
       tslib:
         specifier: ^2.6.3
         version: 2.6.3
@@ -4926,10 +4926,10 @@ packages:
     peerDependencies:
       '@sveltejs/kit': '>=1.5.0 <3.0.0'
 
-  sveltweet@0.2.3:
-    resolution: {integrity: sha512-YPHZQUDm0FiBr+5LhhT0/MWXBaU+1bWZZNz6q6OPDiieoEYAHQ51+6cBMGV+hpOUY/sqEl1d/UK5p6BunqerBw==}
+  sveltweet@0.2.4:
+    resolution: {integrity: sha512-oOOo5AfvQGmq7NY3lyYjlgmR4aMbaqDsPJZY70/5ZKSDA3gpg2E1fNNEwiGaNL8P42y8FBKpx0tw7OJgm3w86w==}
     peerDependencies:
-      '@sveltejs/kit': ^2.5.20
+      '@sveltejs/kit': ^2.5.24
       svelte: ^5.0.0
 
   symbol-tree@3.2.4:
@@ -11599,10 +11599,9 @@ snapshots:
       '@sveltejs/kit': 2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3))
       html-minifier-terser: 7.2.0
 
-  sveltweet@0.2.3(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223):
+  sveltweet@0.2.4(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223):
     dependencies:
       '@sveltejs/kit': 2.5.24(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3)))(svelte@5.0.0-next.223)(vite@5.4.2(@types/node@20.16.1)(terser@5.31.3))
-      esm-env: 1.0.0
       svelte: 5.0.0-next.223
 
   symbol-tree@3.2.4: {}
