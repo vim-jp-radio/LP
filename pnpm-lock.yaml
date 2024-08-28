@@ -11,9 +11,6 @@ importers:
       '@unocss/reset':
         specifier: ^0.62.3
         version: 0.62.3
-      p-retry:
-        specifier: ^6.2.0
-        version: 6.2.0
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.27.3
@@ -63,6 +60,9 @@ importers:
       favicons:
         specifier: ^7.2.0
         version: 7.2.0
+      p-retry:
+        specifier: ^6.2.0
+        version: 6.2.0
       renovate:
         specifier: ^38.57.0
         version: 38.57.0(@aws-sdk/client-sso-oidc@3.621.0(@aws-sdk/client-sts@3.621.0))(encoding@0.1.13)(typanion@3.14.0)
