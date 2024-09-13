@@ -42,7 +42,7 @@
 		"renovate": "^38.68.0",
 		"std-env": "^3.7.0",
 		"svelte": "5.0.0-next.223",
-		"svelte-check": "^3.8.6",
+		"svelte-check": "^4.0.0",
 		"svelte-eslint-parser": "^0.41.0",
 		"svelte-preprocess-budoux": "^1.0.2",
 		"sveltekit-html-minifier": "^1.0.3",
