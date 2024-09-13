@@ -29,7 +29,7 @@
 		"@sveltejs/adapter-static": "^3.0.4",
 		"@sveltejs/enhanced-img": "^0.3.4",
 		"@sveltejs/kit": "^2.5.26",
-		"@sveltejs/vite-plugin-svelte": "4.0.0-next.6",
+		"@sveltejs/vite-plugin-svelte": "4.0.0-next.7",
 		"@types/node": "^20.16.5",
 		"@unocss/eslint-plugin": "^0.62.3",
 		"@unocss/extractor-svelte": "^0.62.3",
