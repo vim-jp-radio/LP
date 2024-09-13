@@ -1,5 +1,5 @@
-import { isDevelopment } from 'std-env';
 import { deepMerge } from '@std/collections/deep-merge';
+import { isDevelopment } from 'std-env';
 import {
 	defineConfig,
 	presetAttributify,

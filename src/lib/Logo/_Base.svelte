@@ -1,7 +1,7 @@
 <script lang='ts'>
+	import type dummyEnhanced from '*?enhanced';
 	import type { HTMLImgAttributes } from 'svelte/elements';
 	import { ensureURL } from '../utils/url';
-	import type dummyEnhanced from '*?enhanced';
 
 	type Picture = typeof dummyEnhanced;
 

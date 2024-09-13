@@ -1,10 +1,10 @@
 <script lang='ts'>
-	import 'uno.css';
-	import '@unocss/reset/tailwind-compat.css';
+	import { Backgroud } from '$lib/Backgroud';
+	import EasterEgg from './EasterEgg.svelte';
 
 	import Meta from './Meta.svelte';
-	import EasterEgg from './EasterEgg.svelte';
-	import { Backgroud } from '$lib/Backgroud';
+	import 'uno.css';
+	import '@unocss/reset/tailwind-compat.css';
 
 	const { children } = $props();
 </script>

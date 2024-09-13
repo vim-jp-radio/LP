@@ -170,4 +170,4 @@ function cancelAnimate(): void {
 	frame = undefined;
 }
 
-export { createCircles, animate, cancelAnimate };
+export { animate, cancelAnimate, createCircles };

@@ -1,8 +1,8 @@
 <script lang='ts'>
-	// import FaviconsHead from 'vite-plugin-favicons/svelte';
-	import faviconLinks from 'virtual:favicons';
 	import OGP from '$/assets/vimjp-radio-cover-art/ogp.png';
 	import { VIM_JP_RADIO_INFO } from '$/lib/links';
+	// import FaviconsHead from 'vite-plugin-favicons/svelte';
+	import faviconLinks from 'virtual:favicons';
 
 	const { title, titleWithTagline, description, url } = VIM_JP_RADIO_INFO;
 
