@@ -1,6 +1,6 @@
 <script lang='ts'>
-	import { animate, cancelAnimate, createCircles } from './circle.js';
 	import { PrefersReducedMotion } from '$lib/utils/runes.svelte.js';
+	import { animate, cancelAnimate, createCircles } from './circle.js';
 
 	/**
 	 * @param {number} circleNum - 円の数

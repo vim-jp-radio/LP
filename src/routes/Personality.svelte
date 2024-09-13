@@ -1,7 +1,7 @@
 <script lang='ts'>
+	import type dummyEnhanced from '*?enhanced';
 	import type { Snippet } from 'svelte';
 	import * as Logo from '$lib/Logo';
-	import type dummyEnhanced from '*?enhanced';
 
 	type Picture = typeof dummyEnhanced;
 

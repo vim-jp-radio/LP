@@ -1,9 +1,9 @@
 <script lang='ts'>
-	import Personality from './Personality.svelte';
-	import { Heading } from '$/lib/Heading';
-
-	import tomoyaImg from '$/assets/avatar/tomoya.jpg?enhanced';
 	import lambdalisueImg from '$/assets/avatar/lambdalisue.png?enhanced';
+	import tomoyaImg from '$/assets/avatar/tomoya.jpg?enhanced';
+
+	import { Heading } from '$/lib/Heading';
+	import Personality from './Personality.svelte';
 </script>
 
 <section>

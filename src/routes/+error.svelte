@@ -1,7 +1,7 @@
 <script lang='ts'>
-	import { page } from '$app/stores';
-	import { dev } from '$app/environment';
 	import { Konami } from '$/lib/Konami';
+	import { dev } from '$app/environment';
+	import { page } from '$app/stores';
 
 	const konami = new Konami(2000);
 

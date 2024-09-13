@@ -1,14 +1,14 @@
 import path from 'node:path';
-import { sveltekit } from '@sveltejs/kit/vite';
-import { enhancedImages } from '@sveltejs/enhanced-img';
-import { defineConfig } from 'vite';
-import UnoCss from 'unocss/vite';
-import extractorSvelte from '@unocss/extractor-svelte';
 import { cloudflareRedirect } from '@ryoppippi/vite-plugin-cloudflare-redirect';
+import { enhancedImages } from '@sveltejs/enhanced-img';
+import { sveltekit } from '@sveltejs/kit/vite';
+import extractorSvelte from '@unocss/extractor-svelte';
+import UnoCss from 'unocss/vite';
+import { defineConfig } from 'vite';
 import { faviconsPlugin } from 'vite-plugin-favicons';
 
-import { theme } from './uno.config.js';
 import { LINKS, VIM_JP_RADIO_INFO } from './src/lib/links/_links.js';
+import { theme } from './uno.config.js';
 
 function relativePath(...args: string[]): string {
 	return path.resolve(import.meta.dirname, ...args);

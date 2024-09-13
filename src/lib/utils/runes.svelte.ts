@@ -1,5 +1,5 @@
-import { on } from 'svelte/events';
 import { browser } from '$app/environment';
+import { on } from 'svelte/events';
 
 /**
  *

@@ -1,6 +1,6 @@
+import { building } from '$app/environment';
 import { ensureURL } from '../utils/url';
 import { LINKS, LISTENERS_TWEET_IDS, VIM_JP_RADIO_INFO } from './_links';
-import { building } from '$app/environment';
 
 /* ビルド時にURLをチェックする */
 if (building) {
@@ -10,4 +10,4 @@ if (building) {
 	}
 }
 
-export { LINKS, VIM_JP_RADIO_INFO, LISTENERS_TWEET_IDS };
+export { LINKS, LISTENERS_TWEET_IDS, VIM_JP_RADIO_INFO };

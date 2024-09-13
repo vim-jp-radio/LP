@@ -1,6 +1,6 @@
 <script lang='ts'>
-	import { SvelteTweet, type Tweet } from 'sveltweet';
 	import { Heading } from '$/lib/Heading';
+	import { SvelteTweet, type Tweet } from 'sveltweet';
 
 	const { tweets }: { tweets: Tweet[] } = $props();
 </script>

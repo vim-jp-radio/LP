@@ -1,7 +1,7 @@
 <script lang='ts'>
+	import icon from '$/assets/logos/logo-audee.svg';
 	import { LINKS } from '../links';
 	import Base from './_Base.svelte';
-	import icon from '$/assets/logos/logo-audee.svg';
 
 	const { ...rest } = $props();
 

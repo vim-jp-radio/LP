@@ -1,8 +1,8 @@
+import type { Tweet } from 'sveltweet';
+import { LISTENERS_TWEET_IDS } from '$/lib/links';
 import { error } from '@sveltejs/kit';
 import pRetry from 'p-retry';
 import { getTweet } from 'sveltweet/api';
-import type { Tweet } from 'sveltweet';
-import { LISTENERS_TWEET_IDS } from '$/lib/links';
 
 /* tweet を取得する。 */
 export async function load() {

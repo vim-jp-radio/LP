@@ -1,10 +1,10 @@
-import process from 'node:process';
 import path from 'node:path';
+import process from 'node:process';
 import adapter from '@sveltejs/adapter-static';
-import htmlMinifierAdaptor from 'sveltekit-html-minifier';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { budouxPreprocess } from 'svelte-preprocess-budoux';
 import { isDevelopment } from 'std-env';
+import { budouxPreprocess } from 'svelte-preprocess-budoux';
+import htmlMinifierAdaptor from 'sveltekit-html-minifier';
 
 /** @param {...string} args */
 function relativePath(...args) {
