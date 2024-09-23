@@ -26,13 +26,13 @@ importers:
         version: '@jsr/std__collections@1.0.5'
       '@sveltejs/adapter-static':
         specifier: ^3.0.4
-        version: 3.0.5(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))
+        version: 3.0.5(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))
       '@sveltejs/enhanced-img':
         specifier: ^0.3.4
         version: 0.3.4(rollup@4.22.4)(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
       '@sveltejs/kit':
         specifier: ^2.5.26
-        version: 2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
+        version: 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
       '@sveltejs/vite-plugin-svelte':
         specifier: 4.0.0-next.7
         version: 4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
@@ -83,10 +83,10 @@ importers:
         version: 1.0.2
       sveltekit-html-minifier:
         specifier: ^1.0.3
-        version: 1.0.3(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))
+        version: 1.0.3(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))
       sveltweet:
         specifier: ^0.2.6
-        version: 0.2.6(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)
+        version: 0.2.6(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)
       tslib:
         specifier: ^2.7.0
         version: 2.7.0
@@ -1141,8 +1141,8 @@ packages:
     resolution: {integrity: sha512-nRqvPYO8xUVdgy/KhJuaCrWlVT/4uZr97Mpbuizsa6CmvtCQf3NuYnVvOOrpYiKUJcZYtEvm84OooJ8+lJytMQ==}
     engines: {node: '>=14.6'}
 
-  '@polka/url@1.0.0-next.25':
-    resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
+  '@polka/url@1.0.0-next.28':
+    resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
   '@protobufjs/aspromise@1.1.2':
     resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==}
@@ -1555,8 +1555,8 @@ packages:
       svelte: ^4.0.0 || ^5.0.0-next.0
       vite: '>= 5.0.0'
 
-  '@sveltejs/kit@2.5.27':
-    resolution: {integrity: sha512-CcbRTzl+65oWljAASL6UlxM4x3NWwd0fjq5fQOfP243vs50myFQ8lil0fr3Im6HeeQqYUCtnv8HjO8REWVPjTw==}
+  '@sveltejs/kit@2.5.28':
+    resolution: {integrity: sha512-/O7pvFGBsQPcFa9UrW8eUC5uHTOXLsUp3SN0dY6YmRAL9nfPSrJsSJk//j5vMpinSshzUjteAFcfQTU+04Ka1w==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -6777,7 +6777,7 @@ snapshots:
       write-file-atomic: 5.0.1
       write-yaml-file: 4.2.0
 
-  '@polka/url@1.0.0-next.25': {}
+  '@polka/url@1.0.0-next.28': {}
 
   '@protobufjs/aspromise@1.1.2': {}
 
@@ -7292,9 +7292,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@sveltejs/adapter-static@3.0.5(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))':
+  '@sveltejs/adapter-static@3.0.5(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))':
     dependencies:
-      '@sveltejs/kit': 2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
+      '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
 
   '@sveltejs/enhanced-img@0.3.4(rollup@4.22.4)(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))':
     dependencies:
@@ -7306,7 +7306,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))':
+  '@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
       '@types/cookie': 0.6.0
@@ -11047,7 +11047,7 @@ snapshots:
 
   sirv@2.0.4:
     dependencies:
-      '@polka/url': 1.0.0-next.25
+      '@polka/url': 1.0.0-next.28
       mrmime: 2.0.0
       totalist: 3.0.1
 
@@ -11266,14 +11266,14 @@ snapshots:
       magic-string: 0.30.11
       zimmerframe: 1.1.2
 
-  sveltekit-html-minifier@1.0.3(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))):
+  sveltekit-html-minifier@1.0.3(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))):
     dependencies:
-      '@sveltejs/kit': 2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
+      '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
       html-minifier-terser: 7.2.0
 
-  sveltweet@0.2.6(@sveltejs/kit@2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223):
+  sveltweet@0.2.6(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223):
     dependencies:
-      '@sveltejs/kit': 2.5.27(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
+      '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
       svelte: 5.0.0-next.223
 
   symbol-tree@3.2.4: {}
