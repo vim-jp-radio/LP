@@ -1,3 +1,4 @@
+import type { PresetUnoTheme } from 'unocss';
 import { deepMerge } from '@std/collections/deep-merge';
 import { isDevelopment } from 'std-env';
 import {
@@ -24,7 +25,7 @@ export const theme = {
 	breakpoints: {
 		tiny: '375px',
 	},
-} as const;
+} as const satisfies PresetUnoTheme;
 
 export default defineConfig({
 	presets: [
