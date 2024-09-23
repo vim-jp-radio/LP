@@ -13,7 +13,8 @@
 		"lint": "eslint --cache .",
 		"lint:renovate": "renovate-config-validator",
 		"format": "npm run lint -- --fix",
-		"prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'"
+		"prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'",
+		"preinstall": "npx only-allow pnpm"
 	},
 	"dependencies": {
 		"@unocss/reset": "^0.62.3"
