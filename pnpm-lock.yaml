@@ -86,7 +86,7 @@ importers:
         version: 1.0.3(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))
       sveltweet:
         specifier: ^0.2.6
-        version: 0.2.6(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)
+        version: 0.2.8(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)
       tslib:
         specifier: ^2.7.0
         version: 2.7.0
@@ -4717,10 +4717,10 @@ packages:
     peerDependencies:
       '@sveltejs/kit': '>=1.5.0 <3.0.0'
 
-  sveltweet@0.2.6:
-    resolution: {integrity: sha512-awBFFWyp1FcjlN9+vbXgs6f8fBeGMnmCJ1gCtXMfxbhJL2cGkBngqkHlnwgGDDUHqB0cuN9kFSsbQKqzl/oPMA==}
+  sveltweet@0.2.8:
+    resolution: {integrity: sha512-b4CZWmNKdGQ0xTUnI36SZQ2O3wGzibwRFIaoXDHziTrX+sXtGtwmWi6z8dO0Fo8zu1sI0HOewP2RoGOrXxSIRQ==}
     peerDependencies:
-      '@sveltejs/kit': ^2.5.24
+      '@sveltejs/kit': ^2.5.28
       svelte: ^5.0.0
 
   symbol-tree@3.2.4:
@@ -11271,7 +11271,7 @@ snapshots:
       '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
       html-minifier-terser: 7.2.0
 
-  sveltweet@0.2.6(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223):
+  sveltweet@0.2.8(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223):
     dependencies:
       '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
       svelte: 5.0.0-next.223
