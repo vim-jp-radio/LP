@@ -39,7 +39,7 @@
 		"p-retry": "^6.2.0",
 		"renovate": "^38.68.0",
 		"std-env": "^3.7.0",
-		"svelte": "5.0.0-next.223",
+		"svelte": "5.0.0-next.262",
 		"svelte-check": "^4.0.0",
 		"svelte-eslint-parser": "^0.41.0",
 		"svelte-preprocess-budoux": "^1.0.2",
