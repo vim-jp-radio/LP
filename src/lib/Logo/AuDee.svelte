@@ -1,5 +1,4 @@
 <script lang='ts'>
-	import icon from '$/assets/logos/logo-audee.svg';
 	import { LINKS } from '../links';
 	import Base from './_Base.svelte';
 
@@ -8,6 +7,7 @@
 	const { label: alt, url: link } = LINKS.AuDee;
 	const width = 123.836;
 	const height = 66.126;
+	const icon = '/src/assets/logos/logo-audee.svg';
 </script>
 
 <Base {alt} {height} {icon} {link} {width} {...rest} />
