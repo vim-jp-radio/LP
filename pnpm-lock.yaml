@@ -81,9 +81,6 @@ importers:
       svelte-preprocess-budoux:
         specifier: ^1.0.2
         version: 1.0.2
-      sveltekit-html-minifier:
-        specifier: ^1.0.3
-        version: 1.0.3(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))
       sveltweet:
         specifier: ^0.2.6
         version: 0.2.8(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)
@@ -2116,9 +2113,6 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  camel-case@4.1.2:
-    resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
-
   camelcase-keys@6.2.2:
     resolution: {integrity: sha512-YrwaA0vEKazPBkn0ipTiMpSajYDSe+KjQfrjhcBMxJt/znbvlHd8Pw/Vamaz5EB4Wfhs3SUR3Z9mwRu/P3s3Yg==}
     engines: {node: '>=8'}
@@ -2178,10 +2172,6 @@ packages:
   cjs-module-lexer@1.4.1:
     resolution: {integrity: sha512-cuSVIHi9/9E/+821Qjdvngor+xpnlwnuwIyZOaLmHBVdXL+gP+I6QQB9VkO7RI77YIcTV+S1W9AreJ5eN63JBA==}
 
-  clean-css@5.3.3:
-    resolution: {integrity: sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==}
-    engines: {node: '>= 10.0'}
-
   clean-git-ref@2.0.1:
     resolution: {integrity: sha512-bLSptAy2P0s6hU4PzuIMKmMJJSE6gLXGH1cntDu7bWJUksvuM+7ReOK61mozULErYvP6a15rnYl0zFDef+pyPw==}
 
@@ -2238,10 +2228,6 @@ packages:
   combined-stream@1.0.8:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
     engines: {node: '>= 0.8'}
-
-  commander@10.0.1:
-    resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
-    engines: {node: '>=14'}
 
   commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
@@ -2457,9 +2443,6 @@ packages:
 
   domutils@3.1.0:
     resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
-
-  dot-case@3.0.4:
-    resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
 
   dotenv@16.4.5:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
@@ -3097,11 +3080,6 @@ packages:
   html-encoding-sniffer@4.0.0:
     resolution: {integrity: sha512-Y22oTqIU4uuPgEemfz7NDJz6OeKf12Lsu+QC+s3BVpda64lTiMYCyGwg5ki4vFxkMwQdeZDl2adZoqUgdFuTgQ==}
     engines: {node: '>=18'}
-
-  html-minifier-terser@7.2.0:
-    resolution: {integrity: sha512-tXgn3QfqPIpGl9o+K5tpcj3/MN4SfLtsx2GWwBC3SSd0tXQGyF3gsSqad8loJgKZGM3ZxbYDd5yhiBIdWpmvLA==}
-    engines: {node: ^14.13.1 || >=16.0.0}
-    hasBin: true
 
   http-cache-semantics@4.1.1:
     resolution: {integrity: sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==}
@@ -4069,9 +4047,6 @@ packages:
   package-manager-detector@0.2.0:
     resolution: {integrity: sha512-E385OSk9qDcXhcM9LNSe4sdhx8a9mAPrZ4sMLW+tmxl5ZuGtPUcdFu+MPP2jbgiWAZ6Pfe5soGFMd+0Db5Vrog==}
 
-  param-case@3.0.4:
-    resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
-
   parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
@@ -4334,10 +4309,6 @@ packages:
   regjsparser@0.10.0:
     resolution: {integrity: sha512-qx+xQGZVsy55CH0a1hiVwHmqjLryfh7wQyF5HO07XJ9f7dQMY/gPQHhlyDkIzJKC+x2fUCpCcUODUUUFrm7SHA==}
     hasBin: true
-
-  relateurl@0.2.7:
-    resolution: {integrity: sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==}
-    engines: {node: '>= 0.10'}
 
   remark-github@10.1.0:
     resolution: {integrity: sha512-q0BTFb41N6/uXQVkxRwLRTFRfLFPYP+8li26Js5XC0GKritCSaxrftd+t+8sfN+1i9BtmJPUKoS7CZwtccj0Fg==}
@@ -4711,11 +4682,6 @@ packages:
   svelte@5.0.0-next.244:
     resolution: {integrity: sha512-whSOcKdpuAFd5xD9J2EhuHeRs4J4nHis6NSUKRXpC3HQoCmsoKhyIldMjiv6QFkQpe6QMsid8lwvgLXkZTSC/A==}
     engines: {node: '>=18'}
-
-  sveltekit-html-minifier@1.0.3:
-    resolution: {integrity: sha512-wG2eR0gINur07FMUUR3q/eGcs2IIfZ0aPR5Ue7X7H//v2a/fjmaVm46lSkqUG0rYqezr4pQNzjiyAQLx7iU8eg==}
-    peerDependencies:
-      '@sveltejs/kit': '>=1.5.0 <3.0.0'
 
   sveltweet@0.2.8:
     resolution: {integrity: sha512-b4CZWmNKdGQ0xTUnI36SZQ2O3wGzibwRFIaoXDHziTrX+sXtGtwmWi6z8dO0Fo8zu1sI0HOewP2RoGOrXxSIRQ==}
@@ -6485,6 +6451,7 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+    optional: true
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
@@ -8048,11 +8015,6 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  camel-case@4.1.2:
-    dependencies:
-      pascal-case: 3.1.2
-      tslib: 2.7.0
-
   camelcase-keys@6.2.2:
     dependencies:
       camelcase: 5.3.1
@@ -8112,10 +8074,6 @@ snapshots:
 
   cjs-module-lexer@1.4.1: {}
 
-  clean-css@5.3.3:
-    dependencies:
-      source-map: 0.6.1
-
   clean-git-ref@2.0.1: {}
 
   clean-regexp@1.0.0:
@@ -8170,13 +8128,12 @@ snapshots:
     dependencies:
       delayed-stream: 1.0.0
 
-  commander@10.0.1: {}
-
   commander@11.1.0: {}
 
   commander@12.1.0: {}
 
-  commander@2.20.3: {}
+  commander@2.20.3:
+    optional: true
 
   comment-parser@1.4.1: {}
 
@@ -8366,11 +8323,6 @@ snapshots:
       dom-serializer: 2.0.0
       domelementtype: 2.3.0
       domhandler: 5.0.3
-
-  dot-case@3.0.4:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.7.0
 
   dotenv@16.4.5: {}
 
@@ -9199,16 +9151,6 @@ snapshots:
   html-encoding-sniffer@4.0.0:
     dependencies:
       whatwg-encoding: 3.1.1
-
-  html-minifier-terser@7.2.0:
-    dependencies:
-      camel-case: 4.1.2
-      clean-css: 5.3.3
-      commander: 10.0.1
-      entities: 4.5.0
-      param-case: 3.0.4
-      relateurl: 0.2.7
-      terser: 5.31.6
 
   http-cache-semantics@4.1.1: {}
 
@@ -10383,11 +10325,6 @@ snapshots:
 
   package-manager-detector@0.2.0: {}
 
-  param-case@3.0.4:
-    dependencies:
-      dot-case: 3.0.4
-      tslib: 2.7.0
-
   parent-module@1.0.1:
     dependencies:
       callsites: 3.1.0
@@ -10685,8 +10622,6 @@ snapshots:
   regjsparser@0.10.0:
     dependencies:
       jsesc: 0.5.0
-
-  relateurl@0.2.7: {}
 
   remark-github@10.1.0:
     dependencies:
@@ -11266,11 +11201,6 @@ snapshots:
       magic-string: 0.30.11
       zimmerframe: 1.1.2
 
-  sveltekit-html-minifier@1.0.3(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))):
-    dependencies:
-      '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
-      html-minifier-terser: 7.2.0
-
   sveltweet@0.2.8(@sveltejs/kit@2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223):
     dependencies:
       '@sveltejs/kit': 2.5.28(@sveltejs/vite-plugin-svelte@4.0.0-next.7(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6)))(svelte@5.0.0-next.223)(vite@5.4.7(@types/node@20.16.5)(terser@5.31.6))
@@ -11321,6 +11251,7 @@ snapshots:
       acorn: 8.12.1
       commander: 2.20.3
       source-map-support: 0.5.21
+    optional: true
 
   text-table@0.2.0: {}
 
