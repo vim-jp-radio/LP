@@ -18,6 +18,9 @@ function relativePath(...args: string[]): string {
 const background = theme.colors.LP.backgroud;
 
 export default defineConfig({
+	build: {
+		minify: false,
+	},
 	plugins: [
 		/* favicon と metadata の設定 */
 		faviconsPlugin({
