@@ -1,7 +1,4 @@
 <script lang='ts'>
-	import lambdalisueImg from '$/assets/avatar/lambdalisue.png?enhanced';
-	import tomoyaImg from '$/assets/avatar/tomoya.jpg?enhanced';
-
 	import { Heading } from '$/lib/Heading';
 	import Personality from './Personality.svelte';
 </script>
@@ -13,7 +10,7 @@
 			name='tomoya'
 			ghLink='https://github.com/tomoya'
 			homeLink='https://blog.tomoya.dev/'
-			imgSrc={tomoyaImg}
+			imgSrc='/src/assets/avatar/tomoya.jpg'
 			xLink='https://x.com/tomoyaton'
 		>
 			<!-- 文字列を渡すだけだとBudouXが処理できない（コードにあるtagをpreprocessしなければならない都合）ので、pタグで囲む -->
@@ -28,7 +25,7 @@
 		<Personality
 			name='ありすえ'
 			ghLink='https://github.com/lambdalisue'
-			imgSrc={lambdalisueImg}
+			imgSrc='/src/assets/avatar/lambdalisue.png'
 			xLink='https://twitter.com/lambdalisue'
 		>
 			<!-- 文字列を渡すだけだとBudouXが処理できない（コードにあるtagをpreprocessしなければならない都合）ので、pタグで囲む -->

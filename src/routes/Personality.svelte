@@ -1,9 +1,7 @@
 <script lang='ts'>
-	import type dummyEnhanced from '*?enhanced';
 	import type { Snippet } from 'svelte';
+	import Image from '$lib/Image.svelte';
 	import * as Logo from '$lib/Logo';
-
-	type Picture = typeof dummyEnhanced;
 
 	const {
 		name,
@@ -14,7 +12,7 @@
 		homeLink,
 	}: {
 		name: string;
-		imgSrc: Picture;
+		imgSrc: string;
 		children: Snippet<[]>;
 		xLink?: string;
 		ghLink?: string;
@@ -59,10 +57,9 @@
 
 	<div>
 		<!-- プロフ画像 -->
-		<enhanced:img
+		<Image
 			class='float-right ml-10px h-auto w-100px'
 			alt={name}
-			loading='lazy'
 			src={imgSrc}
 		/>
 
