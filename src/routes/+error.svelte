@@ -2,6 +2,7 @@
 	import { Konami } from '$/lib/Konami';
 	import { dev } from '$app/environment';
 	import { page } from '$app/stores';
+	import Image from '$lib/Image.svelte';
 
 	const konami = new Konami(2000);
 
@@ -19,11 +20,11 @@
 		uno-place='content-center items-center'
 	>
 		<!-- EASTER_EGG🐰🥚: Konamiコマンドが認識されると、`konami.activated`が`true`になり、`animate-spin`が適用されます。 -->
-		<enhanced:img
-			class:animate-spin={konami.activated}
+		<Image
+			class={konami.activated && 'animate-spin'}
 			alt='error logo'
 			loading='lazy'
-			src='$/assets/alisue/beer.png'
+			src='/src/assets/alisue/beer.png'
 		/>
 		<span uno-text>
 			{$page.error.message}
