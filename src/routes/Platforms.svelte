@@ -4,32 +4,22 @@
 	import * as Logo from '$lib/Logo';
 </script>
 
-<!-- それぞれ繰り返し使う部分をsnippetとして定義 -->
-{#snippet desc()}
-<p data-budoux uno-text>
-	「エンジニアの楽園 vim-jpラジオ」は AuDee（TOKYO FM）の公式番組です。
-</p>
-{/snippet}
-
-{#snippet audeeLink()}
-<a data-budoux href={LINKS.AuDee.url} target='_blank' uno-button>AuDeeで聞く</a>
-{/snippet}
-
-{#snippet audeeLogo()}
-<div uno-max-w-60 uno-min-w-36 uno-tiny-w-full>
-	<Logo.AuDee class='h-full w-full object-fill' />
-</div>
-{/snippet}
-
 <section>
 	<Heading title='配信プラットフォーム' />
 	<div uno-flex-col uno-space-y-12>
 		<!-- 幅がtiny未満であれば、上下に分割して表示 -->
 		<div uno-flex='~ col tiny:row-reverse justify-center' uno-space-y='6 tiny:0'>
-			{@render audeeLogo()}
+			<!-- Audee Logo -->
+			<div uno-max-w-60 uno-min-w-36 uno-tiny-w-full>
+				<Logo.AuDee class='h-full w-full object-fill' />
+			</div>
 			<div uno-space-y='4 tiny:6'>
-				{@render desc()}
-				{@render audeeLink()}
+				<!-- description -->
+				<p data-budoux uno-text>
+					「エンジニアの楽園 vim-jpラジオ」は AuDee（TOKYO FM）の公式番組です。
+				</p>
+				<!-- AuDee link -->
+				<a data-budoux href={LINKS.AuDee.url} target='_blank' uno-button>AuDeeで聞く</a>
 			</div>
 		</div>
 
