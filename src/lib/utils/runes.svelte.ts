@@ -28,8 +28,7 @@ export class PrefersReducedMotion {
 
 		this.#mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 		this.#isReduced = this.#mediaQuery.matches;
-		on(this.#mediaQuery, 'change', (_event) => {
-			const event = _event as MediaQueryListEvent;
+		on(this.#mediaQuery, 'change', (event) => {
 			this.#isReduced = event.matches;
 		});
 	}
