@@ -24,23 +24,13 @@
 <section>
 	<Heading title='配信プラットフォーム' />
 	<div uno-flex-col uno-space-y-12>
-
-		<!-- 幅がtiny以上であれば、左右に分割して表示 -->
-		<div uno-hidden uno-space-x-4 uno-tiny-flex>
-			<div uno-flex-col uno-space-y-6>
+		<!-- 幅がtiny未満であれば、上下に分割して表示 -->
+		<div uno-flex='~ col tiny:row-reverse justify-center' uno-space-y='6 tiny:0'>
+			{@render audeeLogo()}
+			<div uno-space-y='4 tiny:6'>
 				{@render desc()}
 				{@render audeeLink()}
 			</div>
-			{@render audeeLogo()}
-		</div>
-
-		<!-- 幅がtiny未満であれば、上下に分割して表示 -->
-		<div uno-flex='~ col' uno-justify-center uno-space-y-6 uno-tiny-hidden>
-			<div uno-flex-row uno-space-y-4>
-				{@render audeeLogo()}
-				{@render desc()}
-			</div>
-			{@render audeeLink()}
 		</div>
 
 		<div uno-flex-col uno-space-y-6>
