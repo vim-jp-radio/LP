@@ -44,8 +44,7 @@ export class Konami {
 			return;
 		}
 
-		on(window, 'keyup', (_event) => {
-			const { key } = _event as KeyboardEvent;
+		on(window, 'keyup', ({ key }) => {
 			const now = Date.now();
 
 			/** 有効なキーが入力されていない場合はコンボをリセット */
