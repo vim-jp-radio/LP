@@ -43,7 +43,6 @@
 		"svelte-check": "^4.0.0",
 		"svelte-eslint-parser": "^0.41.0",
 		"svelte-preprocess-budoux": "^1.0.2",
-		"sveltekit-html-minifier": "^1.0.3",
 		"sveltweet": "^0.2.6",
 		"tslib": "^2.7.0",
 		"typescript": "^5.5.4",
