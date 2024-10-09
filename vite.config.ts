@@ -21,6 +21,7 @@ export default defineConfig({
 	plugins: [
 		/* favicon と metadata の設定 */
 		faviconsPlugin({
+			cache: true,
 			/** ===== faviconsの設定 ===== */
 			imgSrc: relativePath('./src/assets/vimjp-radio-cover-art/3000x3000-fs8.png'),
 			/** ========================= */
