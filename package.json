@@ -49,6 +49,6 @@
 		"typescript-svelte-plugin": "^0.3.41",
 		"unocss": "^0.62.3",
 		"vite": "^5.4.3",
-		"vite-plugin-favicons": "^0.1.4"
+		"vite-plugin-favicons": "^0.1.5"
 	}
 }
