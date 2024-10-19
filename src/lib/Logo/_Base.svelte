@@ -13,24 +13,24 @@
 
 </script>
 {#snippet image()}
-{#if typeof icon === 'string' && icon.endsWith('.svg')}
-<!-- svg image -->
-<img
-	class={_className}
-	{alt}
-	{loading}
-	src={icon}
-	{...rest}
-/>
-{:else}
-	<enhanced:img
-		class={_className}
-		{alt}
-		{loading}
-		src={icon}
-		{...rest}
-	/>
-  {/if}
+	{#if typeof icon === 'string' && icon.endsWith('.svg')}
+		<!-- svg image -->
+		<img
+			class={_className}
+			{alt}
+			{loading}
+			src={icon}
+			{...rest}
+		/>
+	{:else}
+		<enhanced:img
+			class={_className}
+			{alt}
+			{loading}
+			src={icon}
+			{...rest}
+		/>
+	{/if}
 {/snippet}
 
 {#if link != null}
