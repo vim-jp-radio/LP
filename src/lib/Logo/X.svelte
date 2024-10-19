@@ -5,7 +5,7 @@
 	// @ts-ignore
 	import icon from '$/assets/logos/logo-x.png?enhanced&w=300;600;800';
 
-	const { ...rest }: Omit<ComponentProps<Base>, 'icon'> = $props();
+	const { ...rest }: Omit<ComponentProps<typeof Base>, 'icon'> = $props();
 
 	const { label: alt, url } = LINKS.X;
 
