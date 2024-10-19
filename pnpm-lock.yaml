@@ -21,6 +21,9 @@ importers:
       '@ryoppippi/vite-plugin-cloudflare-redirect':
         specifier: npm:@jsr/ryoppippi__vite-plugin-cloudflare-redirect@^1.0.2
         version: '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.2(@types/node@20.16.5)(terser@5.31.6)'
+      '@std/async':
+        specifier: npm:@jsr/std__async@^1.0.6
+        version: '@jsr/std__async@1.0.6'
       '@std/collections':
         specifier: npm:@jsr/std__collections@^1.0.5
         version: '@jsr/std__collections@1.0.5'
@@ -60,9 +63,6 @@ importers:
       favicons:
         specifier: ^7.2.0
         version: 7.2.0
-      p-retry:
-        specifier: ^6.2.0
-        version: 6.2.0
       renovate:
         specifier: ^38.68.0
         version: 38.93.5(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.637.0))(encoding@0.1.13)(typanion@3.14.0)
@@ -916,6 +916,9 @@ packages:
   '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.2':
     resolution: {integrity: sha512-r/sOhr6ZJaaNbVleCxIxOV62BO0eho7wiW0EW3VlW43PMq5MZ0a0fxUYWh4rfA2XXpVey1DFOXMpsLXuw1ZV5w==, tarball: https://npm.jsr.io/~/11/@jsr/ryoppippi__vite-plugin-cloudflare-redirect/1.0.2.tgz}
 
+  '@jsr/std__async@1.0.6':
+    resolution: {integrity: sha512-lIglWWtdtX1jFgMznUaX1zs1vDIA7lARZC+QrfwuHRPo/4k0nCkzEUOjCBczfqxbqviZKf7VjopGxOMAgy9nXA==, tarball: https://npm.jsr.io/~/11/@jsr/std__async/1.0.6.tgz}
+
   '@jsr/std__collections@1.0.5':
     resolution: {integrity: sha512-bL+K7aDs6uozic3U6qw0ll3zAmIO/sxb+764Dbqiavv/yo4qXrTjJf75wkkPWUECsXvIjLm34xAone/O0P0tyw==, tarball: https://npm.jsr.io/~/11/@jsr/std__collections/1.0.5.tgz}
 
@@ -1661,9 +1664,6 @@ packages:
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
-
-  '@types/retry@0.12.2':
-    resolution: {integrity: sha512-XISRgDJ2Tc5q4TRqvgJtzsRkFYNJzZrhTdtMoGVBttwzzQJkPnS3WWTFc7kuDRoPtPakl+T+OfdEUjYJj7Jbow==}
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -3264,10 +3264,6 @@ packages:
     resolution: {integrity: sha512-1Qed0/Hr2m+YqxnM09CjA2d/i6YZNfF6R2oRAOj36eUdS6qIV/huPJNSEpKbupewFs+ZsJlxsjjPbc0/afW6Lw==}
     engines: {node: '>= 0.4'}
 
-  is-network-error@1.1.0:
-    resolution: {integrity: sha512-tUdRRAnhT+OtCZR/LxZelH/C7QtjtFrTu5tXCA8pl55eTUElUHT+GPYV8MBMBvea/j+NxQqVt3LbWMRir7Gx9g==}
-    engines: {node: '>=16'}
-
   is-number-object@1.0.7:
     resolution: {integrity: sha512-k1U0IRzLMo7ZlYIfzRu23Oh6MiIFasgpb9X76eqfFZAqwH44UI4KTBvBYIZ1dSL9ZzChTB9ShHfLkR4pdW5krQ==}
     engines: {node: '>= 0.4'}
@@ -4030,10 +4026,6 @@ packages:
     resolution: {integrity: sha512-RwFpb72c/BhQLEXIZ5K2e+AhgNVmIejGlTgiB9MzZ0e93GRvqZ7uSi0dvRF7/XIXDeNkra2fNHBxTyPDGySpjQ==}
     engines: {node: '>=8'}
 
-  p-retry@6.2.0:
-    resolution: {integrity: sha512-JA6nkq6hKyWLLasXQXUrO4z8BUZGUt/LjlJxx8Gb2+2ntodU/SS63YZ8b0LUTbQ8ZB9iwOfhEPhg4ykKnn2KsA==}
-    engines: {node: '>=16.17'}
-
   p-throttle@4.1.1:
     resolution: {integrity: sha512-TuU8Ato+pRTPJoDzYD4s7ocJYcNSEZRvlxoq3hcPI2kZDZ49IQ1Wkj7/gDJc3X7XiEAAvRGtDzdXJI0tC3IL1g==}
     engines: {node: '>=10'}
@@ -4370,10 +4362,6 @@ packages:
 
   retry@0.12.0:
     resolution: {integrity: sha512-9LkiTwjUh6rT555DtE9rTX+BKByPfrMzEAtnlEtdEwr3Nkffwiihqe2bWADg+OQRjt9gl6ICdmB/ZFDCGAtSow==}
-    engines: {node: '>= 4'}
-
-  retry@0.13.1:
-    resolution: {integrity: sha512-XQBQ3I8W1Cge0Seh+6gjj03LbmRFWuoszgK9ooCpwYIrhhoO80pfq4cUkU5DkknwfOfFteRwlZ56PYOGYyFWdg==}
     engines: {node: '>= 4'}
 
   reusify@1.0.4:
@@ -6478,6 +6466,8 @@ snapshots:
       - sugarss
       - terser
 
+  '@jsr/std__async@1.0.6': {}
+
   '@jsr/std__collections@1.0.5': {}
 
   '@kwsites/file-exists@1.1.1':
@@ -7409,8 +7399,6 @@ snapshots:
   '@types/responselike@1.0.3':
     dependencies:
       '@types/node': 20.16.5
-
-  '@types/retry@0.12.2': {}
 
   '@types/semver@7.5.8': {}
 
@@ -9334,8 +9322,6 @@ snapshots:
 
   is-map@2.0.3: {}
 
-  is-network-error@1.1.0: {}
-
   is-number-object@1.0.7:
     dependencies:
       has-tostringtag: 1.0.2
@@ -10308,12 +10294,6 @@ snapshots:
       eventemitter3: 4.0.7
       p-timeout: 3.2.0
 
-  p-retry@6.2.0:
-    dependencies:
-      '@types/retry': 0.12.2
-      is-network-error: 1.1.0
-      retry: 0.13.1
-
   p-throttle@4.1.1: {}
 
   p-timeout@3.2.0:
@@ -10802,8 +10782,6 @@ snapshots:
 
   retry@0.12.0:
     optional: true
-
-  retry@0.13.1: {}
 
   reusify@1.0.4: {}
 
