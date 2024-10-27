@@ -36,7 +36,6 @@
 		"eslint": "^9.13.0",
 		"eslint-plugin-format": "^0.1.2",
 		"eslint-plugin-svelte": "^2.45.1",
-		"favicons": "^7.2.0",
 		"renovate": "^38.128.1",
 		"std-env": "^3.7.0",
 		"svelte": "^5.0.0",

@@ -60,9 +60,6 @@ importers:
       eslint-plugin-svelte:
         specifier: ^2.45.1
         version: 2.45.1(eslint@9.13.0(jiti@1.21.6))(svelte@5.0.0)
-      favicons:
-        specifier: ^7.2.0
-        version: 7.2.0
       renovate:
         specifier: ^38.128.1
         version: 38.128.1(@aws-sdk/client-sso-oidc@3.658.1(@aws-sdk/client-sts@3.658.1))(encoding@0.1.13)(typanion@3.14.0)
