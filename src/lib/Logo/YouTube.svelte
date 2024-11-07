@@ -1,8 +1,7 @@
 <script lang='ts'>
+	import icon from '$/assets/logos/icon-youtube.svg';
 	import { LINKS } from '../links';
 	import Base from './_Base.svelte';
-	// @ts-ignore
-	import icon from '$/assets/logos/icon-youtube.png?enhanced&w=300;600;800';
 
 	const { ...rest } = $props();
 
