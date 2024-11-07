@@ -13,7 +13,7 @@
 
 </script>
 {#snippet image()}
-	{#if typeof icon === 'string' && icon.endsWith('.svg')}
+	{#if typeof icon === 'string'}
 		<!-- svg image -->
 		<img
 			class={_className}
