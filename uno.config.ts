@@ -30,7 +30,7 @@ export const theme = {
 export default defineConfig({
 	presets: [
 		presetUno(),
-		presetAttributify({ prefix: 'uno-', prefixedOnly: true }), // class属性ではなく、属性地に直接書く設定。https://unocss.dev/presets/attributify
+		presetAttributify({ prefix: 'uno-', prefixedOnly: true }), // class属性ではなく、属性値に直接書く設定。https://unocss.dev/presets/attributify
 		presetIcons({ autoInstall: isDevelopment }), // Iconを使うための設定。autoInstallも設定している。https://unocss.dev/presets/icons
 	],
 	transformers: [

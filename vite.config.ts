@@ -38,7 +38,7 @@ export default defineConfig({
 			/* ========================= */
 		}),
 
-		/* `_recirects`ファイルを生成するための設定 */
+		/* `_redirects`ファイルを生成するための設定 */
 		cloudflareRedirect({
 			mode: 'generate',
 			redirectsFilePath: relativePath('./static/_redirects'),
