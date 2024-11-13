@@ -13,7 +13,8 @@
 		"lint": "eslint --cache .",
 		"lint:renovate": "renovate-config-validator",
 		"format": "npm run lint -- --fix",
-		"prepare": "git config --local core.hooksPath .githooks || echo 'Can not set git hooks'",
+		"secretlint": "nlx @secretlint/quick-start",
+		"prepare": "husky",
 		"preinstall": "npx only-allow pnpm"
 	},
 	"dependencies": {
@@ -21,6 +22,7 @@
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^3.8.0",
+		"@antfu/ni": "^0.23.0",
 		"@iconify-json/ph": "^1.2.1",
 		"@ryoppippi/vite-plugin-cloudflare-redirect": "npm:@jsr/ryoppippi__vite-plugin-cloudflare-redirect@^1.0.3",
 		"@std/async": "npm:@jsr/std__async@^1.0.6",
@@ -36,6 +38,8 @@
 		"eslint": "^9.13.0",
 		"eslint-plugin-format": "^0.1.2",
 		"eslint-plugin-svelte": "^2.45.1",
+		"husky": "^9.1.6",
+		"lint-staged": "^15.2.10",
 		"renovate": "^38.128.1",
 		"std-env": "^3.7.0",
 		"svelte": "^5.0.0",
@@ -49,5 +53,11 @@
 		"unocss": "^0.62.4",
 		"vite": "^5.4.9",
 		"vite-plugin-favicons": "^0.1.5"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,json,css,html,yaml,yml,md,svelte}": [
+			"nr secretlint",
+			"eslint --cache --fix"
+		]
 	}
 }
