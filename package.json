@@ -12,7 +12,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint --cache .",
 		"lint:renovate": "renovate-config-validator",
-		"format": "npm run lint -- --fix",
+		"format": "nr format --fix",
 		"secretlint": "nlx @secretlint/quick-start",
 		"prepare": "husky",
 		"preinstall": "npx only-allow pnpm"
