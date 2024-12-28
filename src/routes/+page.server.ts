@@ -1,4 +1,4 @@
-import type { Tweet } from 'sveltweet';
+import type { Tweet as TweetT } from 'sveltweet/api';
 import { LISTENERS_TWEET_IDS } from '$/lib/links';
 import { retry } from '@std/async';
 import { error } from '@sveltejs/kit';
@@ -6,7 +6,7 @@ import { getTweet } from 'sveltweet/api';
 
 /* tweet を取得する。 */
 export async function load() {
-	const tweets: Tweet[] = [];
+	const tweets: TweetT[] = [];
 	for (const id of LISTENERS_TWEET_IDS) {
 		const tweet = await retry(async () => {
 			const _tweet = await getTweet(id);

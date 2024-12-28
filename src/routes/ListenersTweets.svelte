@@ -1,15 +1,16 @@
 <script lang='ts'>
+	import type { Tweet as TweetT } from 'sveltweet/api';
 	import { Heading } from '$/lib/Heading';
-	import { SvelteTweet, type Tweet } from 'sveltweet';
+	import { Tweet } from 'sveltweet';
 
-	const { tweets }: { tweets: Tweet[] } = $props();
+	const { tweets }: { tweets: TweetT[] } = $props();
 </script>
 
 <section>
 	<Heading title='リスナーの声' />
 	<div data-theme='dark'>
 		{#each tweets as tweet (tweet.id_str)}
-			<SvelteTweet {tweet} />
+			<Tweet {tweet} />
 		{/each}
 	</div>
 </section>
