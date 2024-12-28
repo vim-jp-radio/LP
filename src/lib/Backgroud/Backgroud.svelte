@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import { PrefersReducedMotion } from '$lib/utils/runes.svelte.js';
+	import { prefersReducedMotion } from 'svelte/motion';
 	import { animate, cancelAnimate, createCircles } from './circle.js';
 
 	/**
@@ -16,8 +16,6 @@
 		minSpeed?: number;
 		maxSpeed?: number;
 	} = $props();
-	/** media queryのprefers-reduced-motionを取得 */
-	const prefersReducedMotionRune = new PrefersReducedMotion();
 
 	let canvas = $state<HTMLCanvasElement | undefined>(undefined);
 	const ctx = $derived.by(() => canvas?.getContext('2d'));
@@ -28,7 +26,7 @@
 	let jsLoaded = $state(false);
 
 	const circles = $derived.by(() =>
-		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx, minSpeed, maxSpeed, prefersReducedMotionRune.isReduced) : [],
+		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx, minSpeed, maxSpeed, prefersReducedMotion.current) : [],
 	);
 
 	/** js が読み込まれたらオンになる */
