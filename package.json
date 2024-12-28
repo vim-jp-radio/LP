@@ -46,7 +46,7 @@
 		"svelte-check": "^4.0.5",
 		"svelte-eslint-parser": "^0.41.1",
 		"svelte-preprocess-budoux": "^1.0.2",
-		"sveltweet": "^0.2.11",
+		"sveltweet": "^0.3.2",
 		"tslib": "^2.8.0",
 		"typescript": "^5.6.3",
 		"typescript-svelte-plugin": "^0.3.42",
