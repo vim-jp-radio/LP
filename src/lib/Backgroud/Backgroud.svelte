@@ -1,5 +1,6 @@
 <script lang='ts'>
-	import { PrefersReducedMotion } from '$lib/utils/runes.svelte.js';
+	import { prefersReducedMotion } from 'svelte/motion';
+	import { innerHeight, innerWidth } from 'svelte/reactivity/window';
 	import { animate, cancelAnimate, createCircles } from './circle.js';
 
 	/**
@@ -16,19 +17,15 @@
 		minSpeed?: number;
 		maxSpeed?: number;
 	} = $props();
-	/** media queryのprefers-reduced-motionを取得 */
-	const prefersReducedMotionRune = new PrefersReducedMotion();
 
 	let canvas = $state<HTMLCanvasElement | undefined>(undefined);
 	const ctx = $derived.by(() => canvas?.getContext('2d'));
-	let width = $state(0);
-	let height = $state(0);
 
 	/** jsが読み込まれたかどうか */
 	let jsLoaded = $state(false);
 
 	const circles = $derived.by(() =>
-		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx, minSpeed, maxSpeed, prefersReducedMotionRune.isReduced) : [],
+		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx, minSpeed, maxSpeed, prefersReducedMotion.current) : [],
 	);
 
 	/** js が読み込まれたらオンになる */
@@ -52,7 +49,6 @@
 	});
 </script>
 
-<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 <!-- svelte-ignore element_invalid_self_closing_tag -->
 <div
 	uno-bg-LP-backgroud
@@ -69,7 +65,7 @@
 		<canvas
 			bind:this={canvas}
 			style:--blur='{blurStrength}px'
-			height={height + blurStrength * 4}
+			height={innerHeight.current ?? 0 + blurStrength * 4}
 			uno-bg-LP-backgroud
 			uno-filter-blur='[--blur]'
 			uno-left='50%'
@@ -79,7 +75,7 @@
 			uno-transform-translate-x='-50%'
 			uno-transform-translate-y='-50%'
 			uno-z-1
-			width={width + blurStrength * 4}
+			width={innerWidth.current ?? 0 + blurStrength * 4}
 		/>
 	{/if}
 </div>
