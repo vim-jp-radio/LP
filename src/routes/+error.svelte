@@ -20,7 +20,7 @@
 	>
 		<!-- EASTER_EGG🐰🥚: Konamiコマンドが認識されると、`konami.activated`が`true`になり、`animate-spin`が適用されます。 -->
 		<enhanced:img
-			class:animate-spin={konami.activated}
+			class={{ 'animate-spin': konami.activated }}
 			alt='error logo'
 			loading='lazy'
 			src='$/assets/alisue/beer.png'
