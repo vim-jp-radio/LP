@@ -28,5 +28,5 @@ export const LISTENERS_TWEET_IDS = [
 	'1839083747846795418', // @na0x2c6
 	'1863863535979364378', // @shuntaka_dev
 	'1846090683507163150', // @takeokunn
-	'1859811195206893973 ', // @mugijiru
+	'1859811195206893973', // @mugijiru
 ] as const satisfies string[];
