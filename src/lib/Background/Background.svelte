@@ -51,7 +51,7 @@
 
 <!-- svelte-ignore element_invalid_self_closing_tag -->
 <div
-	uno-bg-LP-backgroud
+	uno-bg-LP-background
 	uno-h-full
 	uno-left-0
 	uno-overflow-hidden
@@ -66,7 +66,7 @@
 			bind:this={canvas}
 			style:--blur='{blurStrength}px'
 			height={innerHeight.current ?? 0 + blurStrength * 4}
-			uno-bg-LP-backgroud
+			uno-bg-LP-background
 			uno-filter-blur='[--blur]'
 			uno-left='50%'
 			uno-position-absolute

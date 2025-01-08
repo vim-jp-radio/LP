@@ -18,7 +18,7 @@ export const theme = {
 			yellow: '#ffffb3',
 			gray: '#909296',
 			darkGray: '#5C5F66',
-			backgroud: '#010a01',
+			background: '#010a01',
 			textColor: '#f8f9fa',
 		},
 	},
@@ -52,6 +52,6 @@ export default defineConfig({
 	],
 	shortcuts: {
 		text: 'text-base text-LP-textColor',
-		button: 'color-LP-yellow border-(solid 2 LP-yellow) rounded px-4 py-2 hover:(bg-LP-yellow color-LP-backgroud) w-fit flex',
+		button: 'color-LP-yellow border-(solid 2 LP-yellow) rounded px-4 py-2 hover:(bg-LP-yellow color-LP-background) w-fit flex',
 	},
 });

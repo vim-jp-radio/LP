@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import { Backgroud } from '$lib/Backgroud';
+	import { Background } from '$lib/Background';
 	import EasterEgg from './EasterEgg.svelte';
 
 	import Meta from './Meta.svelte';
@@ -14,7 +14,7 @@
 <!-- EASTER_EGG🐰🥚 -->
 <EasterEgg />
 
-<Backgroud />
+<Background />
 <div
 	uno-max-w-600px
 	uno-mx-auto
@@ -33,7 +33,7 @@
 */
 :global {
 	body {
-		--at-apply: bg-LP-backgroud p-safe min-h-safe;
+		--at-apply: bg-LP-background p-safe min-h-safe;
 		margin: 0;
 		min-width: 300px; /* 実際には320pxだが、スクロールバー等を考慮して300pxとしておく */
 	}
