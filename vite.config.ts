@@ -15,7 +15,7 @@ function relativePath(...args: string[]): string {
 }
 
 /* unocss から background color を取得 */
-const background = theme.colors.LP.background;
+const { background } = theme.colors.LP;
 
 export default defineConfig({
 	plugins: [
