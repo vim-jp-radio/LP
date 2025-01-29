@@ -1,56 +1,32 @@
 <script lang='ts'>
-	import { prefersReducedMotion } from 'svelte/motion';
-	import { innerHeight, innerWidth } from 'svelte/reactivity/window';
-	import { animate, cancelAnimate, createCircles } from './circle.js';
+	import { mount, onMount, unmount } from 'svelte';
+	import BackgroundCanvas, { type Props as CanvasProps } from './Background-canvas.svelte';
 
 	/**
 	 * @param {number} circleNum - 円の数
 	 * @param {number} minSpeed - 最小速度
 	 * @param {number} maxSpeed - 最大速度
 	 */
-	const {
-		circleNum = 15,
-		minSpeed = 0.5,
-		maxSpeed = 1,
-	}: {
-		circleNum?: number;
-		minSpeed?: number;
-		maxSpeed?: number;
-	} = $props();
+	const { ...restProps }: CanvasProps = $props();
 
-	let canvas = $state<HTMLCanvasElement | undefined>(undefined);
-	const ctx = $derived.by(() => canvas?.getContext('2d'));
+	let div: HTMLDivElement;
 
-	/** jsが読み込まれたかどうか */
-	let jsLoaded = $state(false);
+	/** js が読み込まれたらCanvasをマウント */
+	onMount(() => {
+		const bg = mount(BackgroundCanvas, {
+			target: div,
+			props: restProps,
+		});
 
-	const circles = $derived.by(() =>
-		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx, minSpeed, maxSpeed, prefersReducedMotion.current) : [],
-	);
-
-	/** js が読み込まれたらオンになる */
-	$effect(() => {
-		jsLoaded = true;
-	});
-
-	$effect(() => {
-		if (
-			circles?.length > 0
-			&& canvas != null
-			&& ctx != null
-		) {
-			animate(canvas, ctx, circles);
-		}
-
-		/** ページ遷移時にアニメーションをキャンセル */
 		return () => {
-			cancelAnimate();
+			unmount(bg);
 		};
 	});
 </script>
 
 <!-- svelte-ignore element_invalid_self_closing_tag -->
 <div
+	bind:this={div}
 	uno-bg-LP-background
 	uno-h-full
 	uno-left-0
@@ -58,24 +34,4 @@
 	uno-position-fixed
 	uno-top-0
 	uno-w-full
->
-	{#if jsLoaded}
-		{@const blurStrength = 50}
-		<!-- css変数を経由することで、unocssのclassに値を渡すことができる -->
-		<canvas
-			bind:this={canvas}
-			style:--blur='{blurStrength}px'
-			height={innerHeight.current ?? 0 + blurStrength * 4}
-			uno-bg-LP-background
-			uno-filter-blur='[--blur]'
-			uno-left='50%'
-			uno-position-absolute
-			uno-position-fixed
-			uno-top='50%'
-			uno-transform-translate-x='-50%'
-			uno-transform-translate-y='-50%'
-			uno-z-1
-			width={innerWidth.current ?? 0 + blurStrength * 4}
-		/>
-	{/if}
-</div>
+/>
