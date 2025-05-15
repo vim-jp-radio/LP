@@ -21,24 +21,12 @@
 	let canvas = $state<HTMLCanvasElement | undefined>(undefined);
 	const ctx = $derived.by(() => canvas?.getContext('2d'));
 
-	/** jsが読み込まれたかどうか */
-	let jsLoaded = $state(false);
-
 	const circles = $derived.by(() =>
 		canvas != null && ctx != null ? createCircles(circleNum, canvas, ctx, minSpeed, maxSpeed, prefersReducedMotion.current) : [],
 	);
 
-	/** js が読み込まれたらオンになる */
 	$effect(() => {
-		jsLoaded = true;
-	});
-
-	$effect(() => {
-		if (
-			circles?.length > 0
-			&& canvas != null
-			&& ctx != null
-		) {
+		if (circles?.length > 0 && canvas != null && ctx != null) {
 			animate(canvas, ctx, circles);
 		}
 
@@ -47,6 +35,8 @@
 			cancelAnimate();
 		};
 	});
+
+	const blurStrength = 50;
 </script>
 
 <!-- svelte-ignore element_invalid_self_closing_tag -->
@@ -59,23 +49,20 @@
 	uno-top-0
 	uno-w-full
 >
-	{#if jsLoaded}
-		{@const blurStrength = 50}
-		<!-- css変数を経由することで、unocssのclassに値を渡すことができる -->
-		<canvas
-			bind:this={canvas}
-			style:--blur='{blurStrength}px'
-			height={innerHeight.current ?? 0 + blurStrength * 4}
-			uno-bg-LP-background
-			uno-filter-blur='[--blur]'
-			uno-left='50%'
-			uno-position-absolute
-			uno-position-fixed
-			uno-top='50%'
-			uno-transform-translate-x='-50%'
-			uno-transform-translate-y='-50%'
-			uno-z-1
-			width={innerWidth.current ?? 0 + blurStrength * 4}
-		/>
-	{/if}
+	<!-- css変数を経由することで、unocssのclassに値を渡すことができる -->
+	<canvas
+		bind:this={canvas}
+		style:--blur='{blurStrength}px'
+		height={innerHeight.current ?? 0 + blurStrength * 4}
+		uno-bg-LP-background
+		uno-filter-blur='[--blur]'
+		uno-left='50%'
+		uno-position-absolute
+		uno-position-fixed
+		uno-top='50%'
+		uno-transform-translate-x='-50%'
+		uno-transform-translate-y='-50%'
+		uno-z-1
+		width={innerWidth.current ?? 0 + blurStrength * 4}
+	/>
 </div>
