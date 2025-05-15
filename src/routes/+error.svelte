@@ -1,7 +1,7 @@
 <script lang='ts'>
 	import { Konami } from '$/lib/Konami';
 	import { dev } from '$app/environment';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	const konami = new Konami(2000);
 
@@ -11,7 +11,7 @@
 	}
 </script>
 
-{#if $page.error != null}
+{#if page.error != null}
 	<h1
 		uno-grid
 		uno-h-100svh
@@ -26,7 +26,7 @@
 			src='$/assets/alisue/beer.png'
 		/>
 		<span uno-text>
-			{$page.error.message}
+			{page.error.message}
 		</span>
 	</h1>
 {/if}
