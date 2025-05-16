@@ -51,8 +51,8 @@
 >
 	<!-- css変数を経由することで、unocssのclassに値を渡すことができる -->
 	<canvas
-		{@attach canvasAttachment}
 		style:--blur='{blurStrength}px'
+		{@attach canvasAttachment}
 		height={innerHeight.current ?? 0 + blurStrength * 4}
 		uno-bg-LP-background
 		uno-filter-blur='[--blur]'
