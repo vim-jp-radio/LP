@@ -1,8 +1,8 @@
 <script lang='ts'>
-	import { LINKS } from '../links';
-	import Base from './_Base.svelte';
 	// @ts-ignore
 	import icon from '$/assets/logos/icon-amazon-music.svg';
+	import { LINKS } from '../links';
+	import Base from './_Base.svelte';
 
 	const { ...rest } = $props();
 
