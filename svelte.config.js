@@ -19,15 +19,6 @@ const config = {
 		budouxPreprocess({ language: 'ja', attribute: 'data-budoux' }), // budouxを使って日本語の改行をいい感じにする。 https://github.com/google/budoux/tree/main/javascript https://github.com/ryoppippi/svelte-preprocess-budoux
 	],
 
-	vitePlugin: {
-		dynamicCompileOptions({ filename }) {
-			/* sveltekit-tweet が rune に対応していないので、user script のみ rune を強制する https://github.com/sveltejs/svelte/issues/9632#issuecomment-1825498213 */
-			if (!filename.includes('node_modules')) {
-				return { runes: true };
-			}
-		},
-	},
-
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
