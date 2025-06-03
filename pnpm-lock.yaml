@@ -22,13 +22,13 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       '@ryoppippi/vite-plugin-cloudflare-redirect':
-        specifier: npm:@jsr/ryoppippi__vite-plugin-cloudflare-redirect@^1.0.3
+        specifier: jsr:^1.0.3
         version: '@jsr/ryoppippi__vite-plugin-cloudflare-redirect@1.0.3(@types/node@20.16.13)(terser@5.31.6)'
       '@std/async':
-        specifier: npm:@jsr/std__async@^1.0.6
+        specifier: jsr:^1.0.6
         version: '@jsr/std__async@1.0.6'
       '@std/collections':
-        specifier: npm:@jsr/std__collections@^1.0.8
+        specifier: jsr:^1.0.8
         version: '@jsr/std__collections@1.0.8'
       '@sveltejs/adapter-static':
         specifier: ^3.0.8
