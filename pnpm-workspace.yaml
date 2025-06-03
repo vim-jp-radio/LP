@@ -1,2 +1,11 @@
 engineStrict: true
+onlyBuiltDependencies:
+  - better-sqlite3
+  - core-js-pure
+  - dtrace-provider
+  - esbuild
+  - protobufjs
+  - re2
+  - sharp
+  - unrs-resolver
 useNodeVersion: 22.15.0
