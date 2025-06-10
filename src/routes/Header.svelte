@@ -9,6 +9,6 @@
 		uno-m-0
 		uno-place='content-center items-center'
 	>
-		<VimJpRadio class='h-auto max-w-100% w-50svh' loading={null} />
+		<VimJpRadio class='h-auto max-w-100% w-50svh' fetchpriority='high' loading={null} />
 	</h1>
 </header>
