@@ -5,10 +5,9 @@
 	type Props = Parameters<typeof getTweet>[0];
 
 	const { id }: Props = $props();
+	const tweet = getTweet({ id });
 </script>
 
-<svelte:boundary>
-	{#snippet pending()} loading{/snippet}
-	<!-- eslint-disable-next-line antfu/no-top-level-await -->
-	<Sveltweet tweet={await getTweet({ id })} />
-</svelte:boundary>
+{#if tweet.current != null}
+	<Sveltweet tweet={tweet.current} />
+{/if}
