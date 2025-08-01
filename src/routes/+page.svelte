@@ -6,9 +6,6 @@
 	import Personalities from './Personalities.svelte';
 	import Platforms from './Platforms.svelte';
 	import RadioLetter from './RadioLetter.svelte';
-
-	/* +page.server.ts からデータを取得 */
-	const { data } = $props();
 </script>
 
 <Header />
@@ -18,7 +15,7 @@
 	<Platforms />
 	<Personalities />
 	<RadioLetter />
-	<ListenersTweets tweets={data.tweets} />
+	<ListenersTweets />
 </main>
 
 <Footer />
