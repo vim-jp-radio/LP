@@ -1,17 +1,15 @@
 <script lang='ts'>
 	import { Heading } from '$/lib/Heading';
-	import { Tweet } from 'sveltweet';
-	import { getTweets } from './tweet.remote';
-
-	const tweets = getTweets();
+	import { LISTENERS_TWEET_IDS } from '$/lib/links';
+	import { Tweet } from '$/lib/Tweet';
 </script>
 
 <section>
 	<Heading title='リスナーの声' />
 	<svelte:boundary>
 		<div data-theme='dark'>
-			{#each tweets.current as tweet (tweet.id_str)}
-				<Tweet {tweet} />
+			{#each LISTENERS_TWEET_IDS as id (id)}
+				<Tweet {id} />
 			{/each}
 		</div>
 	</svelte:boundary>
