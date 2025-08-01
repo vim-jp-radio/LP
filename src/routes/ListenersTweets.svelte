@@ -6,11 +6,9 @@
 
 <section>
 	<Heading title='リスナーの声' />
-	<svelte:boundary>
-		<div data-theme='dark'>
-			{#each LISTENERS_TWEET_IDS as id (id)}
-				<Tweet {id} />
-			{/each}
-		</div>
-	</svelte:boundary>
+	<div data-theme='dark'>
+		{#each LISTENERS_TWEET_IDS as id (id)}
+			<Tweet {id} />
+		{/each}
+	</div>
 </section>
