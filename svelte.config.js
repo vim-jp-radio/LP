@@ -27,6 +27,10 @@ const config = {
 			fallback: '404.html',
 		}),
 
+		experimental: {
+			remoteFunctions: true,
+		},
+
 		typescript: {
 			config(config) {
 				config.include.push(path.join(import.meta.dirname, 'uno.config.ts'));
