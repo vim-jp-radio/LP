@@ -1,16 +1,18 @@
 <script lang='ts'>
-	import type { Tweet as TweetT } from 'sveltweet/api';
 	import { Heading } from '$/lib/Heading';
 	import { Tweet } from 'sveltweet';
+	import { getTweets } from './tweet.remote';
 
-	const { tweets }: { tweets: TweetT[] } = $props();
+	const tweets = getTweets();
 </script>
 
 <section>
 	<Heading title='リスナーの声' />
-	<div data-theme='dark'>
-		{#each tweets as tweet (tweet.id_str)}
-			<Tweet {tweet} />
-		{/each}
-	</div>
+	<svelte:boundary>
+		<div data-theme='dark'>
+			{#each tweets.current as tweet (tweet.id_str)}
+				<Tweet {tweet} />
+			{/each}
+		</div>
+	</svelte:boundary>
 </section>
