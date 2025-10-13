@@ -33,6 +33,7 @@ export default antfu(
 	{
 		files: ['**/*.svelte', '**/*.svelte'],
 		rules: {
+			'antfu/no-top-level-await': 'off',
 			'svelte/valid-compile': 'off',
 			'svelte/button-has-type': 'error',
 			'svelte/require-each-key': 'error',
