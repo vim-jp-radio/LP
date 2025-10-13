@@ -5,9 +5,7 @@
 	type Props = Parameters<typeof getTweet>[0];
 
 	const { id }: Props = $props();
-	const tweet = getTweet({ id });
+	const tweet = await getTweet({ id });
 </script>
 
-{#if tweet.current != null}
-	<Sveltweet tweet={tweet.current} />
-{/if}
+<Sveltweet {tweet} />
