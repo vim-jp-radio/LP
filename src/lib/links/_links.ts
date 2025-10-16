@@ -17,7 +17,7 @@ export const LINKS = {
 export const VIM_JP_RADIO_INFO = {
 	...LINKS.VimJpRadio,
 	title: `エンジニアの楽園 vim-jpラジオ`,
-	titleWithTagline: `エンジニアの楽園 vim-jpラジオ | 毎週月曜配信の技術系ポッドキャスト`,
+	titleWithTagline: `エンジニアの楽園 vim-jpラジオ | 毎月2回配信の技術系ポッドキャスト`,
 	description: `エンジニアが集まるインターネット上のコミュニティvim-jpから生まれた初の音声プログラム。vim-jpはプログラミングから子育てに至るまで無数のチャンネルを抱えたコミュニティです。そんなコミュニティの面白さを生かして、各分野の様々なゲストを交えながら楽しく雑談していきます。`,
 } as const satisfies Record<string, string>;
 
