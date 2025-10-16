@@ -1,6 +1,5 @@
 import AmazonMusic from './AmazonMusic.svelte';
 import ApplePodcast from './ApplePodcast.svelte';
-import AuDee from './AuDee.svelte';
 import GitHub from './GitHub.svelte';
 import Home from './Home.svelte';
 import Spotify from './Spotify.svelte';
@@ -12,7 +11,6 @@ import YouTube from './YouTube.svelte';
 export {
 	AmazonMusic,
 	ApplePodcast,
-	AuDee,
 	GitHub,
 	Home,
 	Spotify,

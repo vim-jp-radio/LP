@@ -14,7 +14,6 @@
 		uno-justify-center
 		uno-mb-8
 	>
-		<Logo.AuDee />
 		<Logo.ApplePodcast />
 		<Logo.Spotify />
 		<Logo.AmazonMusic />
