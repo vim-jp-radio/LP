@@ -9,7 +9,6 @@ export const LINKS = {
 	ApplePodcast: { url: `https://podcasts.apple.com/jp/podcast/エンジニアの楽園-vim-jp-ラジオ/id1755104750`, label: `Apple Podcast` },
 	Spotify: { url: `https://open.spotify.com/show/3fkxQ6g3577mog02HuXZMj?nd=1&dlsi=c2f29ebcdc1940ab`, label: `Spotify` },
 	X: { url: `https://x.com/vimjpradio`, label: `X` },
-	AuDee: { url: `https://audee.jp/program/show/300008578`, label: `AuDee` },
 	Youtube: { url: `https://www.youtube.com/playlist?list=PLcptmT4PuRVNm5qjf5DhzPYZenncjLWQ8`, label: `Youtube` },
 	Suzuri: { url: `https://suzuri.jp/vim-jp-radio`, label: `Suzuri` },
 } as const satisfies Record<string, { url: string; label: string }>;
