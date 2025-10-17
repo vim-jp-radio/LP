@@ -10,7 +10,7 @@
 		<!-- 幅がtiny未満であれば、上下に分割して表示 -->
 		<div uno-flex='~ col tiny:row-reverse justify-center' uno-space-y='6 tiny:0'>
 			<!-- Apple Podcast Logo -->
-			<div uno-max-w-60 uno-min-w-36 uno-tiny-w-full>
+			<div uno-max-w-32 uno-tiny-w-full>
 				<Logo.ApplePodcast class='h-full w-full object-fill' />
 			</div>
 			<div uno-space-y='4 tiny:6'>
