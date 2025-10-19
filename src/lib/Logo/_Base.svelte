@@ -7,7 +7,7 @@
 
 	const { link, icon, alt, class: className, ...rest }: { link?: string; icon: string | Picture } & Omit<HTMLImgAttributes, 'src'> = $props();
 
-	const _defaultClassName = `h-full object-scale-down w-auto`;
+	const _defaultClassName = `h-full w-auto object-scale-down`;
 	const _className = className ?? _defaultClassName;
 	const loading: typeof rest.loading = 'loading' in rest ? rest.loading : `lazy`;
 

@@ -7,9 +7,9 @@ export const LINKS = {
 	VimJpSlack: { url: `https://vim-jp.org/docs/chat.html`, label: `vim-jp Slack` },
 	AmazonMusic: { url: `https://music.amazon.co.jp/podcasts/e059ff85-b9a1-499e-9cc5-b148e5b56c18/エンジニアの楽園-vim-jp-ラジオ`, label: `Amazon Music` },
 	ApplePodcast: { url: `https://podcasts.apple.com/jp/podcast/エンジニアの楽園-vim-jp-ラジオ/id1755104750`, label: `Apple Podcast` },
+	Radiko: { url: `https://radiko.jp/podcast/channels/bf2c6e2d-9fe1-448f-b08a-523c93a5b316`, label: `radiko` },
 	Spotify: { url: `https://open.spotify.com/show/3fkxQ6g3577mog02HuXZMj?nd=1&dlsi=c2f29ebcdc1940ab`, label: `Spotify` },
 	X: { url: `https://x.com/vimjpradio`, label: `X` },
-	AuDee: { url: `https://audee.jp/program/show/300008578`, label: `AuDee` },
 	Youtube: { url: `https://www.youtube.com/playlist?list=PLcptmT4PuRVNm5qjf5DhzPYZenncjLWQ8`, label: `Youtube` },
 	Suzuri: { url: `https://suzuri.jp/vim-jp-radio`, label: `Suzuri` },
 } as const satisfies Record<string, { url: string; label: string }>;
