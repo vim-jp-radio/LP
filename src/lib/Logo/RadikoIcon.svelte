@@ -1,5 +1,5 @@
 <script lang='ts'>
-	import icon from '$/assets/logos/logo-radiko.svg';
+	import icon from '$/assets/logos/icon-radiko.png';
 	import { LINKS } from '../links';
 	import Base from './_Base.svelte';
 

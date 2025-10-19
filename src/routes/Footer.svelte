@@ -14,6 +14,7 @@
 		uno-justify-center
 		uno-mb-8
 	>
+		<Logo.RadikoIcon />
 		<Logo.ApplePodcast />
 		<Logo.Spotify />
 		<Logo.AmazonMusic />
