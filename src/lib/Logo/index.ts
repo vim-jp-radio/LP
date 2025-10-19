@@ -3,6 +3,7 @@ import ApplePodcast from './ApplePodcast.svelte';
 import GitHub from './GitHub.svelte';
 import Home from './Home.svelte';
 import Radiko from './Radiko.svelte';
+import RadikoIcon from './RadikoIcon.svelte';
 import Spotify from './Spotify.svelte';
 import Suzuri from './Suzuri.svelte';
 import VimJpRadio from './VimJpRadio.svelte';
@@ -15,6 +16,7 @@ export {
 	GitHub,
 	Home,
 	Radiko,
+	RadikoIcon,
 	Spotify,
 	Suzuri,
 	VimJpRadio,
