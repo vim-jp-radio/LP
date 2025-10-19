@@ -43,6 +43,7 @@ export default defineConfig({
 			mode: 'generate',
 			redirectsFilePath: relativePath('./static/_redirects'),
 			entries: [
+				{ from: '/radiko', to: LINKS.Radiko.url },
 				{ from: '/apple', to: LINKS.ApplePodcast.url },
 				{ from: '/amazon', to: LINKS.AmazonMusic.url },
 				{ from: '/spotify', to: LINKS.Spotify.url },
