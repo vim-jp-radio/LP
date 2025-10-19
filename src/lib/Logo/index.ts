@@ -2,6 +2,7 @@ import AmazonMusic from './AmazonMusic.svelte';
 import ApplePodcast from './ApplePodcast.svelte';
 import GitHub from './GitHub.svelte';
 import Home from './Home.svelte';
+import Radiko from './Radiko.svelte';
 import Spotify from './Spotify.svelte';
 import Suzuri from './Suzuri.svelte';
 import VimJpRadio from './VimJpRadio.svelte';
@@ -13,6 +14,7 @@ export {
 	ApplePodcast,
 	GitHub,
 	Home,
+	Radiko,
 	Spotify,
 	Suzuri,
 	VimJpRadio,
