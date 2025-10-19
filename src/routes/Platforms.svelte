@@ -9,17 +9,17 @@
 	<div uno-flex-col uno-space-y-12>
 		<!-- 幅がtiny未満であれば、上下に分割して表示 -->
 		<div uno-flex='~ col tiny:row-reverse justify-center' uno-space-y='6 tiny:0'>
-			<!-- Apple Podcast Logo -->
-			<div uno-max-w-32 uno-tiny-w-full>
-				<Logo.ApplePodcast class='h-full w-full object-fill' />
+			<!-- Radiko Logo -->
+			<div uno-max-w-60 uno-min-w-36 uno-tiny-w-full>
+				<Logo.Radiko class='h-full w-full object-fill' />
 			</div>
 			<div uno-space-y='4 tiny:6'>
 				<!-- description -->
 				<p data-budoux uno-text>
 					「エンジニアの楽園 vim-jpラジオ」は TOKYO FM の公式番組です。
 				</p>
-				<!-- Apple Podcast link -->
-				<a data-budoux href={LINKS.ApplePodcast.url} target='_blank' uno-button>Apple Podcastで聞く</a>
+				<!-- Radiko link -->
+				<a data-budoux href={LINKS.Radiko.url} target='_blank' uno-button>radikoで聞く</a>
 			</div>
 		</div>
 
@@ -33,6 +33,7 @@
 				uno-h-16
 				uno-justify-center
 			>
+				<Logo.ApplePodcast />
 				<Logo.Spotify />
 				<Logo.AmazonMusic />
 				<Logo.YouTube />
