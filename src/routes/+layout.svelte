@@ -1,6 +1,7 @@
 <script lang='ts'>
 	import { Background } from '$lib/Background';
 	import EasterEgg from './EasterEgg.svelte';
+	import Footer from './Footer.svelte';
 
 	import Meta from './Meta.svelte';
 	import 'uno.css';
@@ -25,6 +26,7 @@
 	uno-z-1
 >
 	{@render children()}
+	<Footer />
 </div>
 
 <style>
