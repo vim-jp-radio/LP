@@ -1,6 +1,5 @@
 <script>
 	import Description from './Description.svelte';
-	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import ListenersTweets from './ListenersTweets.svelte';
 	import Personalities from './Personalities.svelte';
@@ -17,5 +16,3 @@
 	<RadioLetter />
 	<ListenersTweets />
 </main>
-
-<Footer />
