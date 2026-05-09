@@ -1,11 +1,11 @@
+allowBuilds:
+  better-sqlite3: true
+  core-js-pure: true
+  dtrace-provider: true
+  esbuild: true
+  protobufjs: true
+  re2: true
+  sharp: true
+  unrs-resolver: true
 engineStrict: true
-onlyBuiltDependencies:
-  - better-sqlite3
-  - core-js-pure
-  - dtrace-provider
-  - esbuild
-  - protobufjs
-  - re2
-  - sharp
-  - unrs-resolver
-useNodeVersion: 22.15.0
+nodeVersion: 22.22.0
