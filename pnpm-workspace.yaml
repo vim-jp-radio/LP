@@ -3,6 +3,7 @@ allowBuilds:
   core-js-pure: true
   dtrace-provider: true
   esbuild: true
+  lefthook: true
   protobufjs: true
   re2: true
   sharp: true

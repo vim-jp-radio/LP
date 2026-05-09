@@ -28,7 +28,6 @@
 		"lint:renovate": "renovate-config-validator",
 		"format": "nr lint --fix",
 		"secretlint": "nlx @secretlint/quick-start",
-		"prepare": "husky",
 		"preinstall": "npx only-allow pnpm"
 	},
 	"dependencies": {
@@ -52,8 +51,7 @@
 		"eslint": "^9.28.0",
 		"eslint-plugin-format": "^1.0.1",
 		"eslint-plugin-svelte": "^3.9.1",
-		"husky": "^9.1.7",
-		"lint-staged": "^16.1.0",
+		"lefthook": "^2.1.6",
 		"renovate": "^40.40.1",
 		"std-env": "^3.9.0",
 		"svelte": "^5.55.5",
@@ -67,11 +65,5 @@
 		"valibot": "^1.1.0",
 		"vite": "^8.0.11",
 		"vite-plugin-favicons": "^0.1.7"
-	},
-	"lint-staged": {
-		"*.{js,jsx,ts,tsx,json,css,html,yaml,yml,md,svelte}": [
-			"nr secretlint",
-			"eslint --cache --fix"
-		]
 	}
 }
