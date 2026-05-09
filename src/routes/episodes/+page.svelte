@@ -1,10 +1,10 @@
 <script lang='ts'>
-	import type { PageData } from './$types';
 	import { Heading } from '$lib/Heading';
 	import { VIM_JP_RADIO_INFO } from '$lib/links';
 	import * as Logo from '$lib/Logo';
+	import { getGuestEpisodes } from './episodes.remote';
 
-	const { data }: { data: PageData } = $props();
+	const data = await getGuestEpisodes();
 
 	const description = `エンジニアの楽園 vim-jp ラジオのゲスト出演回タイムラインです。`;
 	const title = `ゲスト出演回タイムライン | ${VIM_JP_RADIO_INFO.title}`;

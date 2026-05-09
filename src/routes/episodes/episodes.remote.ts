@@ -1,4 +1,4 @@
-import type { PageServerLoad } from './$types';
+import { prerender } from '$app/server';
 import { buildGuestEpisodesFromFeedXml, RSS_FEED_URL } from '$lib/guests';
 
 interface ApplePodcastEpisode {
@@ -10,9 +10,10 @@ interface ApplePodcastLookupResponse {
 	results?: ApplePodcastEpisode[];
 }
 
-const YOUTUBE_PLAYLIST_FEED_URL = 'https://www.youtube.com/feeds/videos.xml?playlist_id=PLcptmT4PuRVNm5qjf5DhzPYZenncjLWQ8';
+const YOUTUBE_PLAYLIST_ID = 'PLcptmT4PuRVNm5qjf5DhzPYZenncjLWQ8';
+const YOUTUBE_PLAYLIST_URL = `https://www.youtube.com/playlist?list=${YOUTUBE_PLAYLIST_ID}`;
 
-export const load: PageServerLoad = async ({ fetch }) => {
+export const getGuestEpisodes = prerender(async () => {
 	const response = await fetch(RSS_FEED_URL);
 
 	if (!response.ok) {
@@ -21,8 +22,8 @@ export const load: PageServerLoad = async ({ fetch }) => {
 
 	const episodes = buildGuestEpisodesFromFeedXml(await response.text());
 	const [applePodcastLinks, youtubeLinks] = await Promise.all([
-		fetchApplePodcastLinks(fetch),
-		fetchYoutubeLinks(fetch),
+		fetchApplePodcastLinks(),
+		fetchYoutubeLinks(),
 	]);
 	const guests = new Set(episodes.flatMap(episode => episode.guests));
 
@@ -37,9 +38,9 @@ export const load: PageServerLoad = async ({ fetch }) => {
 			},
 		})),
 	};
-};
+});
 
-async function fetchApplePodcastLinks(fetch: typeof globalThis.fetch): Promise<Map<number, string>> {
+async function fetchApplePodcastLinks(): Promise<Map<number, string>> {
 	const response = await fetch('https://itunes.apple.com/lookup?id=1755104750&entity=podcastEpisode&limit=200&country=JP');
 
 	if (!response.ok) {
@@ -60,35 +61,37 @@ async function fetchApplePodcastLinks(fetch: typeof globalThis.fetch): Promise<M
 	return links;
 }
 
-async function fetchYoutubeLinks(fetch: typeof globalThis.fetch): Promise<Map<number, string>> {
-	const response = await fetch(YOUTUBE_PLAYLIST_FEED_URL);
+async function fetchYoutubeLinks(): Promise<Map<number, string>> {
+	const response = await fetch(YOUTUBE_PLAYLIST_URL);
 
 	if (!response.ok) {
 		return new Map();
 	}
 
-	const feed = await response.text();
+	return parseYoutubePlaylistLinks(await response.text());
+}
+
+function parseYoutubePlaylistLinks(html: string): Map<number, string> {
 	const links = new Map<number, string>();
 
-	for (const match of feed.matchAll(/<entry>[\s\S]*?<\/entry>/g)) {
-		const entry = match[0];
-		const title = decodeXml(entry.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? '');
+	for (const match of html.matchAll(/"playlistVideoRenderer":\{"videoId":"([^"]+)"[\s\S]*?"title":\{"runs":\[\{"text":"((?:\\.|[^"\\])*)"\}\][\s\S]*?"index":\{"simpleText":"\d+"\}/g)) {
+		const [, videoId, encodedTitle] = match;
+		const title = decodeJsonString(encodedTitle);
 		const episodeNumber = title.match(/#(\d+)/)?.[1];
-		const url = decodeXml(entry.match(/<link rel="alternate" href="([^"]+)"/)?.[1] ?? '');
 
-		if (episodeNumber != null && url !== '') {
-			links.set(Number(episodeNumber), url);
+		if (episodeNumber != null) {
+			links.set(Number(episodeNumber), `https://www.youtube.com/watch?v=${videoId}&list=${YOUTUBE_PLAYLIST_ID}`);
 		}
 	}
 
 	return links;
 }
 
-function decodeXml(text: string): string {
-	return text
-		.replaceAll('&amp;', '&')
-		.replaceAll('&lt;', '<')
-		.replaceAll('&gt;', '>')
-		.replaceAll('&quot;', '"')
-		.replaceAll('&#39;', '\'');
+function decodeJsonString(text: string): string {
+	try {
+		return JSON.parse(`"${text}"`) as string;
+	}
+	catch {
+		return text;
+	}
 }
