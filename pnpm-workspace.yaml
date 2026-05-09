@@ -9,4 +9,4 @@ allowBuilds:
   sharp: true
   unrs-resolver: true
 engineStrict: true
-nodeVersion: 22.22.0
+nodeVersion: 24.15.0
