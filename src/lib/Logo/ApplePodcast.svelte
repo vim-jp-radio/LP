@@ -4,9 +4,10 @@
 	import { LINKS } from '../links';
 	import Base from './_Base.svelte';
 
-	const { ...rest } = $props();
+	const { link: linkOverride, ...rest }: { link?: string } & Record<string, unknown> = $props();
 
-	const { label: alt, url: link } = LINKS.ApplePodcast;
+	const { label: alt, url } = LINKS.ApplePodcast;
+	const link = linkOverride ?? url;
 </script>
 
 <Base {alt} {icon} {link} {...rest} />
