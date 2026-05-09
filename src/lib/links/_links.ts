@@ -23,10 +23,10 @@ export const VIM_JP_RADIO_INFO = {
 
 /** リスナーの声で表示する X ID のリスト。 */
 export const LISTENERS_TWEET_IDS = [
-	'1835630355501723876', // @Yudon66
-	'1872814798968373649', // @mattn_jp
-	'1839083747846795418', // @na0x2c6
-	'1863863535979364378', // @shuntaka_dev
-	'1846090683507163150', // @takeokunn
-	'1859811195206893973', // @mugijiru
+	'2036303877008662541', // @sheep__ink
+	'2032442691464921584', // @shosaigomori
+	'2021093586830492147', // @tech_world18
+	'2013261768370348480', // @yukichi_926
+	'2006579448259498057', // @yusei_wy
+	'2003089759376376263', // @kyremoe
 ] as const satisfies string[];
