@@ -4,6 +4,7 @@ onlyBuiltDependencies:
   - core-js-pure
   - dtrace-provider
   - esbuild
+  - lefthook
   - protobufjs
   - re2
   - sharp

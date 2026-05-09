@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    secretlint:
+      glob: '*.{js,jsx,ts,tsx,json,css,html,yaml,yml,md,svelte}'
+      run: pnpm exec nr secretlint {staged_files}
+    eslint:
+      glob: '*.{js,jsx,ts,tsx,json,css,html,yaml,yml,md,svelte}'
+      run: pnpm exec eslint --cache --fix {staged_files}
+      stage_fixed: true
+
+pre-push:
+  parallel: true
+  commands:
+    lint:
+      run: pnpm exec nr lint
+    check:
+      run: pnpm exec nr check
